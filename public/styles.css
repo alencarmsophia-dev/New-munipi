@@ -1,0 +1,1705 @@
+/* ==========================================================================
+   Painel de Apuração 2º Turno 2026 — Broadcast Minimalist Design System
+   Inspiração atmosférica: transmissão noturna de TV + contador ao vivo.
+   Zero caixas pesadas, tipografia tabular gigante, simetria estrita.
+   ========================================================================== */
+
+:root {
+  /* Tema escuro profundo por padrão (Broadcast Night) */
+  --bg: #07080c;
+  --bg-elevated: rgba(16, 19, 27, 0.86);
+  --ink: #f5f7fa;
+  --ink-2: #c6ccd8;
+  --muted: #7f8798;
+  --hairline: rgba(255, 255, 255, 0.09);
+  --hairline-strong: rgba(255, 255, 255, 0.22);
+  --map-empty: #161922;
+  --map-stroke: #07080c;
+  --live: #22c55e;
+  --stale: #f59e0b;
+  --focus: #ffffff;
+
+  /* Cores dos candidatos (sobrescritas dinamicamente pela config CANDIDATES) */
+  --cand-0: #e11d2e;
+  --cand-1: #2563eb;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: dark light;
+}
+
+/* Tema claro refinado quando o sistema operacional preferir claro (exceto em ?tv) */
+@media (prefers-color-scheme: light) {
+  body:not(.tv-mode):not([data-force-dark="true"]) {
+    --bg: #f6f7f9;
+    --bg-elevated: rgba(255, 255, 255, 0.90);
+    --ink: #0b0d13;
+    --ink-2: #2e3340;
+    --muted: #626978;
+    --hairline: rgba(11, 13, 19, 0.09);
+    --hairline-strong: rgba(11, 13, 19, 0.24);
+    --map-empty: #e2e5ec;
+    --map-stroke: #f6f7f9;
+    --live: #16a34a;
+    --stale: #d97706;
+    --focus: #0b0d13;
+    --cand-0: #d91b2b;
+    --cand-1: #1a4fd1;
+    color-scheme: light;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --hairline: rgba(255, 255, 255, 0.35);
+    --hairline-strong: rgba(255, 255, 255, 0.75);
+    --muted: #d0d5e0;
+  }
+  @media (prefers-color-scheme: light) {
+    body:not(.tv-mode) {
+      --hairline: rgba(11, 13, 19, 0.35);
+      --hairline-strong: rgba(11, 13, 19, 0.75);
+      --muted: #2e3340;
+    }
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  font-family: Geist, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background-color: var(--bg);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: hidden;
+  position: relative;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+/* Acessibilidade */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 16px;
+  z-index: 200;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 10px 16px;
+  border-radius: 99px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* Aurora atmosférica suave nas cores dos dois candidatos */
+.aurora-backdrop {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.aurora-glow {
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  max-width: 760px;
+  max-height: 760px;
+  border-radius: 50%;
+  filter: blur(110px);
+  opacity: 0.16;
+  transition: background-color 0.8s ease;
+}
+
+.aurora-left {
+  top: -12%;
+  left: -14%;
+  background: var(--cand-0);
+}
+
+.aurora-right {
+  top: -12%;
+  right: -14%;
+  background: var(--cand-1);
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.tv-mode) .aurora-glow {
+    opacity: 0.09;
+  }
+}
+
+/* Barra superior minimalista */
+.broadcast-topbar {
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 14px 24px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 11px;
+  color: var(--ink);
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--live);
+  animation: livePulse 2.2s ease-out infinite;
+}
+
+.live-indicator.stale .live-dot {
+  background: var(--stale);
+  animation: none;
+}
+
+.live-indicator.waiting .live-dot {
+  background: var(--muted);
+  animation: none;
+}
+
+@keyframes livePulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--live) 65%, transparent); }
+  75%, 100% { box-shadow: 0 0 0 8px transparent; }
+}
+
+.sim-mark {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.final-mark {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--bg);
+  background: var(--ink);
+  border-radius: 99px;
+  padding: 2px 9px;
+}
+
+/* Único controle fixo: switch Presidente / Governadores */
+.role-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+  padding: 3px;
+  border-radius: 99px;
+}
+
+.role-tab {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 500;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 99px;
+  cursor: pointer;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.role-tab:hover {
+  color: var(--ink);
+}
+
+.role-tab[aria-selected="true"] {
+  background: var(--ink);
+  color: var(--bg);
+  font-weight: 600;
+}
+
+/* Linha de chips de UF para Governadores */
+.gov-uf-strip {
+  position: relative;
+  z-index: 19;
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.gov-uf-scroll {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.gov-uf-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.gov-chip {
+  appearance: none;
+  border: 1px solid var(--hairline);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  min-height: 36px;
+  padding: 0 12px;
+  border-radius: 99px;
+  cursor: pointer;
+  flex: 1 1 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  white-space: nowrap;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.gov-chip:hover {
+  color: var(--ink);
+  border-color: var(--hairline-strong);
+}
+
+.gov-chip.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+.chip-uf {
+  letter-spacing: 0.02em;
+}
+
+.chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+  transition: background-color 0.3s ease;
+}
+
+.chip-dot.empty {
+  background: transparent;
+  box-shadow: inset 0 0 0 1.5px currentColor;
+  opacity: 0.5;
+}
+
+.chip-lead {
+  font-size: 11.5px;
+  font-weight: 500;
+  opacity: 0.85;
+  max-width: 11ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 480px) {
+  .chip-lead { display: none; }
+  .gov-uf-strip { padding-left: 14px; padding-right: 14px; }
+  .gov-chip { flex: 1 1 0; min-width: 0; padding: 0 6px; gap: 6px; }
+}
+
+/* Linha calma para Antes das 17h ou aviso de conexão */
+.calm-state-line {
+  position: relative;
+  z-index: 18;
+  text-align: center;
+  padding: 8px 20px;
+  font-size: 13px;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--hairline);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.calm-clock {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink);
+}
+
+/* ==========================================================================
+   PALCO PRINCIPAL: 3 Zonas no Desktop, Simétrico no Topo no Celular
+   ========================================================================== */
+.broadcast-stage {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 18px 24px 8px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 1.18fr) minmax(0, 1fr);
+  grid-template-areas:
+    "head head head"
+    "left map right"
+    "hud  hud hud";
+  align-items: center;
+  gap: 16px 28px;
+}
+
+.cand-left  { grid-area: left; }
+.map-zone   { grid-area: map; }
+.cand-right { grid-area: right; }
+.center-hud { grid-area: hud; }
+.stage-head-row {
+  grid-area: head;
+  position: relative;
+  z-index: 30; /* o menu de compartilhar abre por cima dos candidatos e do mapa */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 16px;
+}
+
+/* Painéis simétricos dos dois candidatos (2.4 Neutralidade absoluta) */
+.cand-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 0;
+  padding: 8px 4px;
+}
+
+/* Moldura da foto com iluminação radial e máscara suave na base */
+.portrait-wrap {
+  position: relative;
+  width: clamp(112px, 13.5vw, 210px);
+  aspect-ratio: 600 / 660;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portrait-halo {
+  position: absolute;
+  inset: -12%;
+  border-radius: 50%;
+  filter: blur(28px);
+  opacity: 0.42;
+  pointer-events: none;
+  transition: background-color 0.5s ease;
+}
+
+#halo-0 { background: radial-gradient(circle, var(--cand-0) 0%, transparent 72%); }
+#halo-1 { background: radial-gradient(circle, var(--cand-1) 0%, transparent 72%); }
+
+.portrait-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 999px 999px 28px 28px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--ink) 5%, transparent);
+  box-shadow: inset 0 0 0 1px var(--hairline-strong);
+  -webkit-mask-image: linear-gradient(to bottom, #000 76%, rgba(0, 0, 0, 0.12) 100%);
+  mask-image: linear-gradient(to bottom, #000 76%, rgba(0, 0, 0, 0.12) 100%);
+}
+
+.cand-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
+
+.cand-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.03em;
+}
+
+.elected-flag {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 3px 10px;
+  border-radius: 99px;
+}
+
+.cand-identity {
+  margin-bottom: 4px;
+}
+
+.cand-party-num {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.cand-display-name {
+  margin: 2px 0 0;
+  font-size: clamp(18px, 2vw, 28px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+/* Percentual gigante em destaque */
+.cand-pct-block {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  margin: 4px 0 6px;
+}
+
+.giant-pct {
+  font-size: clamp(42px, 6.2vw, 92px);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.96;
+}
+
+.giant-pct-symbol {
+  font-size: clamp(20px, 2.5vw, 38px);
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 3px;
+}
+
+/* Contador ao vivo de votos (Live Ticker) */
+.vote-ticker-wrap {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote-ticker-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font: inherit;
+  padding: 6px 12px;
+  min-height: 44px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.vote-ticker-btn:hover,
+.vote-ticker-btn:focus-visible {
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+  color: var(--ink);
+}
+
+.vote-digits {
+  font-size: clamp(16px, 1.85vw, 26px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.vote-unit {
+  font-size: clamp(12px, 1.1vw, 15px);
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.exact-popover {
+  position: absolute;
+  top: 100%;
+  margin-top: 4px;
+  z-index: 35;
+  white-space: nowrap;
+  background: var(--bg-elevated);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 11.5px;
+  color: var(--ink-2);
+  pointer-events: none;
+}
+
+/* Indicador discreto e idêntico de "à frente por X p.p." */
+.lead-indicator {
+  margin-top: 4px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--muted);
+  min-height: 20px;
+}
+
+/* ==========================================================================
+   HUD CENTRAL: Barra de Divisão (Tug-of-War) + Linha Fina de Progresso
+   ========================================================================== */
+.center-hud {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 6px 0 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tug-bar-wrap {
+  position: relative;
+  padding: 4px 0;
+}
+
+.tug-bar {
+  display: flex;
+  height: 6px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: var(--map-empty);
+  gap: 2px;
+}
+
+.tug-seg {
+  height: 100%;
+  transition: width 0.6s var(--ease-out), background-color 0.4s ease;
+}
+
+.tug-left  { background: var(--cand-0); }
+.tug-right { background: var(--cand-1); }
+
+.tug-mid-tick {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--ink);
+  transform: translateX(-50%);
+  opacity: 0.7;
+}
+
+.progress-hairline-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progress-stats-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.progress-stats-row strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.muted-inline {
+  opacity: 0.8;
+}
+
+.progress-hairline {
+  height: 2px;
+  width: 100%;
+  background: var(--hairline);
+  overflow: hidden;
+}
+
+.progress-hairline-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--ink);
+  transition: width 0.6s var(--ease-out);
+}
+
+/* ==========================================================================
+   ZONA DO MAPA DO BRASIL (Estados, Callouts do Nordeste/DF e Popover)
+   ========================================================================== */
+.map-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-width: 0;
+}
+
+.map-stage {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+svg#map {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 54dvh;
+  overflow: visible;
+  user-select: none;
+}
+
+svg#map path.uf-shape {
+  fill: var(--map-empty);
+  stroke: var(--map-stroke);
+  stroke-width: 1.2;
+  vector-effect: non-scaling-stroke;
+  cursor: pointer;
+  transition: fill 0.45s ease, fill-opacity 0.45s ease, stroke 0.15s ease, stroke-width 0.15s ease;
+}
+
+svg#map path.uf-shape.hover {
+  stroke: var(--ink);
+  stroke-width: 1.9;
+}
+
+/* B3: UFs sem 2º turno de governador ficam neutras */
+svg#map path.uf-shape.no-runoff,
+svg#map g.uf-callout-pill.no-runoff {
+  opacity: 0.5;
+}
+
+/* B13: anéis de destaque desenhados por cima dos estados, sem reordenar nós do SVG */
+svg#map path.uf-ring {
+  fill: none;
+  stroke: var(--ink);
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+svg#map path.uf-ring-hover { stroke-width: 1.9; }
+svg#map path.uf-ring-hover.on { opacity: 0.9; }
+svg#map path.uf-ring-sel {
+  stroke-width: 2.8;
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--ink) 60%, transparent));
+}
+svg#map path.uf-ring-sel.on { opacity: 1; }
+
+svg#map path.uf-shape.sel {
+  stroke: var(--ink);
+  stroke-width: 2.5;
+}
+
+svg#map path.uf-shape:focus-visible {
+  outline: none;
+  stroke: var(--ink);
+  stroke-width: 2.6;
+}
+
+svg#map text.uf-map-label {
+  font-size: 9.5px;
+  font-weight: 600;
+  fill: var(--ink);
+  paint-order: stroke;
+  stroke: var(--map-stroke);
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  text-anchor: middle;
+  dominant-baseline: central;
+  opacity: 0.92;
+}
+
+/* Linhas de chamada (Callouts) para estados densos do Nordeste e DF */
+svg#map line.uf-callout-line {
+  stroke: var(--hairline-strong);
+  stroke-width: 1;
+  pointer-events: none;
+}
+
+svg#map g.uf-callout-pill {
+  cursor: pointer;
+}
+
+svg#map g.uf-callout-pill rect {
+  fill: var(--map-empty);
+  stroke: var(--hairline-strong);
+  stroke-width: 1;
+  rx: 5px;
+  transition: fill 0.45s ease, stroke 0.15s ease;
+}
+
+svg#map g.uf-callout-pill:hover rect,
+svg#map g.uf-callout-pill.sel rect {
+  stroke: var(--ink);
+  stroke-width: 1.8;
+}
+
+svg#map g.uf-callout-pill text {
+  font-size: 9.5px;
+  font-weight: 600;
+  fill: var(--ink);
+  text-anchor: middle;
+  dominant-baseline: central;
+  pointer-events: none;
+}
+
+/* Chip discreto do Exterior (ZZ) */
+.ext-chip {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  appearance: none;
+  background: var(--bg-elevated);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--hairline-strong);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 11.5px;
+  font-weight: 500;
+  min-height: 36px;
+  padding: 0 11px;
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.ext-chip:hover,
+.ext-chip.sel {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.ext-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--map-empty);
+}
+
+/* Compartilhar a apuração da Presidência (botão no cabeçalho do bloco principal + menu) */
+.share-main {
+  position: relative;
+}
+
+.share-main-btn {
+  appearance: none;
+  background: var(--bg-elevated);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--hairline-strong);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  min-height: 36px;
+  padding: 0 14px 0 12px;
+  border-radius: 99px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.share-main-btn:hover,
+.share-main-btn[aria-expanded="true"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.share-menu {
+  --shift: 0px; /* ajustado em JS para o menu nunca ficar cortado nas bordas da tela */
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(calc(-50% + var(--shift)));
+  z-index: 40;
+  width: max-content;
+  min-width: 224px;
+  max-width: calc(100vw - 20px);
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  /* quase opaco: o texto dos candidatos não pode "vazar" por trás do menu */
+  background: color-mix(in srgb, var(--bg) 97%, transparent);
+  backdrop-filter: blur(22px) saturate(1.35);
+  -webkit-backdrop-filter: blur(22px) saturate(1.35);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 16px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 18px 44px rgba(0, 0, 0, 0.38), 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.share-menu:not([hidden]) {
+  animation: share-menu-in 0.16s var(--ease-out);
+}
+
+@keyframes share-menu-in {
+  from { opacity: 0; translate: 0 -4px; }
+  to { opacity: 1; translate: 0 0; }
+}
+
+.share-item {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: left;
+  text-decoration: none;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.share-item svg {
+  flex: none;
+  color: var(--ink-2);
+}
+
+.share-item:hover,
+.share-item:focus-visible {
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.share-item:focus-visible {
+  outline-offset: -2px;
+}
+
+/* Legenda única fina em gradiente */
+.slim-gradient-legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.legend-gradient-bar {
+  width: 160px;
+  height: 5px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--cand-0) 0%, var(--map-empty) 50%, var(--cand-1) 100%);
+}
+
+/* Cartão de vidro do estado (desktop, ancorado no estado) / bottom sheet (celular) */
+.detail-backdrop {
+  display: none;
+}
+
+.state-popover {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: min(304px, calc(100% - 20px));
+  display: flex;
+  flex-direction: column;
+  background: color-mix(in srgb, var(--bg-elevated) 84%, transparent);
+  backdrop-filter: blur(22px) saturate(1.35);
+  -webkit-backdrop-filter: blur(22px) saturate(1.35);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 20px;
+  padding: 16px 16px 14px;
+  z-index: 50;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 22px 56px rgba(0, 0, 0, 0.42), 0 2px 8px rgba(0, 0, 0, 0.2);
+  outline: none;
+  opacity: 0;
+  transform: translateY(8px) scale(0.965);
+  transition: opacity 0.18s ease, transform 0.24s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.state-popover.open {
+  opacity: 1;
+  transform: none;
+}
+
+.state-popover.dragging {
+  transition: none;
+}
+
+.state-popover:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-color-scheme: light) {
+  body:not(.tv-mode) .state-popover {
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 18px 44px rgba(11, 13, 19, 0.16), 0 2px 8px rgba(11, 13, 19, 0.08);
+  }
+}
+
+.sheet-grip {
+  display: none;
+}
+
+.popover-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "id id"
+    "status actions";
+  align-items: center;
+  gap: 10px 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.popover-id {
+  grid-area: id;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.popover-code {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+  color: var(--ink);
+}
+
+.popover-titles {
+  min-width: 0;
+}
+
+.popover-titles h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.popover-titles p {
+  margin: 3px 0 0;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.popover-actions {
+  grid-area: actions;
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 2px;
+  margin: -4px -6px -4px 0;
+}
+
+.status-tag {
+  grid-area: status;
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px 3px 8px;
+  border-radius: 99px;
+  border: 1px solid var(--hairline-strong);
+  color: var(--ink-2);
+}
+
+.status-tag::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--muted);
+}
+
+.status-tag.is-live::before { background: var(--live); }
+.status-tag.is-tie::before { background: var(--stale); }
+.status-tag.is-final {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+.status-tag.is-final::before { background: var(--bg); }
+
+.icon-link-btn,
+.icon-close-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11.5px;
+  padding: 6px 8px;
+  min-height: 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.icon-link-btn:hover,
+.icon-close-btn:hover {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.popover-body {
+  padding-top: 4px;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  max-height: min(62dvh, 460px);
+}
+
+.popover-cands {
+  display: flex;
+  flex-direction: column;
+}
+
+.pop-cand-row {
+  --c: var(--muted);
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  grid-template-areas:
+    "avatar id nums"
+    "bar    bar bar";
+  align-items: center;
+  column-gap: 11px;
+  row-gap: 10px;
+  padding: 13px 0 11px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.pop-avatar {
+  grid-area: avatar;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--c) 16%, transparent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--c) 75%, transparent);
+}
+
+.pop-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.pop-initials {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.pop-cand-id {
+  grid-area: id;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 0;
+}
+
+.pop-cand-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.pop-cand-meta {
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.pop-elected {
+  margin-top: 2px;
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 1px 8px;
+  border-radius: 99px;
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.pop-cand-nums {
+  grid-area: nums;
+  text-align: right;
+}
+
+.pop-pct {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.pop-cand-row.is-leader .pop-pct {
+  color: var(--c);
+}
+
+.pop-votes {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.pop-bar {
+  grid-area: bar;
+  height: 6px;
+  border-radius: 99px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--ink) 8%, transparent);
+}
+
+.pop-bar-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: inherit;
+  background: var(--c);
+  transition: width 0.7s var(--ease-out);
+}
+
+.popover-msg {
+  margin: 16px 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink-2);
+}
+
+.popover-lead {
+  --c: var(--muted);
+  margin: 12px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.popover-lead::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+  background: var(--c);
+}
+
+.popover-sec {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 11.5px;
+  color: var(--muted);
+}
+
+.popover-sec-bar {
+  height: 2px;
+  background: var(--hairline);
+  overflow: hidden;
+}
+
+.popover-sec-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--ink);
+  transition: width 0.6s var(--ease-out);
+}
+
+/* ==========================================================================
+   RODAPÉ DISCRETO E LINHA EXPANSÍVEL DE MÉTRICAS SECUNDÁRIAS
+   ========================================================================== */
+.broadcast-footer {
+  position: relative;
+  z-index: 15;
+  width: 100%;
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 10px 24px 16px;
+  border-top: 1px solid var(--hairline);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.footer-primary-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.details-toggle-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 12px;
+  padding: 6px 10px;
+  min-height: 36px;
+  border-radius: 99px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.details-toggle-btn:hover {
+  color: var(--ink);
+  background: color-mix(in srgb, var(--ink) 6%, transparent);
+}
+
+.details-toggle-btn[aria-expanded="true"] .chevron-icon {
+  transform: rotate(180deg);
+}
+
+.secondary-drawer {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--hairline);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.secondary-metrics-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 12px;
+}
+
+.secondary-metrics-line strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.sparkline-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sparkline-svg {
+  width: 180px;
+  height: 26px;
+  overflow: visible;
+}
+
+/* Tooltip de hover no mapa (apenas mouse desktop) */
+.map-hover-tip {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 120;
+  pointer-events: none;
+  background: var(--bg-elevated);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 10px;
+  padding: 8px 11px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+}
+
+.map-hover-tip.on {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   RESPONSIVIDADE MOBILE: Candidatos lado a lado no topo sem rolagem!
+   ========================================================================== */
+@media (max-width: 960px) {
+  .broadcast-topbar {
+    padding: 10px 14px;
+  }
+
+  .broadcast-stage {
+    padding: 12px 14px 8px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "head head"
+      "left right"
+      "hud  hud"
+      "map  map";
+    gap: 10px 12px;
+    align-items: start;
+  }
+
+  .portrait-wrap {
+    width: clamp(78px, 23vw, 118px);
+    margin-bottom: 8px;
+  }
+
+  .cand-display-name {
+    font-size: clamp(15px, 4.2vw, 20px);
+  }
+
+  .giant-pct {
+    font-size: clamp(32px, 9.6vw, 48px);
+  }
+
+  .giant-pct-symbol {
+    font-size: clamp(15px, 4.2vw, 22px);
+  }
+
+  .vote-digits {
+    font-size: clamp(14px, 3.9vw, 18px);
+  }
+
+  .vote-ticker-btn {
+    padding: 4px 8px;
+    min-height: 40px;
+  }
+
+  svg#map {
+    max-height: 46dvh;
+  }
+
+  /* Bottom sheet no celular: grabber, arrastar para baixo fecha, 82dvh e área segura */
+  .detail-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 80;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .detail-backdrop.on {
+    opacity: 1;
+  }
+
+  .state-popover {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: auto;
+    width: 100%;
+    max-height: 82dvh;
+    border-radius: 26px 26px 0 0;
+    padding: 6px 18px max(18px, env(safe-area-inset-bottom));
+    z-index: 90;
+    opacity: 1;
+    transform: translateY(100%);
+    box-shadow: 0 -18px 50px rgba(0, 0, 0, 0.45);
+  }
+
+  .state-popover.open {
+    transform: none;
+  }
+
+  /* O painel (position: fixed) vive dentro do .broadcast-stage, que cria um contexto de
+     empilhamento (z-index: 10). Sem isto, o rodapé (z-index: 15) e a topbar (z-index: 20)
+     eram desenhados POR CIMA do bottom sheet e do fundo escuro. */
+  body.panel-open .broadcast-stage {
+    z-index: 100;
+  }
+
+  .popover-body {
+    flex: 1 1 auto;
+    max-height: none;
+  }
+
+  .sheet-grip {
+    display: flex;
+    justify-content: center;
+    padding: 6px 0 12px;
+    cursor: grab;
+    touch-action: none;
+  }
+
+  .sheet-grip span {
+    width: 40px;
+    height: 4px;
+    border-radius: 99px;
+    background: var(--hairline-strong);
+  }
+
+  .popover-head {
+    touch-action: none;
+  }
+}
+
+/* ==========================================================================
+   MODO TV (?tv): Tela cheia, tipografia ampliada, zero controles, ciclo automático
+   ========================================================================== */
+body.tv-mode {
+  background: #050609;
+  color: #f8fafc;
+}
+
+body.tv-mode .hide-on-tv {
+  display: none !important;
+}
+
+body.tv-mode .broadcast-topbar,
+body.tv-mode .broadcast-stage,
+body.tv-mode .broadcast-footer {
+  max-width: 94vw;
+}
+
+body.tv-mode .portrait-wrap {
+  width: clamp(180px, 16vw, 310px);
+}
+
+body.tv-mode .giant-pct {
+  font-size: clamp(64px, 7.2vw, 132px);
+}
+
+body.tv-mode .vote-digits {
+  font-size: clamp(24px, 2.4vw, 42px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+
+/* ==========================================================================
+   MARCA "Surubim" (discreta, sem clique)
+   ========================================================================== */
+.brand-mark {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1;
+  color: var(--ink);
+  opacity: 0.55;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+@media (max-width: 1180px) {
+  /* canto superior direito, acima da chave Presidente/Governadores */
+  .broadcast-topbar {
+    padding-top: 20px;
+  }
+
+  .brand-mark {
+    left: auto;
+    right: 24px;
+    top: 5px;
+    transform: none;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+  }
+}
+
+@media (max-width: 960px) {
+  .broadcast-topbar {
+    padding-top: 20px;
+  }
+
+  .brand-mark {
+    right: 14px;
+  }
+}
+
+/* ==========================================================================
+   CABEÇALHO DO BLOCO PRINCIPAL ("Governador · AC Acre · Boletim das …")
+   ========================================================================== */
+.stage-head {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px 9px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-2);
+}
+
+.stage-office {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.stage-sep {
+  color: var(--muted);
+}
+
+.stage-uf {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.stage-time {
+  margin-left: 6px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+/* Estado vazio: sem zeros, sem dados de outro cargo */
+.broadcast-stage.is-waiting .giant-pct,
+.broadcast-stage.is-waiting .vote-digits {
+  color: var(--muted);
+  opacity: 0.6;
+}
+
+.broadcast-stage.is-waiting .giant-pct-symbol {
+  display: none;
+}
+
+.broadcast-stage.is-waiting .tug-seg {
+  background: var(--map-empty);
+}
+
+.broadcast-stage.is-waiting .portrait-halo {
+  opacity: 0.16;
+}
+
+.legend-caption {
+  margin: 8px 0 0;
+  font-size: 11px;
+  text-align: center;
+  color: var(--muted);
+}
+
+.footer-credit {
+  color: var(--muted);
+}
+
+/* Logo no rodapé (claro/escuro pelo esquema de cores do aparelho, como o resto do painel) */
+.footer-logo {
+  display: block;
+  margin: 2px 0 8px;
+}
+.footer-logo img {
+  display: block;
+  height: 36px;
+  width: auto;
+  opacity: 0.95;
+}

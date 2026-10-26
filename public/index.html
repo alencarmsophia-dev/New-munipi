@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#07080c" id="meta-theme-color">
+  <meta name="description" content="Apuração em tempo real do segundo turno da eleição de 2026 — dados oficiais do TSE.">
+  <title>Apuração 2026 • 2º Turno — Resultado Oficial TSE</title>
+  <!-- Pré-visualização ao compartilhar o link (WhatsApp, Facebook, X, Telegram…). Para exibir uma imagem,
+       acrescente <meta property="og:image" content="https://SEU-DOMINIO/img/og.png"> (URL absoluta, ~1200x630). -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Apuração 2026 • 2º Turno — Resultado Oficial TSE">
+  <meta property="og:description" content="Apuração em tempo real do segundo turno da eleição de 2026 — dados oficiais do TSE.">
+  <meta name="twitter:card" content="summary">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/img/logo/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/pos.css">
+</head>
+<body>
+  <a href="#stage" class="skip-link">Pular para o placar</a>
+
+  <!-- Anunciador acessível aria-live="polite" (sempre com o valor oficial exato TARGET, limitado) -->
+  <div id="sr-announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Aurora atmosférica nas cores dos dois candidatos -->
+  <div class="aurora-backdrop" aria-hidden="true">
+    <div class="aurora-glow aurora-left" id="aurora-left"></div>
+    <div class="aurora-glow aurora-right" id="aurora-right"></div>
+  </div>
+
+  <!-- Barra superior minimalista estilo transmissão de TV -->
+  <header class="broadcast-topbar" role="banner">
+    <span class="brand-mark" id="brand-mark">Surubim</span>
+    <div class="topbar-left">
+      <span class="live-indicator" id="live-indicator">
+        <span class="live-dot" id="live-dot"></span>
+        <span class="live-label" id="live-label">AO VIVO</span>
+      </span>
+      <span class="topbar-sep" aria-hidden="true">·</span>
+      <span class="topbar-time" id="official-time-label">conectando ao TSE…</span>
+      <span class="sim-mark" id="sim-mark" hidden title="Modo de dados simulados do TSE">SIM</span>
+      <span class="final-mark" id="final-mark" hidden>TOTALIZAÇÃO FINAL DO TSE</span>
+    </div>
+
+    <!-- Único controle fixo: seletor elegante Presidente / Governadores -->
+    <nav class="role-switch hide-on-tv" role="tablist" aria-label="Cargo em apuração">
+      <button type="button" class="role-tab" id="tab-pres" role="tab" aria-selected="true">Presidente</button>
+      <button type="button" class="role-tab" id="tab-gov" role="tab" aria-selected="false">Governadores</button>
+    </nav>
+  </header>
+
+  <!-- Linha fina de chips de UF quando em Governadores -->
+  <nav class="gov-uf-strip hide-on-tv" id="gov-bar" hidden aria-label="Escolha o estado para Governador">
+    <div class="gov-uf-scroll" id="gov-uf-chips"></div>
+  </nav>
+
+  <!-- Linha calma de estado especial (Antes das 17h ou dados desatualizados) -->
+  <div class="calm-state-line" id="calm-state-line" hidden role="status" aria-live="polite">
+    <span id="calm-state-text">A divulgação oficial do TSE começa às 17h (horário de Brasília).</span>
+    <span class="calm-clock" id="pre17-timer" hidden>00:00:00</span>
+  </div>
+
+  <!-- PALCO PRINCIPAL DE 3 ZONAS: Candidato Esquerda | Mapa Central | Candidato Direita -->
+  <main class="broadcast-stage" id="stage">
+    <!-- Cabeçalho do bloco principal: deixa claro o que está na tela -->
+    <div class="stage-head-row">
+      <h1 class="stage-head" id="stage-head">
+        <span class="stage-office" id="stage-office">Presidente</span>
+        <span class="stage-sep" aria-hidden="true">·</span>
+        <span class="stage-uf" id="stage-uf">BR</span>
+        <span class="stage-place" id="stage-place">Brasil</span>
+        <span class="stage-time" id="stage-time">Aguardando o TSE</span>
+      </h1>
+
+      <!-- Compartilhar a apuração da Presidência nas redes sociais (só aparece em "Presidente") -->
+      <div class="share-main hide-on-tv" id="share-main">
+        <button
+          type="button"
+          class="share-main-btn"
+          id="btn-share-main"
+          aria-haspopup="true"
+          aria-expanded="false"
+          aria-controls="share-menu"
+          title="Compartilhar a apuração nas redes sociais"
+        >
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M8 10.5V2.2M8 2.2L5 5.2M8 2.2l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.5 7.5H4A1.5 1.5 0 0 0 2.5 9v3.5A1.5 1.5 0 0 0 4 14h8a1.5 1.5 0 0 0 1.5-1.5V9A1.5 1.5 0 0 0 12 7.5h-.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Compartilhar</span>
+        </button>
+
+        <div class="share-menu" id="share-menu" aria-label="Compartilhar a apuração" hidden>
+          <a class="share-item" id="share-wa" data-net="whatsapp" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.2 15l-.3-.18-3.08.88.9-3-.2-.31A8.1 8.1 0 0 1 12.04 3.8Zm-3.2 3.9c-.2 0-.5.07-.76.35-.26.29-1 .98-1 2.4 0 1.4 1.03 2.77 1.17 2.96.15.2 2 3.2 4.95 4.36 2.45.96 2.95.77 3.48.72.53-.05 1.7-.7 1.94-1.37.24-.68.24-1.25.17-1.37-.07-.12-.26-.2-.55-.34-.29-.15-1.7-.84-1.97-.94-.26-.1-.46-.14-.65.15-.2.29-.75.94-.92 1.13-.17.2-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.7-1.6-1.99-.17-.29-.02-.45.13-.6.13-.13.29-.34.43-.5.15-.17.2-.29.29-.48.1-.2.05-.36-.02-.5-.07-.15-.65-1.57-.9-2.15-.23-.56-.47-.48-.65-.49h-.55Z"/></svg>
+            <span>WhatsApp</span>
+          </a>
+          <a class="share-item" id="share-x" data-net="x" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.84-6.32L5.45 21H2.38l7.17-8.2L2 3h6.33l4.37 5.78L17.75 3Zm-1.08 16.16h1.7L7.4 4.74H5.58l11.09 14.42Z"/></svg>
+            <span>X (Twitter)</span>
+          </a>
+          <a class="share-item" id="share-fb" data-net="facebook" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 22v-8.2h2.76l.41-3.2H13.5V8.56c0-.93.26-1.56 1.59-1.56h1.7V4.14A22.6 22.6 0 0 0 14.32 4c-2.45 0-4.12 1.5-4.12 4.23v2.37H7.43v3.2h2.77V22h3.3Z"/></svg>
+            <span>Facebook</span>
+          </a>
+          <a class="share-item" id="share-tg" data-net="telegram" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.4 4.1 2.9 11.2c-1.26.5-1.25 1.2-.23 1.51l4.75 1.48 1.84 5.62c.23.62.12.87.77.87.5 0 .72-.23 1-.5l2.28-2.22 4.75 3.5c.87.48 1.5.23 1.72-.81l3.12-14.7c.32-1.28-.49-1.86-1.3-1.52ZM8.2 13.5l10.3-6.5c.5-.3.97-.14.59.19l-8.35 7.54-.32 3.4-2.22-4.63Z"/></svg>
+            <span>Telegram</span>
+          </a>
+          <button type="button" class="share-item" id="share-copy">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="8.5" y="8.5" width="11" height="11" rx="2.2" stroke="currentColor" stroke-width="1.7"/><path d="M15.5 8.5V6.7A2.2 2.2 0 0 0 13.3 4.5H6.7a2.2 2.2 0 0 0-2.2 2.2v6.6a2.2 2.2 0 0 0 2.2 2.2h1.8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+            <span id="share-copy-text">Copiar texto e link</span>
+          </button>
+          <button type="button" class="share-item" id="share-native" hidden>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="5.5" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="18.5" cy="12" r="2" fill="currentColor"/></svg>
+            <span>Mais opções…</span>
+          </button>
+          <span class="sr-only" id="share-status" role="status" aria-live="polite"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZONA 1: Candidato da Esquerda (Posição Fixa 1) -->
+    <section class="cand-zone cand-left" id="cand-zone-0" aria-label="Candidato 1">
+      <div class="portrait-wrap">
+        <div class="portrait-halo" id="halo-0" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img
+            id="photo-0"
+            class="cand-photo"
+            src="/img/cand-1.webp"
+            alt=""
+            width="600"
+            height="660"
+            decoding="async"
+            fetchpriority="high"
+          >
+          <div class="cand-avatar-fallback" id="avatar-0" hidden aria-hidden="true">
+            <span id="initials-0">L</span>
+          </div>
+        </div>
+        <span class="elected-flag" id="elected-0" hidden>Totalização final • Eleito (TSE)</span>
+      </div>
+
+      <div class="cand-identity">
+        <div class="cand-party-num" id="meta-0">PT · 13</div>
+        <h2 class="cand-display-name" id="name-0">Lula</h2>
+      </div>
+
+      <div class="cand-pct-block">
+        <span class="giant-pct" id="pct-0">0,00</span><span class="giant-pct-symbol">%</span>
+      </div>
+
+      <!-- Contador ao vivo com affordance de toque/hover para ver valor oficial exato TARGET -->
+      <div class="vote-ticker-wrap">
+        <button
+          type="button"
+          class="vote-ticker-btn"
+          id="ticker-btn-0"
+          aria-describedby="exact-pop-0"
+          title="Toque ou passe o mouse para ver o número oficial exato do lote do TSE"
+        >
+          <span class="vote-digits" id="votes-shown-0">0</span>
+          <span class="vote-unit">votos</span>
+        </button>
+        <div class="exact-popover" id="exact-pop-0" role="tooltip" hidden>
+          Oficial TSE: <strong id="votes-target-0">0</strong> votos (<span id="votes-time-0">—</span>)
+        </div>
+      </div>
+
+      <div class="lead-indicator" id="lead-0" aria-live="off">&nbsp;</div>
+    </section>
+
+    <!-- FAIXA DE PROPORÇÃO E PROGRESSO (Entre os candidatos e o mapa no celular, integrada no desktop) -->
+    <section class="center-hud" aria-label="Proporção e andamento da apuração">
+      <!-- Barra única fina de divisão com centro em 50% -->
+      <div class="tug-bar-wrap">
+        <div class="tug-bar" id="split-bar">
+          <div class="tug-seg tug-left" id="split-seg-0" style="width:50%"></div>
+          <div class="tug-seg tug-right" id="split-seg-1" style="width:50%"></div>
+        </div>
+        <div class="tug-mid-tick" aria-hidden="true" title="Marca de 50%"></div>
+      </div>
+
+      <!-- Linha fina de progresso de seções apuradas e total de votos -->
+      <div class="progress-hairline-wrap">
+        <div class="progress-stats-row">
+          <span><strong id="sec-pct-label">0,00%</strong> das seções apuradas <span class="muted-inline" id="secs-count-text"></span></span>
+          <span class="lead-diff-summary" id="diff-values">Diferença atual: —</span>
+          <span><strong id="total-valid-votes">0</strong> votos válidos</span>
+        </div>
+        <div class="progress-hairline" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="sec-progressbar" aria-label="Percentual de seções apuradas">
+          <div class="progress-hairline-fill" id="sec-prog-fill"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ZONA 2: Mapa do Brasil por Estado (Centro) -->
+    <section class="map-zone" aria-label="Mapa da apuração por estado">
+      <div class="map-stage" id="map-viewport">
+        <svg
+          id="map"
+          viewBox="0 0 640 640"
+          role="group"
+          aria-label="Mapa do Brasil colorido pelo candidato à frente em cada estado. Use Tab ou as setas para navegar e Enter para abrir os dados do estado."
+        >
+          <defs>
+            <pattern id="tie-pattern" width="10" height="10" patternTransform="rotate(-45 0 0)" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="5" height="10" id="tie-rect-a" fill="#e11d2e"></rect>
+              <rect x="5" y="0" width="5" height="10" id="tie-rect-b" fill="#2563eb"></rect>
+            </pattern>
+          </defs>
+          <g id="map-paths"></g>
+          <g id="map-rings" aria-hidden="true"></g>
+          <g id="map-callouts"></g>
+          <g id="map-labels"></g>
+        </svg>
+
+        <!-- Chip discreto para votos no Exterior (ZZ) -->
+        <button type="button" class="ext-chip" id="ext-btn" aria-label="Votos no Exterior (ZZ)">
+          <span class="ext-chip-dot" id="ext-dot"></span>
+          <span>ZZ · Exterior</span>
+        </button>
+
+        <!-- Cartão de vidro ancorado no estado (desktop) / bottom sheet arrastável (celular) -->
+        <div class="detail-backdrop" id="detail-backdrop" hidden aria-hidden="true"></div>
+        <aside class="state-popover" id="detail-panel" role="dialog" aria-modal="false" aria-labelledby="detail-uf-title" tabindex="-1" hidden>
+          <div class="sheet-grip" id="sheet-handle" aria-hidden="true"><span></span></div>
+          <header class="popover-head" id="popover-head">
+            <div class="popover-id">
+              <span class="popover-code" id="detail-uf-code" aria-hidden="true">UF</span>
+              <div class="popover-titles">
+                <h2 id="detail-uf-title">Estado</h2>
+                <p id="detail-uf-sub">Totalização oficial TSE: —</p>
+              </div>
+            </div>
+            <div class="popover-actions hide-on-tv">
+              <button type="button" class="icon-link-btn" id="btn-share-uf" aria-label="Compartilhar link deste estado" title="Compartilhar estado">
+                <span id="share-btn-text">Compartilhar</span>
+              </button>
+              <button type="button" class="icon-close-btn" id="btn-close-detail" aria-label="Fechar detalhe do estado">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+            <span class="status-tag is-wait" id="detail-status">Aguardando o TSE</span>
+          </header>
+
+          <div class="popover-body">
+            <div class="popover-cands" id="detail-cands-list"></div>
+            <p class="popover-msg" id="detail-msg" hidden></p>
+            <p class="popover-lead" id="detail-lead" hidden></p>
+            <div class="popover-sec" id="detail-sec-wrap" hidden>
+              <div class="popover-sec-bar" aria-hidden="true"><i id="detail-sec-fill"></i></div>
+              <span id="det-sec">0,00% das seções apuradas</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Uma única legenda fina em gradiente abaixo do mapa -->
+      <div class="slim-gradient-legend" id="legend-gradient" aria-label="Escala de vantagem em pontos percentuais">
+        <span class="legend-side-label" id="legend-label-0">+20 p.p.</span>
+        <div class="legend-gradient-bar" id="legend-gradient-bar"></div>
+        <span class="legend-side-label" id="legend-label-1">+20 p.p.</span>
+      </div>
+      <p class="legend-caption" id="legend-caption" hidden>Cor do candidato à frente · quanto mais forte, maior a vantagem</p>
+    </section>
+
+    <!-- ZONA 3: Candidato da Direita (Posição Fixa 2) -->
+    <section class="cand-zone cand-right" id="cand-zone-1" aria-label="Candidato 2">
+      <div class="portrait-wrap">
+        <div class="portrait-halo" id="halo-1" aria-hidden="true"></div>
+        <div class="portrait-frame">
+          <img
+            id="photo-1"
+            class="cand-photo"
+            src="/img/cand-2.webp"
+            alt=""
+            width="600"
+            height="660"
+            decoding="async"
+            fetchpriority="high"
+          >
+          <div class="cand-avatar-fallback" id="avatar-1" hidden aria-hidden="true">
+            <span id="initials-1">FB</span>
+          </div>
+        </div>
+        <span class="elected-flag" id="elected-1" hidden>Totalização final • Eleito (TSE)</span>
+      </div>
+
+      <div class="cand-identity">
+        <div class="cand-party-num" id="meta-1">PL · 22</div>
+        <h2 class="cand-display-name" id="name-1">Flávio Bolsonaro</h2>
+      </div>
+
+      <div class="cand-pct-block">
+        <span class="giant-pct" id="pct-1">0,00</span><span class="giant-pct-symbol">%</span>
+      </div>
+
+      <div class="vote-ticker-wrap">
+        <button
+          type="button"
+          class="vote-ticker-btn"
+          id="ticker-btn-1"
+          aria-describedby="exact-pop-1"
+          title="Toque ou passe o mouse para ver o número oficial exato do lote do TSE"
+        >
+          <span class="vote-digits" id="votes-shown-1">0</span>
+          <span class="vote-unit">votos</span>
+        </button>
+        <div class="exact-popover" id="exact-pop-1" role="tooltip" hidden>
+          Oficial TSE: <strong id="votes-target-1">0</strong> votos (<span id="votes-time-1">—</span>)
+        </div>
+      </div>
+
+      <div class="lead-indicator" id="lead-1" aria-live="off">&nbsp;</div>
+    </section>
+  </main>
+
+  <!-- Camada de análise pós-eleição (isolada e oculta no modo TV) -->
+  <section class="pos-analysis-section hide-on-tv" id="pos-eleicao-section" aria-label="Como foi a eleição"></section>
+
+  <!-- Rodapé discreto de linha única com métricas secundárias expansíveis sob demanda -->
+  <footer class="broadcast-footer" role="contentinfo">
+    <picture class="footer-logo">
+      <source media="(prefers-color-scheme: dark)" srcset="/img/logo/logo-horizontal-escuro.svg">
+      <img src="/img/logo/logo-horizontal-claro.svg" alt="Apuração 2026 — 2º turno" width="102" height="36" decoding="async" loading="lazy">
+    </picture>
+    <div class="footer-primary-line">
+      <span>Contador animado; valores oficiais do TSE.</span>
+      <button type="button" class="details-toggle-btn hide-on-tv" id="btn-toggle-details" aria-expanded="false" aria-controls="secondary-drawer">
+        <span>Comparecimento, brancos, nulos e evolução</span>
+        <svg class="chevron-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M2.5 4.5L6 8L9.5 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <span>Projeto independente, sem vínculo oficial. O resultado oficial é o do TSE.</span>
+      <span class="footer-credit">Fotos: TSE (DivulgaCandContas)</span>
+    </div>
+
+    <div class="secondary-drawer" id="secondary-drawer" hidden>
+      <div class="secondary-metrics-line">
+        <span>Comparecimento: <strong id="m-comp-pct">—</strong> <small id="m-comp-abs"></small></span>
+        <span class="sep-dot" aria-hidden="true">·</span>
+        <span>Abstenção: <strong id="m-abst-pct">—</strong> <small id="m-abst-abs"></small></span>
+        <span class="sep-dot" aria-hidden="true">·</span>
+        <span>Votos válidos: <strong id="m-val-pct">—</strong> <small id="m-val-abs"></small></span>
+        <span class="sep-dot" aria-hidden="true">·</span>
+        <span>Brancos: <strong id="m-br-pct">—</strong> <small id="m-br-abs"></small></span>
+        <span class="sep-dot" aria-hidden="true">·</span>
+        <span>Nulos: <strong id="m-nul-pct">—</strong> <small id="m-nul-abs"></small></span>
+      </div>
+
+      <div class="sparkline-row">
+        <span class="spark-caption">Margem na sessão (p.p.):</span>
+        <svg class="sparkline-svg" id="sparkline-svg" viewBox="0 0 240 32" role="img" aria-label="Evolução da diferença percentual na sessão">
+          <g id="sparkline-body"></g>
+        </svg>
+        <span class="spark-caption" id="selftest-badge" hidden></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Dica leve ao passar o mouse no desktop -->
+  <div class="map-hover-tip" id="tip" role="tooltip" aria-hidden="true"></div>
+
+  <script type="module" src="/app.js"></script>
+  <script type="module" src="/pos.js"></script>
+</body>
+</html>

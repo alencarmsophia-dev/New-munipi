@@ -1,0 +1,29 @@
+FOTOS DOS CANDIDATOS A GOVERNADOR (2º turno 2026)
+=================================================
+
+Coloque aqui as 12 fotos OFICIAIS, em WebP, 600x660 px (retrato, rosto no terço superior),
+com EXATAMENTE estes nomes. Enquanto um arquivo não existir, o site mostra as iniciais do candidato.
+
+  ac-mailza-assis.webp               Mailza Assis (PP 11)
+  ac-alan-rick.webp                  Alan Rick (REPUBLICANOS 10)
+  am-omar-aziz.webp                  Omar Aziz (PSD 55)
+  am-professora-maria-do-carmo.webp  Professora Maria do Carmo (PL 22)
+  df-celina-leao.webp                Celina Leão (PP 11)
+  df-leandro-grass.webp              Leandro Grass (PT 13)
+  es-lorenzo-pazolini.webp           Lorenzo Pazolini (REPUBLICANOS 10)
+  es-ricardo-ferraco.webp            Ricardo Ferraço (MDB 15)
+  rn-allyson.webp                    Allyson (UNIÃO 44)
+  rn-cadu-de-lula.webp               Cadu de Lula (PT 13)
+  to-professora-dorinha.webp         Professora Dorinha (UNIÃO 44)
+  to-vicentinho-junior.webp          Vicentinho Júnior (PSDB 45)
+
+Onde achar a foto oficial: DivulgaCandContas (https://divulgacandcontas.tse.jus.br) — busque o
+candidato, ano 2026, cargo Governador, e baixe a foto. Depois recorte em 600x660 e salve em .webp.
+
+Se mudar um nome de arquivo, ajuste também o campo `photo` em GOV_CANDIDATES (public/app.js)
+e a lista GOV_PHOTOS em public/sw.js.
+
+Dica (não testada por mim, sem acesso à rede): os arquivos de resultado do TSE trazem o campo
+`sqcand` de cada candidato; em repositórios públicos de apuração a foto oficial aparece em
+https://resultados.tse.jus.br/oficial/ele2026/{eleicao}/fotos/{uf}/{sqcand}.jpeg
+(eleição 6259 = 1º turno de governador, 6260 = 2º turno). Confira a foto no DivulgaCandContas.

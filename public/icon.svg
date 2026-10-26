@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Apuração 2026"><defs>
+<linearGradient id="bgi" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b2133"/><stop offset="1" stop-color="#090b12"/></linearGradient>
+<radialGradient id="gli" cx="0.25" cy="0.12" r="0.8"><stop offset="0" stop-color="#ffffff" stop-opacity="0.16"/><stop offset="0.6" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+<linearGradient id="rdi" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#d91b2b"/><stop offset="1" stop-color="#ff6572"/></linearGradient>
+<linearGradient id="bli" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6aa8ff"/><stop offset="1" stop-color="#2358e8"/></linearGradient></defs>
+<rect width="512" height="512" rx="116" fill="url(#bgi)"/>
+<rect width="512" height="512" rx="116" fill="url(#gli)"/>
+<path d="M 244.50 387.50 A 132 132 0 0 1 208.70 132.77" fill="none" stroke="url(#rdi)" stroke-width="44" stroke-linecap="round"/>
+<path d="M 267.50 124.50 A 132 132 0 0 1 303.30 379.23" fill="none" stroke="url(#bli)" stroke-width="44" stroke-linecap="round"/>
+<path d="M 205 262 L 241 298 L 311 222" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/></svg>

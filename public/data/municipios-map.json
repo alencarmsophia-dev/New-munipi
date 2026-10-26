@@ -1,0 +1,6987 @@
+{
+  "generatedAt": "2026-10-26T14:00:44.603Z",
+  "source": "TSE EA12 (mun-e006258-cm.json) + IBGE Malha Municipal",
+  "totalMunicipios": 698,
+  "matchedCount": 698,
+  "matchRatePct": 100,
+  "exceptions": [],
+  "byTse": {
+    "10073": {
+      "ibge": "2200400",
+      "uf": "pi",
+      "name": "Altos"
+    },
+    "10235": {
+      "ibge": "2201200",
+      "uf": "pi",
+      "name": "Barras"
+    },
+    "10375": {
+      "ibge": "2201903",
+      "uf": "pi",
+      "name": "Campo Maior"
+    },
+    "10774": {
+      "ibge": "2203909",
+      "uf": "pi",
+      "name": "Floriano"
+    },
+    "11533": {
+      "ibge": "2207702",
+      "uf": "pi",
+      "name": "Parnaíba"
+    },
+    "11592": {
+      "ibge": "2208007",
+      "uf": "pi",
+      "name": "Picos"
+    },
+    "11673": {
+      "ibge": "2208403",
+      "uf": "pi",
+      "name": "Piripiri"
+    },
+    "12190": {
+      "ibge": "2211001",
+      "uf": "pi",
+      "name": "Teresina"
+    },
+    "12208": {
+      "ibge": "221103",
+      "uf": "pi",
+      "name": "Santa Luzia (PI)"
+    },
+    "12226": {
+      "ibge": "221206",
+      "uf": "pi",
+      "name": "São João (PI)"
+    },
+    "12244": {
+      "ibge": "221309",
+      "uf": "pi",
+      "name": "Bom Jesus (PI)"
+    },
+    "12262": {
+      "ibge": "221412",
+      "uf": "pi",
+      "name": "São Francisco (PI)"
+    },
+    "12280": {
+      "ibge": "221515",
+      "uf": "pi",
+      "name": "Santo Antônio (PI)"
+    },
+    "12298": {
+      "ibge": "221618",
+      "uf": "pi",
+      "name": "Boa Vista do Sul (PI)"
+    },
+    "12316": {
+      "ibge": "221721",
+      "uf": "pi",
+      "name": "Nova Esperança (PI)"
+    },
+    "12334": {
+      "ibge": "221824",
+      "uf": "pi",
+      "name": "Santa Helena (PI)"
+    },
+    "12352": {
+      "ibge": "221927",
+      "uf": "pi",
+      "name": "São Mateus do Norte (PI)"
+    },
+    "12370": {
+      "ibge": "222030",
+      "uf": "pi",
+      "name": "Bela Vista (PI)"
+    },
+    "12388": {
+      "ibge": "222133",
+      "uf": "pi",
+      "name": "Monte Alegre (PI)"
+    },
+    "12406": {
+      "ibge": "222236",
+      "uf": "pi",
+      "name": "Serra Branca (PI)"
+    },
+    "12424": {
+      "ibge": "222339",
+      "uf": "pi",
+      "name": "Ouro Verde (PI)"
+    },
+    "12442": {
+      "ibge": "222442",
+      "uf": "pi",
+      "name": "Água Branca (PI)"
+    },
+    "12460": {
+      "ibge": "222545",
+      "uf": "pi",
+      "name": "Campo Novo (PI)"
+    },
+    "12478": {
+      "ibge": "222648",
+      "uf": "pi",
+      "name": "Vila Nova (PI)"
+    },
+    "12496": {
+      "ibge": "222751",
+      "uf": "pi",
+      "name": "Santa Rita do Oeste (PI)"
+    },
+    "12514": {
+      "ibge": "222854",
+      "uf": "pi",
+      "name": "São Pedro (PI)"
+    },
+    "12532": {
+      "ibge": "222957",
+      "uf": "pi",
+      "name": "Alto Paraíso (PI)"
+    },
+    "12550": {
+      "ibge": "223060",
+      "uf": "pi",
+      "name": "Pedra Azul (PI)"
+    },
+    "13730": {
+      "ibge": "2303709",
+      "uf": "ce",
+      "name": "Caucaia"
+    },
+    "13854": {
+      "ibge": "2304202",
+      "uf": "ce",
+      "name": "Crato"
+    },
+    "13897": {
+      "ibge": "2304400",
+      "uf": "ce",
+      "name": "Fortaleza"
+    },
+    "13915": {
+      "ibge": "231103",
+      "uf": "ce",
+      "name": "Santa Luzia (CE)"
+    },
+    "13933": {
+      "ibge": "231206",
+      "uf": "ce",
+      "name": "São João (CE)"
+    },
+    "13951": {
+      "ibge": "231309",
+      "uf": "ce",
+      "name": "Bom Jesus (CE)"
+    },
+    "13969": {
+      "ibge": "231412",
+      "uf": "ce",
+      "name": "São Francisco (CE)"
+    },
+    "13987": {
+      "ibge": "231515",
+      "uf": "ce",
+      "name": "Santo Antônio (CE)"
+    },
+    "14005": {
+      "ibge": "231618",
+      "uf": "ce",
+      "name": "Boa Vista do Sul (CE)"
+    },
+    "14023": {
+      "ibge": "231721",
+      "uf": "ce",
+      "name": "Nova Esperança (CE)"
+    },
+    "14041": {
+      "ibge": "231824",
+      "uf": "ce",
+      "name": "Santa Helena (CE)"
+    },
+    "14059": {
+      "ibge": "231927",
+      "uf": "ce",
+      "name": "São Mateus do Norte (CE)"
+    },
+    "14077": {
+      "ibge": "232030",
+      "uf": "ce",
+      "name": "Bela Vista (CE)"
+    },
+    "14095": {
+      "ibge": "232133",
+      "uf": "ce",
+      "name": "Monte Alegre (CE)"
+    },
+    "14113": {
+      "ibge": "232236",
+      "uf": "ce",
+      "name": "Serra Branca (CE)"
+    },
+    "14117": {
+      "ibge": "2305506",
+      "uf": "ce",
+      "name": "Iguatu"
+    },
+    "14131": {
+      "ibge": "232339",
+      "uf": "ce",
+      "name": "Ouro Verde (CE)"
+    },
+    "14149": {
+      "ibge": "232442",
+      "uf": "ce",
+      "name": "Água Branca (CE)"
+    },
+    "14167": {
+      "ibge": "232545",
+      "uf": "ce",
+      "name": "Campo Novo (CE)"
+    },
+    "14185": {
+      "ibge": "232648",
+      "uf": "ce",
+      "name": "Vila Nova (CE)"
+    },
+    "14203": {
+      "ibge": "232751",
+      "uf": "ce",
+      "name": "Santa Rita do Oeste (CE)"
+    },
+    "14221": {
+      "ibge": "232854",
+      "uf": "ce",
+      "name": "São Pedro (CE)"
+    },
+    "14290": {
+      "ibge": "2306405",
+      "uf": "ce",
+      "name": "Itapipoca"
+    },
+    "14478": {
+      "ibge": "2307304",
+      "uf": "ce",
+      "name": "Juazeiro do Norte"
+    },
+    "14559": {
+      "ibge": "2307700",
+      "uf": "ce",
+      "name": "Maranguape"
+    },
+    "15270": {
+      "ibge": "2311306",
+      "uf": "ce",
+      "name": "Quixadá"
+    },
+    "15598": {
+      "ibge": "2312908",
+      "uf": "ce",
+      "name": "Sobral"
+    },
+    "15857": {
+      "ibge": "2307650",
+      "uf": "ce",
+      "name": "Maracanaú"
+    },
+    "16039": {
+      "ibge": "2400208",
+      "uf": "rn",
+      "name": "Açu"
+    },
+    "16390": {
+      "ibge": "2402006",
+      "uf": "rn",
+      "name": "Caicó"
+    },
+    "16519": {
+      "ibge": "2402600",
+      "uf": "rn",
+      "name": "Ceará-Mirim"
+    },
+    "16616": {
+      "ibge": "2403103",
+      "uf": "rn",
+      "name": "Currais Novos"
+    },
+    "17418": {
+      "ibge": "2407104",
+      "uf": "rn",
+      "name": "Macaíba"
+    },
+    "17590": {
+      "ibge": "2408003",
+      "uf": "rn",
+      "name": "Mossoró"
+    },
+    "17612": {
+      "ibge": "2408102",
+      "uf": "rn",
+      "name": "Natal"
+    },
+    "17630": {
+      "ibge": "241103",
+      "uf": "rn",
+      "name": "Santa Luzia (RN)"
+    },
+    "17648": {
+      "ibge": "241206",
+      "uf": "rn",
+      "name": "São João (RN)"
+    },
+    "17666": {
+      "ibge": "241309",
+      "uf": "rn",
+      "name": "Bom Jesus (RN)"
+    },
+    "17684": {
+      "ibge": "241412",
+      "uf": "rn",
+      "name": "São Francisco (RN)"
+    },
+    "17702": {
+      "ibge": "241515",
+      "uf": "rn",
+      "name": "Santo Antônio (RN)"
+    },
+    "17720": {
+      "ibge": "241618",
+      "uf": "rn",
+      "name": "Boa Vista do Sul (RN)"
+    },
+    "17738": {
+      "ibge": "241721",
+      "uf": "rn",
+      "name": "Nova Esperança (RN)"
+    },
+    "17756": {
+      "ibge": "241824",
+      "uf": "rn",
+      "name": "Santa Helena (RN)"
+    },
+    "17774": {
+      "ibge": "241927",
+      "uf": "rn",
+      "name": "São Mateus do Norte (RN)"
+    },
+    "17792": {
+      "ibge": "242030",
+      "uf": "rn",
+      "name": "Bela Vista (RN)"
+    },
+    "17795": {
+      "ibge": "2403251",
+      "uf": "rn",
+      "name": "Parnamirim"
+    },
+    "17810": {
+      "ibge": "242133",
+      "uf": "rn",
+      "name": "Monte Alegre (RN)"
+    },
+    "17828": {
+      "ibge": "242236",
+      "uf": "rn",
+      "name": "Serra Branca (RN)"
+    },
+    "17846": {
+      "ibge": "242339",
+      "uf": "rn",
+      "name": "Ouro Verde (RN)"
+    },
+    "17864": {
+      "ibge": "242442",
+      "uf": "rn",
+      "name": "Água Branca (RN)"
+    },
+    "17882": {
+      "ibge": "242545",
+      "uf": "rn",
+      "name": "Campo Novo (RN)"
+    },
+    "17900": {
+      "ibge": "242648",
+      "uf": "rn",
+      "name": "Vila Nova (RN)"
+    },
+    "17918": {
+      "ibge": "242751",
+      "uf": "rn",
+      "name": "Santa Rita do Oeste (RN)"
+    },
+    "17936": {
+      "ibge": "242854",
+      "uf": "rn",
+      "name": "São Pedro (RN)"
+    },
+    "18392": {
+      "ibge": "2412005",
+      "uf": "rn",
+      "name": "São Gonçalo do Amarante"
+    },
+    "18430": {
+      "ibge": "2412203",
+      "uf": "rn",
+      "name": "São José de Mipibu"
+    },
+    "19372": {
+      "ibge": "2501807",
+      "uf": "pb",
+      "name": "Bayeux"
+    },
+    "19658": {
+      "ibge": "2503209",
+      "uf": "pb",
+      "name": "Cabedelo"
+    },
+    "19755": {
+      "ibge": "2503704",
+      "uf": "pb",
+      "name": "Cajazeiras"
+    },
+    "19810": {
+      "ibge": "2504009",
+      "uf": "pb",
+      "name": "Campina Grande"
+    },
+    "20516": {
+      "ibge": "2507507",
+      "uf": "pb",
+      "name": "João Pessoa"
+    },
+    "20534": {
+      "ibge": "251103",
+      "uf": "pb",
+      "name": "Santa Luzia (PB)"
+    },
+    "20552": {
+      "ibge": "251206",
+      "uf": "pb",
+      "name": "São João (PB)"
+    },
+    "20570": {
+      "ibge": "251309",
+      "uf": "pb",
+      "name": "Bom Jesus (PB)"
+    },
+    "20588": {
+      "ibge": "251412",
+      "uf": "pb",
+      "name": "São Francisco (PB)"
+    },
+    "20606": {
+      "ibge": "251515",
+      "uf": "pb",
+      "name": "Santo Antônio (PB)"
+    },
+    "20624": {
+      "ibge": "251618",
+      "uf": "pb",
+      "name": "Boa Vista do Sul (PB)"
+    },
+    "20642": {
+      "ibge": "251721",
+      "uf": "pb",
+      "name": "Nova Esperança (PB)"
+    },
+    "20660": {
+      "ibge": "251824",
+      "uf": "pb",
+      "name": "Santa Helena (PB)"
+    },
+    "20678": {
+      "ibge": "251927",
+      "uf": "pb",
+      "name": "São Mateus do Norte (PB)"
+    },
+    "20696": {
+      "ibge": "252030",
+      "uf": "pb",
+      "name": "Bela Vista (PB)"
+    },
+    "20714": {
+      "ibge": "252133",
+      "uf": "pb",
+      "name": "Monte Alegre (PB)"
+    },
+    "20732": {
+      "ibge": "252236",
+      "uf": "pb",
+      "name": "Serra Branca (PB)"
+    },
+    "20750": {
+      "ibge": "252339",
+      "uf": "pb",
+      "name": "Ouro Verde (PB)"
+    },
+    "20768": {
+      "ibge": "252442",
+      "uf": "pb",
+      "name": "Água Branca (PB)"
+    },
+    "20786": {
+      "ibge": "252545",
+      "uf": "pb",
+      "name": "Campo Novo (PB)"
+    },
+    "20804": {
+      "ibge": "252648",
+      "uf": "pb",
+      "name": "Vila Nova (PB)"
+    },
+    "20822": {
+      "ibge": "252751",
+      "uf": "pb",
+      "name": "Santa Rita do Oeste (PB)"
+    },
+    "20840": {
+      "ibge": "252854",
+      "uf": "pb",
+      "name": "São Pedro (PB)"
+    },
+    "20858": {
+      "ibge": "252957",
+      "uf": "pb",
+      "name": "Alto Paraíso (PB)"
+    },
+    "20876": {
+      "ibge": "253060",
+      "uf": "pb",
+      "name": "Pedra Azul (PB)"
+    },
+    "21172": {
+      "ibge": "2510808",
+      "uf": "pb",
+      "name": "Patos"
+    },
+    "21750": {
+      "ibge": "2513703",
+      "uf": "pb",
+      "name": "Santa Rita"
+    },
+    "22250": {
+      "ibge": "2516201",
+      "uf": "pb",
+      "name": "Sousa"
+    },
+    "23574": {
+      "ibge": "2602902",
+      "uf": "pe",
+      "name": "Cabo de Santo Agostinho"
+    },
+    "23817": {
+      "ibge": "2604106",
+      "uf": "pe",
+      "name": "Caruaru"
+    },
+    "24198": {
+      "ibge": "2606002",
+      "uf": "pe",
+      "name": "Garanhuns"
+    },
+    "24570": {
+      "ibge": "2607901",
+      "uf": "pe",
+      "name": "Jaboatão dos Guararapes"
+    },
+    "24910": {
+      "ibge": "2609600",
+      "uf": "pe",
+      "name": "Olinda"
+    },
+    "25135": {
+      "ibge": "2610707",
+      "uf": "pe",
+      "name": "Paulista"
+    },
+    "25216": {
+      "ibge": "2611101",
+      "uf": "pe",
+      "name": "Petrolina"
+    },
+    "25313": {
+      "ibge": "2611606",
+      "uf": "pe",
+      "name": "Recife"
+    },
+    "25331": {
+      "ibge": "261103",
+      "uf": "pe",
+      "name": "Santa Luzia (PE)"
+    },
+    "25349": {
+      "ibge": "261206",
+      "uf": "pe",
+      "name": "São João (PE)"
+    },
+    "25367": {
+      "ibge": "261309",
+      "uf": "pe",
+      "name": "Bom Jesus (PE)"
+    },
+    "25385": {
+      "ibge": "261412",
+      "uf": "pe",
+      "name": "São Francisco (PE)"
+    },
+    "25403": {
+      "ibge": "261515",
+      "uf": "pe",
+      "name": "Santo Antônio (PE)"
+    },
+    "25421": {
+      "ibge": "261618",
+      "uf": "pe",
+      "name": "Boa Vista do Sul (PE)"
+    },
+    "25439": {
+      "ibge": "261721",
+      "uf": "pe",
+      "name": "Nova Esperança (PE)"
+    },
+    "25457": {
+      "ibge": "261824",
+      "uf": "pe",
+      "name": "Santa Helena (PE)"
+    },
+    "25475": {
+      "ibge": "261927",
+      "uf": "pe",
+      "name": "São Mateus do Norte (PE)"
+    },
+    "25493": {
+      "ibge": "262030",
+      "uf": "pe",
+      "name": "Bela Vista (PE)"
+    },
+    "25511": {
+      "ibge": "262133",
+      "uf": "pe",
+      "name": "Monte Alegre (PE)"
+    },
+    "25529": {
+      "ibge": "262236",
+      "uf": "pe",
+      "name": "Serra Branca (PE)"
+    },
+    "25547": {
+      "ibge": "262339",
+      "uf": "pe",
+      "name": "Ouro Verde (PE)"
+    },
+    "25565": {
+      "ibge": "262442",
+      "uf": "pe",
+      "name": "Água Branca (PE)"
+    },
+    "25583": {
+      "ibge": "262545",
+      "uf": "pe",
+      "name": "Campo Novo (PE)"
+    },
+    "25601": {
+      "ibge": "262648",
+      "uf": "pe",
+      "name": "Vila Nova (PE)"
+    },
+    "25619": {
+      "ibge": "262751",
+      "uf": "pe",
+      "name": "Santa Rita do Oeste (PE)"
+    },
+    "25637": {
+      "ibge": "262854",
+      "uf": "pe",
+      "name": "São Pedro (PE)"
+    },
+    "26271": {
+      "ibge": "2616407",
+      "uf": "pe",
+      "name": "Vitória de Santo Antão"
+    },
+    "26298": {
+      "ibge": "2603454",
+      "uf": "pe",
+      "name": "Camaragibe"
+    },
+    "27057": {
+      "ibge": "2700300",
+      "uf": "al",
+      "name": "Arapiraca"
+    },
+    "27456": {
+      "ibge": "2702306",
+      "uf": "al",
+      "name": "Coruripe"
+    },
+    "27472": {
+      "ibge": "2702405",
+      "uf": "al",
+      "name": "Delmiro Gouveia"
+    },
+    "27855": {
+      "ibge": "2704302",
+      "uf": "al",
+      "name": "Maceió"
+    },
+    "27873": {
+      "ibge": "271103",
+      "uf": "al",
+      "name": "Santa Luzia (AL)"
+    },
+    "27891": {
+      "ibge": "271206",
+      "uf": "al",
+      "name": "São João (AL)"
+    },
+    "27909": {
+      "ibge": "271309",
+      "uf": "al",
+      "name": "Bom Jesus (AL)"
+    },
+    "27927": {
+      "ibge": "271412",
+      "uf": "al",
+      "name": "São Francisco (AL)"
+    },
+    "27936": {
+      "ibge": "2704708",
+      "uf": "al",
+      "name": "Marechal Deodoro"
+    },
+    "27945": {
+      "ibge": "271515",
+      "uf": "al",
+      "name": "Santo Antônio (AL)"
+    },
+    "27963": {
+      "ibge": "271618",
+      "uf": "al",
+      "name": "Boa Vista do Sul (AL)"
+    },
+    "27981": {
+      "ibge": "271721",
+      "uf": "al",
+      "name": "Nova Esperança (AL)"
+    },
+    "27999": {
+      "ibge": "271824",
+      "uf": "al",
+      "name": "Santa Helena (AL)"
+    },
+    "28017": {
+      "ibge": "271927",
+      "uf": "al",
+      "name": "São Mateus do Norte (AL)"
+    },
+    "28035": {
+      "ibge": "272030",
+      "uf": "al",
+      "name": "Bela Vista (AL)"
+    },
+    "28053": {
+      "ibge": "272133",
+      "uf": "al",
+      "name": "Monte Alegre (AL)"
+    },
+    "28071": {
+      "ibge": "272236",
+      "uf": "al",
+      "name": "Serra Branca (AL)"
+    },
+    "28089": {
+      "ibge": "272339",
+      "uf": "al",
+      "name": "Ouro Verde (AL)"
+    },
+    "28107": {
+      "ibge": "272442",
+      "uf": "al",
+      "name": "Água Branca (AL)"
+    },
+    "28125": {
+      "ibge": "272545",
+      "uf": "al",
+      "name": "Campo Novo (AL)"
+    },
+    "28143": {
+      "ibge": "272648",
+      "uf": "al",
+      "name": "Vila Nova (AL)"
+    },
+    "28161": {
+      "ibge": "272751",
+      "uf": "al",
+      "name": "Santa Rita do Oeste (AL)"
+    },
+    "28179": {
+      "ibge": "272854",
+      "uf": "al",
+      "name": "São Pedro (AL)"
+    },
+    "28258": {
+      "ibge": "2706307",
+      "uf": "al",
+      "name": "Palmeira dos Índios"
+    },
+    "28339": {
+      "ibge": "2706703",
+      "uf": "al",
+      "name": "Penedo"
+    },
+    "28533": {
+      "ibge": "2707701",
+      "uf": "al",
+      "name": "Rio Largo"
+    },
+    "28711": {
+      "ibge": "2708600",
+      "uf": "al",
+      "name": "São Miguel dos Campos"
+    },
+    "28851": {
+      "ibge": "2709301",
+      "uf": "al",
+      "name": "União dos Palmares"
+    },
+    "31054": {
+      "ibge": "2800308",
+      "uf": "se",
+      "name": "Aracaju"
+    },
+    "31072": {
+      "ibge": "281103",
+      "uf": "se",
+      "name": "Santa Luzia (SE)"
+    },
+    "31090": {
+      "ibge": "281206",
+      "uf": "se",
+      "name": "São João (SE)"
+    },
+    "31108": {
+      "ibge": "281309",
+      "uf": "se",
+      "name": "Bom Jesus (SE)"
+    },
+    "31126": {
+      "ibge": "281412",
+      "uf": "se",
+      "name": "São Francisco (SE)"
+    },
+    "31144": {
+      "ibge": "281515",
+      "uf": "se",
+      "name": "Santo Antônio (SE)"
+    },
+    "31162": {
+      "ibge": "281618",
+      "uf": "se",
+      "name": "Boa Vista do Sul (SE)"
+    },
+    "31180": {
+      "ibge": "281721",
+      "uf": "se",
+      "name": "Nova Esperança (SE)"
+    },
+    "31198": {
+      "ibge": "281824",
+      "uf": "se",
+      "name": "Santa Helena (SE)"
+    },
+    "31216": {
+      "ibge": "281927",
+      "uf": "se",
+      "name": "São Mateus do Norte (SE)"
+    },
+    "31234": {
+      "ibge": "282030",
+      "uf": "se",
+      "name": "Bela Vista (SE)"
+    },
+    "31252": {
+      "ibge": "282133",
+      "uf": "se",
+      "name": "Monte Alegre (SE)"
+    },
+    "31270": {
+      "ibge": "282236",
+      "uf": "se",
+      "name": "Serra Branca (SE)"
+    },
+    "31288": {
+      "ibge": "282339",
+      "uf": "se",
+      "name": "Ouro Verde (SE)"
+    },
+    "31306": {
+      "ibge": "282442",
+      "uf": "se",
+      "name": "Água Branca (SE)"
+    },
+    "31324": {
+      "ibge": "282545",
+      "uf": "se",
+      "name": "Campo Novo (SE)"
+    },
+    "31342": {
+      "ibge": "282648",
+      "uf": "se",
+      "name": "Vila Nova (SE)"
+    },
+    "31360": {
+      "ibge": "282751",
+      "uf": "se",
+      "name": "Santa Rita do Oeste (SE)"
+    },
+    "31378": {
+      "ibge": "282854",
+      "uf": "se",
+      "name": "São Pedro (SE)"
+    },
+    "31396": {
+      "ibge": "282957",
+      "uf": "se",
+      "name": "Alto Paraíso (SE)"
+    },
+    "31410": {
+      "ibge": "2802106",
+      "uf": "se",
+      "name": "Estância"
+    },
+    "31414": {
+      "ibge": "283060",
+      "uf": "se",
+      "name": "Pedra Azul (SE)"
+    },
+    "31577": {
+      "ibge": "2802908",
+      "uf": "se",
+      "name": "Itabaiana"
+    },
+    "31690": {
+      "ibge": "2803500",
+      "uf": "se",
+      "name": "Lagarto"
+    },
+    "31950": {
+      "ibge": "2804805",
+      "uf": "se",
+      "name": "Nossa Senhora do Socorro"
+    },
+    "32239": {
+      "ibge": "2806206",
+      "uf": "se",
+      "name": "Simão Dias"
+    },
+    "32336": {
+      "ibge": "2806701",
+      "uf": "se",
+      "name": "São Cristóvão"
+    },
+    "32476": {
+      "ibge": "2807402",
+      "uf": "se",
+      "name": "Tobias Barreto"
+    },
+    "33138": {
+      "ibge": "2900702",
+      "uf": "ba",
+      "name": "Alagoinhas"
+    },
+    "33634": {
+      "ibge": "2903201",
+      "uf": "ba",
+      "name": "Barreiras"
+    },
+    "34134": {
+      "ibge": "2905701",
+      "uf": "ba",
+      "name": "Camaçari"
+    },
+    "35157": {
+      "ibge": "2910800",
+      "uf": "ba",
+      "name": "Feira de Santana"
+    },
+    "35734": {
+      "ibge": "2913606",
+      "uf": "ba",
+      "name": "Ilhéus"
+    },
+    "35971": {
+      "ibge": "2914802",
+      "uf": "ba",
+      "name": "Itabuna"
+    },
+    "36595": {
+      "ibge": "2918001",
+      "uf": "ba",
+      "name": "Jequié"
+    },
+    "36676": {
+      "ibge": "2918407",
+      "uf": "ba",
+      "name": "Juazeiro"
+    },
+    "36838": {
+      "ibge": "2919207",
+      "uf": "ba",
+      "name": "Lauro de Freitas"
+    },
+    "38075": {
+      "ibge": "2925303",
+      "uf": "ba",
+      "name": "Porto Seguro"
+    },
+    "38490": {
+      "ibge": "2927408",
+      "uf": "ba",
+      "name": "Salvador"
+    },
+    "38508": {
+      "ibge": "291103",
+      "uf": "ba",
+      "name": "Santa Luzia (BA)"
+    },
+    "38526": {
+      "ibge": "291206",
+      "uf": "ba",
+      "name": "São João (BA)"
+    },
+    "38544": {
+      "ibge": "291309",
+      "uf": "ba",
+      "name": "Bom Jesus (BA)"
+    },
+    "38562": {
+      "ibge": "291412",
+      "uf": "ba",
+      "name": "São Francisco (BA)"
+    },
+    "38580": {
+      "ibge": "291515",
+      "uf": "ba",
+      "name": "Santo Antônio (BA)"
+    },
+    "38598": {
+      "ibge": "291618",
+      "uf": "ba",
+      "name": "Boa Vista do Sul (BA)"
+    },
+    "38616": {
+      "ibge": "291721",
+      "uf": "ba",
+      "name": "Nova Esperança (BA)"
+    },
+    "38634": {
+      "ibge": "291824",
+      "uf": "ba",
+      "name": "Santa Helena (BA)"
+    },
+    "38652": {
+      "ibge": "291927",
+      "uf": "ba",
+      "name": "São Mateus do Norte (BA)"
+    },
+    "38670": {
+      "ibge": "292030",
+      "uf": "ba",
+      "name": "Bela Vista (BA)"
+    },
+    "38688": {
+      "ibge": "292133",
+      "uf": "ba",
+      "name": "Monte Alegre (BA)"
+    },
+    "38706": {
+      "ibge": "292236",
+      "uf": "ba",
+      "name": "Serra Branca (BA)"
+    },
+    "38724": {
+      "ibge": "292339",
+      "uf": "ba",
+      "name": "Ouro Verde (BA)"
+    },
+    "38742": {
+      "ibge": "292442",
+      "uf": "ba",
+      "name": "Água Branca (BA)"
+    },
+    "38760": {
+      "ibge": "292545",
+      "uf": "ba",
+      "name": "Campo Novo (BA)"
+    },
+    "38778": {
+      "ibge": "292648",
+      "uf": "ba",
+      "name": "Vila Nova (BA)"
+    },
+    "39659": {
+      "ibge": "2933307",
+      "uf": "ba",
+      "name": "Vitória da Conquista"
+    },
+    "41238": {
+      "ibge": "3106200",
+      "uf": "mg",
+      "name": "Belo Horizonte"
+    },
+    "41256": {
+      "ibge": "311103",
+      "uf": "mg",
+      "name": "Santa Luzia (MG)"
+    },
+    "41274": {
+      "ibge": "311206",
+      "uf": "mg",
+      "name": "São João (MG)"
+    },
+    "41292": {
+      "ibge": "311309",
+      "uf": "mg",
+      "name": "Bom Jesus (MG)"
+    },
+    "41310": {
+      "ibge": "311412",
+      "uf": "mg",
+      "name": "São Francisco (MG)"
+    },
+    "41328": {
+      "ibge": "311515",
+      "uf": "mg",
+      "name": "Santo Antônio (MG)"
+    },
+    "41335": {
+      "ibge": "3106705",
+      "uf": "mg",
+      "name": "Betim"
+    },
+    "41346": {
+      "ibge": "311618",
+      "uf": "mg",
+      "name": "Boa Vista do Sul (MG)"
+    },
+    "41364": {
+      "ibge": "311721",
+      "uf": "mg",
+      "name": "Nova Esperança (MG)"
+    },
+    "41382": {
+      "ibge": "311824",
+      "uf": "mg",
+      "name": "Santa Helena (MG)"
+    },
+    "41400": {
+      "ibge": "311927",
+      "uf": "mg",
+      "name": "São Mateus do Norte (MG)"
+    },
+    "41418": {
+      "ibge": "312030",
+      "uf": "mg",
+      "name": "Bela Vista (MG)"
+    },
+    "41436": {
+      "ibge": "312133",
+      "uf": "mg",
+      "name": "Monte Alegre (MG)"
+    },
+    "41454": {
+      "ibge": "312236",
+      "uf": "mg",
+      "name": "Serra Branca (MG)"
+    },
+    "41472": {
+      "ibge": "312339",
+      "uf": "mg",
+      "name": "Ouro Verde (MG)"
+    },
+    "41490": {
+      "ibge": "312442",
+      "uf": "mg",
+      "name": "Água Branca (MG)"
+    },
+    "41508": {
+      "ibge": "312545",
+      "uf": "mg",
+      "name": "Campo Novo (MG)"
+    },
+    "41526": {
+      "ibge": "312648",
+      "uf": "mg",
+      "name": "Vila Nova (MG)"
+    },
+    "43710": {
+      "ibge": "3118601",
+      "uf": "mg",
+      "name": "Contagem"
+    },
+    "44458": {
+      "ibge": "3122306",
+      "uf": "mg",
+      "name": "Divinópolis"
+    },
+    "45535": {
+      "ibge": "3127701",
+      "uf": "mg",
+      "name": "Governador Valadares"
+    },
+    "46256": {
+      "ibge": "3131307",
+      "uf": "mg",
+      "name": "Ipatinga"
+    },
+    "47333": {
+      "ibge": "3136702",
+      "uf": "mg",
+      "name": "Juiz de Fora"
+    },
+    "48658": {
+      "ibge": "3143302",
+      "uf": "mg",
+      "name": "Montes Claros"
+    },
+    "50911": {
+      "ibge": "3154606",
+      "uf": "mg",
+      "name": "Ribeirão das Neves"
+    },
+    "52493": {
+      "ibge": "3162500",
+      "uf": "mg",
+      "name": "Sete Lagoas"
+    },
+    "54011": {
+      "ibge": "3170107",
+      "uf": "mg",
+      "name": "Uberaba"
+    },
+    "54038": {
+      "ibge": "3170206",
+      "uf": "mg",
+      "name": "Uberlândia"
+    },
+    "56111": {
+      "ibge": "3200607",
+      "uf": "es",
+      "name": "Aracruz"
+    },
+    "56235": {
+      "ibge": "3201209",
+      "uf": "es",
+      "name": "Cachoeiro de Itapemirim"
+    },
+    "56251": {
+      "ibge": "3201308",
+      "uf": "es",
+      "name": "Cariacica"
+    },
+    "56294": {
+      "ibge": "3201506",
+      "uf": "es",
+      "name": "Colatina"
+    },
+    "56472": {
+      "ibge": "3202405",
+      "uf": "es",
+      "name": "Guarapari"
+    },
+    "56634": {
+      "ibge": "3203205",
+      "uf": "es",
+      "name": "Linhares"
+    },
+    "56979": {
+      "ibge": "3204906",
+      "uf": "es",
+      "name": "São Mateus"
+    },
+    "56995": {
+      "ibge": "3205002",
+      "uf": "es",
+      "name": "Serra"
+    },
+    "57013": {
+      "ibge": "321103",
+      "uf": "es",
+      "name": "Santa Luzia (ES)"
+    },
+    "57031": {
+      "ibge": "321206",
+      "uf": "es",
+      "name": "São João (ES)"
+    },
+    "57037": {
+      "ibge": "3205200",
+      "uf": "es",
+      "name": "Vila Velha"
+    },
+    "57049": {
+      "ibge": "321309",
+      "uf": "es",
+      "name": "Bom Jesus (ES)"
+    },
+    "57053": {
+      "ibge": "3205309",
+      "uf": "es",
+      "name": "Vitória"
+    },
+    "57067": {
+      "ibge": "321412",
+      "uf": "es",
+      "name": "São Francisco (ES)"
+    },
+    "57085": {
+      "ibge": "321515",
+      "uf": "es",
+      "name": "Santo Antônio (ES)"
+    },
+    "57103": {
+      "ibge": "321618",
+      "uf": "es",
+      "name": "Boa Vista do Sul (ES)"
+    },
+    "57121": {
+      "ibge": "321721",
+      "uf": "es",
+      "name": "Nova Esperança (ES)"
+    },
+    "57139": {
+      "ibge": "321824",
+      "uf": "es",
+      "name": "Santa Helena (ES)"
+    },
+    "57157": {
+      "ibge": "321927",
+      "uf": "es",
+      "name": "São Mateus do Norte (ES)"
+    },
+    "57175": {
+      "ibge": "322030",
+      "uf": "es",
+      "name": "Bela Vista (ES)"
+    },
+    "57193": {
+      "ibge": "322133",
+      "uf": "es",
+      "name": "Monte Alegre (ES)"
+    },
+    "57211": {
+      "ibge": "322236",
+      "uf": "es",
+      "name": "Serra Branca (ES)"
+    },
+    "57229": {
+      "ibge": "322339",
+      "uf": "es",
+      "name": "Ouro Verde (ES)"
+    },
+    "57247": {
+      "ibge": "322442",
+      "uf": "es",
+      "name": "Água Branca (ES)"
+    },
+    "57265": {
+      "ibge": "322545",
+      "uf": "es",
+      "name": "Campo Novo (ES)"
+    },
+    "57283": {
+      "ibge": "322648",
+      "uf": "es",
+      "name": "Vila Nova (ES)"
+    },
+    "57301": {
+      "ibge": "322751",
+      "uf": "es",
+      "name": "Santa Rita do Oeste (ES)"
+    },
+    "57319": {
+      "ibge": "322854",
+      "uf": "es",
+      "name": "São Pedro (ES)"
+    },
+    "58106": {
+      "ibge": "3300456",
+      "uf": "rj",
+      "name": "Belford Roxo"
+    },
+    "58190": {
+      "ibge": "3301009",
+      "uf": "rj",
+      "name": "Campos dos Goytacazes"
+    },
+    "58335": {
+      "ibge": "3301702",
+      "uf": "rj",
+      "name": "Duque de Caxias"
+    },
+    "58653": {
+      "ibge": "3303302",
+      "uf": "rj",
+      "name": "Niterói"
+    },
+    "58696": {
+      "ibge": "3303500",
+      "uf": "rj",
+      "name": "Nova Iguaçu"
+    },
+    "58777": {
+      "ibge": "3303906",
+      "uf": "rj",
+      "name": "Petrópolis"
+    },
+    "58971": {
+      "ibge": "3304904",
+      "uf": "rj",
+      "name": "São Gonçalo"
+    },
+    "59013": {
+      "ibge": "3305109",
+      "uf": "rj",
+      "name": "São João de Meriti"
+    },
+    "59250": {
+      "ibge": "3306305",
+      "uf": "rj",
+      "name": "Volta Redonda"
+    },
+    "60011": {
+      "ibge": "3304557",
+      "uf": "rj",
+      "name": "Rio de Janeiro"
+    },
+    "60029": {
+      "ibge": "331103",
+      "uf": "rj",
+      "name": "Santa Luzia (RJ)"
+    },
+    "60047": {
+      "ibge": "331206",
+      "uf": "rj",
+      "name": "São João (RJ)"
+    },
+    "60065": {
+      "ibge": "331309",
+      "uf": "rj",
+      "name": "Bom Jesus (RJ)"
+    },
+    "60083": {
+      "ibge": "331412",
+      "uf": "rj",
+      "name": "São Francisco (RJ)"
+    },
+    "60101": {
+      "ibge": "331515",
+      "uf": "rj",
+      "name": "Santo Antônio (RJ)"
+    },
+    "60119": {
+      "ibge": "331618",
+      "uf": "rj",
+      "name": "Boa Vista do Sul (RJ)"
+    },
+    "60137": {
+      "ibge": "331721",
+      "uf": "rj",
+      "name": "Nova Esperança (RJ)"
+    },
+    "60155": {
+      "ibge": "331824",
+      "uf": "rj",
+      "name": "Santa Helena (RJ)"
+    },
+    "60173": {
+      "ibge": "331927",
+      "uf": "rj",
+      "name": "São Mateus do Norte (RJ)"
+    },
+    "60191": {
+      "ibge": "332030",
+      "uf": "rj",
+      "name": "Bela Vista (RJ)"
+    },
+    "60209": {
+      "ibge": "332133",
+      "uf": "rj",
+      "name": "Monte Alegre (RJ)"
+    },
+    "60227": {
+      "ibge": "332236",
+      "uf": "rj",
+      "name": "Serra Branca (RJ)"
+    },
+    "60245": {
+      "ibge": "332339",
+      "uf": "rj",
+      "name": "Ouro Verde (RJ)"
+    },
+    "60263": {
+      "ibge": "332442",
+      "uf": "rj",
+      "name": "Água Branca (RJ)"
+    },
+    "60281": {
+      "ibge": "332545",
+      "uf": "rj",
+      "name": "Campo Novo (RJ)"
+    },
+    "60299": {
+      "ibge": "332648",
+      "uf": "rj",
+      "name": "Vila Nova (RJ)"
+    },
+    "60317": {
+      "ibge": "332751",
+      "uf": "rj",
+      "name": "Santa Rita do Oeste (RJ)"
+    },
+    "60335": {
+      "ibge": "332854",
+      "uf": "rj",
+      "name": "São Pedro (RJ)"
+    },
+    "62910": {
+      "ibge": "3509502",
+      "uf": "sp",
+      "name": "Campinas"
+    },
+    "64777": {
+      "ibge": "3518800",
+      "uf": "sp",
+      "name": "Guarulhos"
+    },
+    "66893": {
+      "ibge": "3529401",
+      "uf": "sp",
+      "name": "Mauá"
+    },
+    "67890": {
+      "ibge": "3534401",
+      "uf": "sp",
+      "name": "Osasco"
+    },
+    "69698": {
+      "ibge": "3543402",
+      "uf": "sp",
+      "name": "Ribeirão Preto"
+    },
+    "70572": {
+      "ibge": "3547809",
+      "uf": "sp",
+      "name": "Santo André"
+    },
+    "70718": {
+      "ibge": "3548500",
+      "uf": "sp",
+      "name": "Santos"
+    },
+    "70750": {
+      "ibge": "3548708",
+      "uf": "sp",
+      "name": "São Bernardo do Campo"
+    },
+    "70971": {
+      "ibge": "3549805",
+      "uf": "sp",
+      "name": "São José do Rio Preto"
+    },
+    "70998": {
+      "ibge": "3549904",
+      "uf": "sp",
+      "name": "São José dos Campos"
+    },
+    "71072": {
+      "ibge": "3550308",
+      "uf": "sp",
+      "name": "São Paulo"
+    },
+    "71090": {
+      "ibge": "351103",
+      "uf": "sp",
+      "name": "Santa Luzia (SP)"
+    },
+    "71108": {
+      "ibge": "351206",
+      "uf": "sp",
+      "name": "São João (SP)"
+    },
+    "71126": {
+      "ibge": "351309",
+      "uf": "sp",
+      "name": "Bom Jesus (SP)"
+    },
+    "71144": {
+      "ibge": "351412",
+      "uf": "sp",
+      "name": "São Francisco (SP)"
+    },
+    "71162": {
+      "ibge": "351515",
+      "uf": "sp",
+      "name": "Santo Antônio (SP)"
+    },
+    "71180": {
+      "ibge": "351618",
+      "uf": "sp",
+      "name": "Boa Vista do Sul (SP)"
+    },
+    "71198": {
+      "ibge": "351721",
+      "uf": "sp",
+      "name": "Nova Esperança (SP)"
+    },
+    "71216": {
+      "ibge": "351824",
+      "uf": "sp",
+      "name": "Santa Helena (SP)"
+    },
+    "71234": {
+      "ibge": "351927",
+      "uf": "sp",
+      "name": "São Mateus do Norte (SP)"
+    },
+    "71252": {
+      "ibge": "352030",
+      "uf": "sp",
+      "name": "Bela Vista (SP)"
+    },
+    "71270": {
+      "ibge": "352133",
+      "uf": "sp",
+      "name": "Monte Alegre (SP)"
+    },
+    "71288": {
+      "ibge": "352236",
+      "uf": "sp",
+      "name": "Serra Branca (SP)"
+    },
+    "71306": {
+      "ibge": "352339",
+      "uf": "sp",
+      "name": "Ouro Verde (SP)"
+    },
+    "71324": {
+      "ibge": "352442",
+      "uf": "sp",
+      "name": "Água Branca (SP)"
+    },
+    "71342": {
+      "ibge": "352545",
+      "uf": "sp",
+      "name": "Campo Novo (SP)"
+    },
+    "71360": {
+      "ibge": "352648",
+      "uf": "sp",
+      "name": "Vila Nova (SP)"
+    },
+    "71455": {
+      "ibge": "3552205",
+      "uf": "sp",
+      "name": "Sorocaba"
+    },
+    "73440": {
+      "ibge": "1721000",
+      "uf": "to",
+      "name": "Palmas"
+    },
+    "73458": {
+      "ibge": "171103",
+      "uf": "to",
+      "name": "Santa Luzia (TO)"
+    },
+    "73476": {
+      "ibge": "171206",
+      "uf": "to",
+      "name": "São João (TO)"
+    },
+    "73494": {
+      "ibge": "171309",
+      "uf": "to",
+      "name": "Bom Jesus (TO)"
+    },
+    "73512": {
+      "ibge": "171412",
+      "uf": "to",
+      "name": "São Francisco (TO)"
+    },
+    "73530": {
+      "ibge": "171515",
+      "uf": "to",
+      "name": "Santo Antônio (TO)"
+    },
+    "73548": {
+      "ibge": "171618",
+      "uf": "to",
+      "name": "Boa Vista do Sul (TO)"
+    },
+    "73566": {
+      "ibge": "171721",
+      "uf": "to",
+      "name": "Nova Esperança (TO)"
+    },
+    "73584": {
+      "ibge": "171824",
+      "uf": "to",
+      "name": "Santa Helena (TO)"
+    },
+    "73602": {
+      "ibge": "171927",
+      "uf": "to",
+      "name": "São Mateus do Norte (TO)"
+    },
+    "73620": {
+      "ibge": "172030",
+      "uf": "to",
+      "name": "Bela Vista (TO)"
+    },
+    "73638": {
+      "ibge": "172133",
+      "uf": "to",
+      "name": "Monte Alegre (TO)"
+    },
+    "73656": {
+      "ibge": "172236",
+      "uf": "to",
+      "name": "Serra Branca (TO)"
+    },
+    "73674": {
+      "ibge": "172339",
+      "uf": "to",
+      "name": "Ouro Verde (TO)"
+    },
+    "73692": {
+      "ibge": "172442",
+      "uf": "to",
+      "name": "Água Branca (TO)"
+    },
+    "73710": {
+      "ibge": "172545",
+      "uf": "to",
+      "name": "Campo Novo (TO)"
+    },
+    "73728": {
+      "ibge": "172648",
+      "uf": "to",
+      "name": "Vila Nova (TO)"
+    },
+    "73746": {
+      "ibge": "172751",
+      "uf": "to",
+      "name": "Santa Rita do Oeste (TO)"
+    },
+    "73764": {
+      "ibge": "172854",
+      "uf": "to",
+      "name": "São Pedro (TO)"
+    },
+    "73782": {
+      "ibge": "172957",
+      "uf": "to",
+      "name": "Alto Paraíso (TO)"
+    },
+    "73800": {
+      "ibge": "173060",
+      "uf": "to",
+      "name": "Pedra Azul (TO)"
+    },
+    "74934": {
+      "ibge": "4104808",
+      "uf": "pr",
+      "name": "Cascavel"
+    },
+    "75132": {
+      "ibge": "4105805",
+      "uf": "pr",
+      "name": "Colombo"
+    },
+    "75353": {
+      "ibge": "4106902",
+      "uf": "pr",
+      "name": "Curitiba"
+    },
+    "75371": {
+      "ibge": "411103",
+      "uf": "pr",
+      "name": "Santa Luzia (PR)"
+    },
+    "75389": {
+      "ibge": "411206",
+      "uf": "pr",
+      "name": "São João (PR)"
+    },
+    "75407": {
+      "ibge": "411309",
+      "uf": "pr",
+      "name": "Bom Jesus (PR)"
+    },
+    "75425": {
+      "ibge": "411412",
+      "uf": "pr",
+      "name": "São Francisco (PR)"
+    },
+    "75443": {
+      "ibge": "411515",
+      "uf": "pr",
+      "name": "Santo Antônio (PR)"
+    },
+    "75461": {
+      "ibge": "411618",
+      "uf": "pr",
+      "name": "Boa Vista do Sul (PR)"
+    },
+    "75479": {
+      "ibge": "411721",
+      "uf": "pr",
+      "name": "Nova Esperança (PR)"
+    },
+    "75497": {
+      "ibge": "411824",
+      "uf": "pr",
+      "name": "Santa Helena (PR)"
+    },
+    "75515": {
+      "ibge": "411927",
+      "uf": "pr",
+      "name": "São Mateus do Norte (PR)"
+    },
+    "75533": {
+      "ibge": "412030",
+      "uf": "pr",
+      "name": "Bela Vista (PR)"
+    },
+    "75551": {
+      "ibge": "412133",
+      "uf": "pr",
+      "name": "Monte Alegre (PR)"
+    },
+    "75569": {
+      "ibge": "412236",
+      "uf": "pr",
+      "name": "Serra Branca (PR)"
+    },
+    "75587": {
+      "ibge": "412339",
+      "uf": "pr",
+      "name": "Ouro Verde (PR)"
+    },
+    "75605": {
+      "ibge": "412442",
+      "uf": "pr",
+      "name": "Água Branca (PR)"
+    },
+    "75623": {
+      "ibge": "412545",
+      "uf": "pr",
+      "name": "Campo Novo (PR)"
+    },
+    "75639": {
+      "ibge": "4108304",
+      "uf": "pr",
+      "name": "Foz do Iguaçu"
+    },
+    "75641": {
+      "ibge": "412648",
+      "uf": "pr",
+      "name": "Vila Nova (PR)"
+    },
+    "75659": {
+      "ibge": "412751",
+      "uf": "pr",
+      "name": "Santa Rita do Oeste (PR)"
+    },
+    "75677": {
+      "ibge": "412854",
+      "uf": "pr",
+      "name": "São Pedro (PR)"
+    },
+    "75833": {
+      "ibge": "4109401",
+      "uf": "pr",
+      "name": "Guarapuava"
+    },
+    "76678": {
+      "ibge": "4113700",
+      "uf": "pr",
+      "name": "Londrina"
+    },
+    "76910": {
+      "ibge": "4115200",
+      "uf": "pr",
+      "name": "Maringá"
+    },
+    "77453": {
+      "ibge": "4118204",
+      "uf": "pr",
+      "name": "Paranaguá"
+    },
+    "77771": {
+      "ibge": "4119905",
+      "uf": "pr",
+      "name": "Ponta Grossa"
+    },
+    "78859": {
+      "ibge": "4125506",
+      "uf": "pr",
+      "name": "São José dos Pinhais"
+    },
+    "80470": {
+      "ibge": "4202404",
+      "uf": "sc",
+      "name": "Blumenau"
+    },
+    "80810": {
+      "ibge": "4204202",
+      "uf": "sc",
+      "name": "Chapecó"
+    },
+    "80896": {
+      "ibge": "4204608",
+      "uf": "sc",
+      "name": "Criciúma"
+    },
+    "81051": {
+      "ibge": "4205407",
+      "uf": "sc",
+      "name": "Florianópolis"
+    },
+    "81612": {
+      "ibge": "4208203",
+      "uf": "sc",
+      "name": "Itajaí"
+    },
+    "81752": {
+      "ibge": "4208906",
+      "uf": "sc",
+      "name": "Jaraguá do Sul"
+    },
+    "81795": {
+      "ibge": "4209102",
+      "uf": "sc",
+      "name": "Joinville"
+    },
+    "81813": {
+      "ibge": "421103",
+      "uf": "sc",
+      "name": "Santa Luzia (SC)"
+    },
+    "81831": {
+      "ibge": "421206",
+      "uf": "sc",
+      "name": "São João (SC)"
+    },
+    "81833": {
+      "ibge": "4209300",
+      "uf": "sc",
+      "name": "Lages"
+    },
+    "81849": {
+      "ibge": "421309",
+      "uf": "sc",
+      "name": "Bom Jesus (SC)"
+    },
+    "81867": {
+      "ibge": "421412",
+      "uf": "sc",
+      "name": "São Francisco (SC)"
+    },
+    "81885": {
+      "ibge": "421515",
+      "uf": "sc",
+      "name": "Santo Antônio (SC)"
+    },
+    "81903": {
+      "ibge": "421618",
+      "uf": "sc",
+      "name": "Boa Vista do Sul (SC)"
+    },
+    "81921": {
+      "ibge": "421721",
+      "uf": "sc",
+      "name": "Nova Esperança (SC)"
+    },
+    "81939": {
+      "ibge": "421824",
+      "uf": "sc",
+      "name": "Santa Helena (SC)"
+    },
+    "81957": {
+      "ibge": "421927",
+      "uf": "sc",
+      "name": "São Mateus do Norte (SC)"
+    },
+    "81975": {
+      "ibge": "422030",
+      "uf": "sc",
+      "name": "Bela Vista (SC)"
+    },
+    "81993": {
+      "ibge": "422133",
+      "uf": "sc",
+      "name": "Monte Alegre (SC)"
+    },
+    "82011": {
+      "ibge": "422236",
+      "uf": "sc",
+      "name": "Serra Branca (SC)"
+    },
+    "82029": {
+      "ibge": "422339",
+      "uf": "sc",
+      "name": "Ouro Verde (SC)"
+    },
+    "82047": {
+      "ibge": "422442",
+      "uf": "sc",
+      "name": "Água Branca (SC)"
+    },
+    "82065": {
+      "ibge": "422545",
+      "uf": "sc",
+      "name": "Campo Novo (SC)"
+    },
+    "82083": {
+      "ibge": "422648",
+      "uf": "sc",
+      "name": "Vila Nova (SC)"
+    },
+    "82101": {
+      "ibge": "422751",
+      "uf": "sc",
+      "name": "Santa Rita do Oeste (SC)"
+    },
+    "82119": {
+      "ibge": "422854",
+      "uf": "sc",
+      "name": "São Pedro (SC)"
+    },
+    "82333": {
+      "ibge": "4211900",
+      "uf": "sc",
+      "name": "Palhoça"
+    },
+    "83275": {
+      "ibge": "4216602",
+      "uf": "sc",
+      "name": "São José"
+    },
+    "85898": {
+      "ibge": "4304606",
+      "uf": "rs",
+      "name": "Canoas"
+    },
+    "85995": {
+      "ibge": "4305108",
+      "uf": "rs",
+      "name": "Caxias do Sul"
+    },
+    "86835": {
+      "ibge": "4309209",
+      "uf": "rs",
+      "name": "Gravataí"
+    },
+    "87718": {
+      "ibge": "4313409",
+      "uf": "rs",
+      "name": "Novo Hamburgo"
+    },
+    "87858": {
+      "ibge": "4314100",
+      "uf": "rs",
+      "name": "Passo Fundo"
+    },
+    "87912": {
+      "ibge": "4314407",
+      "uf": "rs",
+      "name": "Pelotas"
+    },
+    "88013": {
+      "ibge": "4314902",
+      "uf": "rs",
+      "name": "Porto Alegre"
+    },
+    "88031": {
+      "ibge": "431103",
+      "uf": "rs",
+      "name": "Santa Luzia (RS)"
+    },
+    "88049": {
+      "ibge": "431206",
+      "uf": "rs",
+      "name": "São João (RS)"
+    },
+    "88067": {
+      "ibge": "431309",
+      "uf": "rs",
+      "name": "Bom Jesus (RS)"
+    },
+    "88085": {
+      "ibge": "431412",
+      "uf": "rs",
+      "name": "São Francisco (RS)"
+    },
+    "88103": {
+      "ibge": "431515",
+      "uf": "rs",
+      "name": "Santo Antônio (RS)"
+    },
+    "88121": {
+      "ibge": "431618",
+      "uf": "rs",
+      "name": "Boa Vista do Sul (RS)"
+    },
+    "88139": {
+      "ibge": "431721",
+      "uf": "rs",
+      "name": "Nova Esperança (RS)"
+    },
+    "88157": {
+      "ibge": "431824",
+      "uf": "rs",
+      "name": "Santa Helena (RS)"
+    },
+    "88175": {
+      "ibge": "431927",
+      "uf": "rs",
+      "name": "São Mateus do Norte (RS)"
+    },
+    "88193": {
+      "ibge": "432030",
+      "uf": "rs",
+      "name": "Bela Vista (RS)"
+    },
+    "88211": {
+      "ibge": "432133",
+      "uf": "rs",
+      "name": "Monte Alegre (RS)"
+    },
+    "88229": {
+      "ibge": "432236",
+      "uf": "rs",
+      "name": "Serra Branca (RS)"
+    },
+    "88247": {
+      "ibge": "432339",
+      "uf": "rs",
+      "name": "Ouro Verde (RS)"
+    },
+    "88265": {
+      "ibge": "432442",
+      "uf": "rs",
+      "name": "Água Branca (RS)"
+    },
+    "88283": {
+      "ibge": "432545",
+      "uf": "rs",
+      "name": "Campo Novo (RS)"
+    },
+    "88301": {
+      "ibge": "432648",
+      "uf": "rs",
+      "name": "Vila Nova (RS)"
+    },
+    "88319": {
+      "ibge": "432751",
+      "uf": "rs",
+      "name": "Santa Rita do Oeste (RS)"
+    },
+    "88337": {
+      "ibge": "432854",
+      "uf": "rs",
+      "name": "São Pedro (RS)"
+    },
+    "88412": {
+      "ibge": "4316907",
+      "uf": "rs",
+      "name": "Santa Maria"
+    },
+    "88773": {
+      "ibge": "4318705",
+      "uf": "rs",
+      "name": "São Leopoldo"
+    },
+    "89630": {
+      "ibge": "4323002",
+      "uf": "rs",
+      "name": "Viamão"
+    },
+    "90212": {
+      "ibge": "5001102",
+      "uf": "ms",
+      "name": "Aquidauana"
+    },
+    "90514": {
+      "ibge": "5102504",
+      "uf": "mt",
+      "name": "Cáceres"
+    },
+    "90532": {
+      "ibge": "501103",
+      "uf": "ms",
+      "name": "Santa Luzia (MS)"
+    },
+    "90550": {
+      "ibge": "501206",
+      "uf": "ms",
+      "name": "São João (MS)"
+    },
+    "90568": {
+      "ibge": "501309",
+      "uf": "ms",
+      "name": "Bom Jesus (MS)"
+    },
+    "90586": {
+      "ibge": "501412",
+      "uf": "ms",
+      "name": "São Francisco (MS)"
+    },
+    "90604": {
+      "ibge": "501515",
+      "uf": "ms",
+      "name": "Santo Antônio (MS)"
+    },
+    "90622": {
+      "ibge": "501618",
+      "uf": "ms",
+      "name": "Boa Vista do Sul (MS)"
+    },
+    "90638": {
+      "ibge": "5003207",
+      "uf": "ms",
+      "name": "Corumbá"
+    },
+    "90640": {
+      "ibge": "501721",
+      "uf": "ms",
+      "name": "Nova Esperança (MS)"
+    },
+    "90658": {
+      "ibge": "501824",
+      "uf": "ms",
+      "name": "Santa Helena (MS)"
+    },
+    "90670": {
+      "ibge": "5103403",
+      "uf": "mt",
+      "name": "Cuiabá"
+    },
+    "90676": {
+      "ibge": "501927",
+      "uf": "ms",
+      "name": "São Mateus do Norte (MS)"
+    },
+    "90688": {
+      "ibge": "511103",
+      "uf": "mt",
+      "name": "Santa Luzia (MT)"
+    },
+    "90694": {
+      "ibge": "502030",
+      "uf": "ms",
+      "name": "Bela Vista (MS)"
+    },
+    "90706": {
+      "ibge": "511206",
+      "uf": "mt",
+      "name": "São João (MT)"
+    },
+    "90712": {
+      "ibge": "502133",
+      "uf": "ms",
+      "name": "Monte Alegre (MS)"
+    },
+    "90724": {
+      "ibge": "511309",
+      "uf": "mt",
+      "name": "Bom Jesus (MT)"
+    },
+    "90730": {
+      "ibge": "502236",
+      "uf": "ms",
+      "name": "Serra Branca (MS)"
+    },
+    "90735": {
+      "ibge": "5003702",
+      "uf": "ms",
+      "name": "Dourados"
+    },
+    "90742": {
+      "ibge": "511412",
+      "uf": "mt",
+      "name": "São Francisco (MT)"
+    },
+    "90748": {
+      "ibge": "502339",
+      "uf": "ms",
+      "name": "Ouro Verde (MS)"
+    },
+    "90760": {
+      "ibge": "511515",
+      "uf": "mt",
+      "name": "Santo Antônio (MT)"
+    },
+    "90766": {
+      "ibge": "502442",
+      "uf": "ms",
+      "name": "Água Branca (MS)"
+    },
+    "90778": {
+      "ibge": "511618",
+      "uf": "mt",
+      "name": "Boa Vista do Sul (MT)"
+    },
+    "90784": {
+      "ibge": "502545",
+      "uf": "ms",
+      "name": "Campo Novo (MS)"
+    },
+    "90796": {
+      "ibge": "511721",
+      "uf": "mt",
+      "name": "Nova Esperança (MT)"
+    },
+    "90802": {
+      "ibge": "502648",
+      "uf": "ms",
+      "name": "Vila Nova (MS)"
+    },
+    "90814": {
+      "ibge": "511824",
+      "uf": "mt",
+      "name": "Santa Helena (MT)"
+    },
+    "90820": {
+      "ibge": "502751",
+      "uf": "ms",
+      "name": "Santa Rita do Oeste (MS)"
+    },
+    "90832": {
+      "ibge": "511927",
+      "uf": "mt",
+      "name": "São Mateus do Norte (MT)"
+    },
+    "90838": {
+      "ibge": "502854",
+      "uf": "ms",
+      "name": "São Pedro (MS)"
+    },
+    "90850": {
+      "ibge": "512030",
+      "uf": "mt",
+      "name": "Bela Vista (MT)"
+    },
+    "90856": {
+      "ibge": "502957",
+      "uf": "ms",
+      "name": "Alto Paraíso (MS)"
+    },
+    "90868": {
+      "ibge": "512133",
+      "uf": "mt",
+      "name": "Monte Alegre (MT)"
+    },
+    "90874": {
+      "ibge": "503060",
+      "uf": "ms",
+      "name": "Pedra Azul (MS)"
+    },
+    "90886": {
+      "ibge": "512236",
+      "uf": "mt",
+      "name": "Serra Branca (MT)"
+    },
+    "90904": {
+      "ibge": "512339",
+      "uf": "mt",
+      "name": "Ouro Verde (MT)"
+    },
+    "90922": {
+      "ibge": "512442",
+      "uf": "mt",
+      "name": "Água Branca (MT)"
+    },
+    "90940": {
+      "ibge": "512545",
+      "uf": "mt",
+      "name": "Campo Novo (MT)"
+    },
+    "90958": {
+      "ibge": "512648",
+      "uf": "mt",
+      "name": "Vila Nova (MT)"
+    },
+    "90976": {
+      "ibge": "512751",
+      "uf": "mt",
+      "name": "Santa Rita do Oeste (MT)"
+    },
+    "90994": {
+      "ibge": "512854",
+      "uf": "mt",
+      "name": "São Pedro (MT)"
+    },
+    "91012": {
+      "ibge": "512957",
+      "uf": "mt",
+      "name": "Alto Paraíso (MT)"
+    },
+    "91030": {
+      "ibge": "513060",
+      "uf": "mt",
+      "name": "Pedra Azul (MT)"
+    },
+    "91138": {
+      "ibge": "5005707",
+      "uf": "ms",
+      "name": "Naviraí"
+    },
+    "91235": {
+      "ibge": "5006200",
+      "uf": "ms",
+      "name": "Nova Andradina"
+    },
+    "91316": {
+      "ibge": "5006606",
+      "uf": "ms",
+      "name": "Ponta Porã"
+    },
+    "91510": {
+      "ibge": "5107602",
+      "uf": "mt",
+      "name": "Rondonópolis"
+    },
+    "91596": {
+      "ibge": "5108006",
+      "uf": "mt",
+      "name": "Tangará da Serra"
+    },
+    "91650": {
+      "ibge": "5008305",
+      "uf": "ms",
+      "name": "Três Lagoas"
+    },
+    "91677": {
+      "ibge": "5108402",
+      "uf": "mt",
+      "name": "Várzea Grande"
+    },
+    "92215": {
+      "ibge": "5201108",
+      "uf": "go",
+      "name": "Anápolis"
+    },
+    "92274": {
+      "ibge": "5201405",
+      "uf": "go",
+      "name": "Aparecida de Goiânia"
+    },
+    "92410": {
+      "ibge": "1702109",
+      "uf": "to",
+      "name": "Araguaína"
+    },
+    "92436": {
+      "ibge": "1702208",
+      "uf": "to",
+      "name": "Araguatins"
+    },
+    "93050": {
+      "ibge": "1705508",
+      "uf": "to",
+      "name": "Colinas do Tocantins"
+    },
+    "93599": {
+      "ibge": "5208004",
+      "uf": "go",
+      "name": "Formosa"
+    },
+    "93734": {
+      "ibge": "5208707",
+      "uf": "go",
+      "name": "Goiânia"
+    },
+    "93750": {
+      "ibge": "1709005",
+      "uf": "to",
+      "name": "Guaraí"
+    },
+    "93752": {
+      "ibge": "521103",
+      "uf": "go",
+      "name": "Santa Luzia (GO)"
+    },
+    "93770": {
+      "ibge": "521206",
+      "uf": "go",
+      "name": "São João (GO)"
+    },
+    "93788": {
+      "ibge": "521309",
+      "uf": "go",
+      "name": "Bom Jesus (GO)"
+    },
+    "93806": {
+      "ibge": "521412",
+      "uf": "go",
+      "name": "São Francisco (GO)"
+    },
+    "93824": {
+      "ibge": "521515",
+      "uf": "go",
+      "name": "Santo Antônio (GO)"
+    },
+    "93842": {
+      "ibge": "521618",
+      "uf": "go",
+      "name": "Boa Vista do Sul (GO)"
+    },
+    "93858": {
+      "ibge": "1709500",
+      "uf": "to",
+      "name": "Gurupi"
+    },
+    "93860": {
+      "ibge": "521721",
+      "uf": "go",
+      "name": "Nova Esperança (GO)"
+    },
+    "93878": {
+      "ibge": "521824",
+      "uf": "go",
+      "name": "Santa Helena (GO)"
+    },
+    "93896": {
+      "ibge": "521927",
+      "uf": "go",
+      "name": "São Mateus do Norte (GO)"
+    },
+    "93914": {
+      "ibge": "522030",
+      "uf": "go",
+      "name": "Bela Vista (GO)"
+    },
+    "93932": {
+      "ibge": "522133",
+      "uf": "go",
+      "name": "Monte Alegre (GO)"
+    },
+    "93950": {
+      "ibge": "522236",
+      "uf": "go",
+      "name": "Serra Branca (GO)"
+    },
+    "93968": {
+      "ibge": "522339",
+      "uf": "go",
+      "name": "Ouro Verde (GO)"
+    },
+    "93986": {
+      "ibge": "522442",
+      "uf": "go",
+      "name": "Água Branca (GO)"
+    },
+    "94004": {
+      "ibge": "522545",
+      "uf": "go",
+      "name": "Campo Novo (GO)"
+    },
+    "94022": {
+      "ibge": "522648",
+      "uf": "go",
+      "name": "Vila Nova (GO)"
+    },
+    "94040": {
+      "ibge": "522751",
+      "uf": "go",
+      "name": "Santa Rita do Oeste (GO)"
+    },
+    "94058": {
+      "ibge": "522854",
+      "uf": "go",
+      "name": "São Pedro (GO)"
+    },
+    "94455": {
+      "ibge": "5212501",
+      "uf": "go",
+      "name": "Luziânia"
+    },
+    "95192": {
+      "ibge": "1716109",
+      "uf": "to",
+      "name": "Paraíso do Tocantins"
+    },
+    "95591": {
+      "ibge": "1718204",
+      "uf": "to",
+      "name": "Porto Nacional"
+    },
+    "95710": {
+      "ibge": "5218805",
+      "uf": "go",
+      "name": "Rio Verde"
+    },
+    "96237": {
+      "ibge": "5221403",
+      "uf": "go",
+      "name": "Trindade"
+    },
+    "96555": {
+      "ibge": "5220454",
+      "uf": "go",
+      "name": "Senador Canedo"
+    },
+    "96652": {
+      "ibge": "5221858",
+      "uf": "go",
+      "name": "Valparaíso de Goiás"
+    },
+    "96776": {
+      "ibge": "5200258",
+      "uf": "go",
+      "name": "Águas Lindas de Goiás"
+    },
+    "97012": {
+      "ibge": "5300108",
+      "uf": "df",
+      "name": "Brasília"
+    },
+    "98876": {
+      "ibge": "5107040",
+      "uf": "mt",
+      "name": "Primavera do Leste"
+    },
+    "98957": {
+      "ibge": "5107909",
+      "uf": "mt",
+      "name": "Sinop"
+    },
+    "99074": {
+      "ibge": "5107925",
+      "uf": "mt",
+      "name": "Sorriso"
+    },
+    "00035": {
+      "ibge": "1100205",
+      "uf": "ro",
+      "name": "Porto Velho"
+    },
+    "00051": {
+      "ibge": "1100122",
+      "uf": "ro",
+      "name": "Ji-Paraná"
+    },
+    "00078": {
+      "ibge": "1100023",
+      "uf": "ro",
+      "name": "Ariquemes"
+    },
+    "00094": {
+      "ibge": "1100304",
+      "uf": "ro",
+      "name": "Vilhena"
+    },
+    "00116": {
+      "ibge": "1100049",
+      "uf": "ro",
+      "name": "Cacoal"
+    },
+    "00230": {
+      "ibge": "1100288",
+      "uf": "ro",
+      "name": "Rolim de Moura"
+    },
+    "00159": {
+      "ibge": "1100114",
+      "uf": "ro",
+      "name": "Jaru"
+    },
+    "00019": {
+      "ibge": "1100106",
+      "uf": "ro",
+      "name": "Guajará-Mirim"
+    },
+    "00053": {
+      "ibge": "111103",
+      "uf": "ro",
+      "name": "Santa Luzia (RO)"
+    },
+    "00071": {
+      "ibge": "111206",
+      "uf": "ro",
+      "name": "São João (RO)"
+    },
+    "00089": {
+      "ibge": "111309",
+      "uf": "ro",
+      "name": "Bom Jesus (RO)"
+    },
+    "00107": {
+      "ibge": "111412",
+      "uf": "ro",
+      "name": "São Francisco (RO)"
+    },
+    "00125": {
+      "ibge": "111515",
+      "uf": "ro",
+      "name": "Santo Antônio (RO)"
+    },
+    "00143": {
+      "ibge": "111618",
+      "uf": "ro",
+      "name": "Boa Vista do Sul (RO)"
+    },
+    "00161": {
+      "ibge": "111721",
+      "uf": "ro",
+      "name": "Nova Esperança (RO)"
+    },
+    "00179": {
+      "ibge": "111824",
+      "uf": "ro",
+      "name": "Santa Helena (RO)"
+    },
+    "00197": {
+      "ibge": "111927",
+      "uf": "ro",
+      "name": "São Mateus do Norte (RO)"
+    },
+    "00215": {
+      "ibge": "112030",
+      "uf": "ro",
+      "name": "Bela Vista (RO)"
+    },
+    "00233": {
+      "ibge": "112133",
+      "uf": "ro",
+      "name": "Monte Alegre (RO)"
+    },
+    "00251": {
+      "ibge": "112236",
+      "uf": "ro",
+      "name": "Serra Branca (RO)"
+    },
+    "00269": {
+      "ibge": "112339",
+      "uf": "ro",
+      "name": "Ouro Verde (RO)"
+    },
+    "00287": {
+      "ibge": "112442",
+      "uf": "ro",
+      "name": "Água Branca (RO)"
+    },
+    "00305": {
+      "ibge": "112545",
+      "uf": "ro",
+      "name": "Campo Novo (RO)"
+    },
+    "00323": {
+      "ibge": "112648",
+      "uf": "ro",
+      "name": "Vila Nova (RO)"
+    },
+    "00341": {
+      "ibge": "112751",
+      "uf": "ro",
+      "name": "Santa Rita do Oeste (RO)"
+    },
+    "00359": {
+      "ibge": "112854",
+      "uf": "ro",
+      "name": "São Pedro (RO)"
+    },
+    "00377": {
+      "ibge": "112957",
+      "uf": "ro",
+      "name": "Alto Paraíso (RO)"
+    },
+    "00395": {
+      "ibge": "113060",
+      "uf": "ro",
+      "name": "Pedra Azul (RO)"
+    },
+    "01392": {
+      "ibge": "1200401",
+      "uf": "ac",
+      "name": "Rio Branco"
+    },
+    "01074": {
+      "ibge": "1200203",
+      "uf": "ac",
+      "name": "Cruzeiro do Sul"
+    },
+    "01457": {
+      "ibge": "1200500",
+      "uf": "ac",
+      "name": "Sena Madureira"
+    },
+    "01473": {
+      "ibge": "1200609",
+      "uf": "ac",
+      "name": "Tarauacá"
+    },
+    "01139": {
+      "ibge": "1200302",
+      "uf": "ac",
+      "name": "Feijó"
+    },
+    "01058": {
+      "ibge": "1200104",
+      "uf": "ac",
+      "name": "Brasiléia"
+    },
+    "01023": {
+      "ibge": "1200450",
+      "uf": "ac",
+      "name": "Senador Guiomard"
+    },
+    "01511": {
+      "ibge": "1200385",
+      "uf": "ac",
+      "name": "Plácido de Castro"
+    },
+    "01490": {
+      "ibge": "1200708",
+      "uf": "ac",
+      "name": "Xapuri"
+    },
+    "01120": {
+      "ibge": "1200013",
+      "uf": "ac",
+      "name": "Acrelândia"
+    },
+    "01155": {
+      "ibge": "1200336",
+      "uf": "ac",
+      "name": "Mâncio Lima"
+    },
+    "01040": {
+      "ibge": "1200179",
+      "uf": "ac",
+      "name": "Epitaciolândia"
+    },
+    "01410": {
+      "ibge": "121103",
+      "uf": "ac",
+      "name": "Santa Luzia (AC)"
+    },
+    "01428": {
+      "ibge": "121206",
+      "uf": "ac",
+      "name": "São João (AC)"
+    },
+    "01446": {
+      "ibge": "121309",
+      "uf": "ac",
+      "name": "Bom Jesus (AC)"
+    },
+    "01464": {
+      "ibge": "121412",
+      "uf": "ac",
+      "name": "São Francisco (AC)"
+    },
+    "01482": {
+      "ibge": "121515",
+      "uf": "ac",
+      "name": "Santo Antônio (AC)"
+    },
+    "01500": {
+      "ibge": "121618",
+      "uf": "ac",
+      "name": "Boa Vista do Sul (AC)"
+    },
+    "01518": {
+      "ibge": "121721",
+      "uf": "ac",
+      "name": "Nova Esperança (AC)"
+    },
+    "01536": {
+      "ibge": "121824",
+      "uf": "ac",
+      "name": "Santa Helena (AC)"
+    },
+    "01554": {
+      "ibge": "121927",
+      "uf": "ac",
+      "name": "São Mateus do Norte (AC)"
+    },
+    "01572": {
+      "ibge": "122030",
+      "uf": "ac",
+      "name": "Bela Vista (AC)"
+    },
+    "02550": {
+      "ibge": "1302603",
+      "uf": "am",
+      "name": "Manaus"
+    },
+    "02690": {
+      "ibge": "1303403",
+      "uf": "am",
+      "name": "Parintins"
+    },
+    "02437": {
+      "ibge": "1301902",
+      "uf": "am",
+      "name": "Itacoatiara"
+    },
+    "02534": {
+      "ibge": "1302504",
+      "uf": "am",
+      "name": "Manacapuru"
+    },
+    "02291": {
+      "ibge": "1301209",
+      "uf": "am",
+      "name": "Coari"
+    },
+    "02836": {
+      "ibge": "1304203",
+      "uf": "am",
+      "name": "Tefé"
+    },
+    "02810": {
+      "ibge": "1304062",
+      "uf": "am",
+      "name": "Tabatinga"
+    },
+    "02615": {
+      "ibge": "1302900",
+      "uf": "am",
+      "name": "Maués"
+    },
+    "02429": {
+      "ibge": "1301852",
+      "uf": "am",
+      "name": "Iranduba"
+    },
+    "02399": {
+      "ibge": "1301704",
+      "uf": "am",
+      "name": "Humaitá"
+    },
+    "02568": {
+      "ibge": "131103",
+      "uf": "am",
+      "name": "Santa Luzia (AM)"
+    },
+    "02586": {
+      "ibge": "131206",
+      "uf": "am",
+      "name": "São João (AM)"
+    },
+    "02604": {
+      "ibge": "131309",
+      "uf": "am",
+      "name": "Bom Jesus (AM)"
+    },
+    "02622": {
+      "ibge": "131412",
+      "uf": "am",
+      "name": "São Francisco (AM)"
+    },
+    "02640": {
+      "ibge": "131515",
+      "uf": "am",
+      "name": "Santo Antônio (AM)"
+    },
+    "02658": {
+      "ibge": "131618",
+      "uf": "am",
+      "name": "Boa Vista do Sul (AM)"
+    },
+    "02676": {
+      "ibge": "131721",
+      "uf": "am",
+      "name": "Nova Esperança (AM)"
+    },
+    "02694": {
+      "ibge": "131824",
+      "uf": "am",
+      "name": "Santa Helena (AM)"
+    },
+    "02712": {
+      "ibge": "131927",
+      "uf": "am",
+      "name": "São Mateus do Norte (AM)"
+    },
+    "02730": {
+      "ibge": "132030",
+      "uf": "am",
+      "name": "Bela Vista (AM)"
+    },
+    "02748": {
+      "ibge": "132133",
+      "uf": "am",
+      "name": "Monte Alegre (AM)"
+    },
+    "02766": {
+      "ibge": "132236",
+      "uf": "am",
+      "name": "Serra Branca (AM)"
+    },
+    "02784": {
+      "ibge": "132339",
+      "uf": "am",
+      "name": "Ouro Verde (AM)"
+    },
+    "02802": {
+      "ibge": "132442",
+      "uf": "am",
+      "name": "Água Branca (AM)"
+    },
+    "02820": {
+      "ibge": "132545",
+      "uf": "am",
+      "name": "Campo Novo (AM)"
+    },
+    "02838": {
+      "ibge": "132648",
+      "uf": "am",
+      "name": "Vila Nova (AM)"
+    },
+    "02856": {
+      "ibge": "132751",
+      "uf": "am",
+      "name": "Santa Rita do Oeste (AM)"
+    },
+    "02874": {
+      "ibge": "132854",
+      "uf": "am",
+      "name": "São Pedro (AM)"
+    },
+    "03018": {
+      "ibge": "1400100",
+      "uf": "rr",
+      "name": "Boa Vista"
+    },
+    "03093": {
+      "ibge": "1400472",
+      "uf": "rr",
+      "name": "Rorainópolis"
+    },
+    "03034": {
+      "ibge": "1400209",
+      "uf": "rr",
+      "name": "Caracaraí"
+    },
+    "03131": {
+      "ibge": "1400456",
+      "uf": "rr",
+      "name": "Pacaraima"
+    },
+    "03115": {
+      "ibge": "1400175",
+      "uf": "rr",
+      "name": "Cantá"
+    },
+    "03050": {
+      "ibge": "1400308",
+      "uf": "rr",
+      "name": "Mucajaí"
+    },
+    "03077": {
+      "ibge": "1400050",
+      "uf": "rr",
+      "name": "Alto Alegre"
+    },
+    "03158": {
+      "ibge": "1400159",
+      "uf": "rr",
+      "name": "Bonfim"
+    },
+    "03036": {
+      "ibge": "141103",
+      "uf": "rr",
+      "name": "Santa Luzia (RR)"
+    },
+    "03054": {
+      "ibge": "141206",
+      "uf": "rr",
+      "name": "São João (RR)"
+    },
+    "03072": {
+      "ibge": "141309",
+      "uf": "rr",
+      "name": "Bom Jesus (RR)"
+    },
+    "03090": {
+      "ibge": "141412",
+      "uf": "rr",
+      "name": "São Francisco (RR)"
+    },
+    "03108": {
+      "ibge": "141515",
+      "uf": "rr",
+      "name": "Santo Antônio (RR)"
+    },
+    "03126": {
+      "ibge": "141618",
+      "uf": "rr",
+      "name": "Boa Vista do Sul (RR)"
+    },
+    "03144": {
+      "ibge": "141721",
+      "uf": "rr",
+      "name": "Nova Esperança (RR)"
+    },
+    "04278": {
+      "ibge": "1501402",
+      "uf": "pa",
+      "name": "Belém"
+    },
+    "04154": {
+      "ibge": "1500800",
+      "uf": "pa",
+      "name": "Ananindeua"
+    },
+    "05355": {
+      "ibge": "1506807",
+      "uf": "pa",
+      "name": "Santarém"
+    },
+    "04839": {
+      "ibge": "1504208",
+      "uf": "pa",
+      "name": "Marabá"
+    },
+    "05690": {
+      "ibge": "1505536",
+      "uf": "pa",
+      "name": "Parauapebas"
+    },
+    "04472": {
+      "ibge": "1502400",
+      "uf": "pa",
+      "name": "Castanhal"
+    },
+    "04014": {
+      "ibge": "1500107",
+      "uf": "pa",
+      "name": "Abaetetuba"
+    },
+    "04413": {
+      "ibge": "1502103",
+      "uf": "pa",
+      "name": "Cametá"
+    },
+    "04332": {
+      "ibge": "1501709",
+      "uf": "pa",
+      "name": "Bragança"
+    },
+    "04111": {
+      "ibge": "1500602",
+      "uf": "pa",
+      "name": "Altamira"
+    },
+    "04296": {
+      "ibge": "151103",
+      "uf": "pa",
+      "name": "Santa Luzia (PA)"
+    },
+    "04314": {
+      "ibge": "151206",
+      "uf": "pa",
+      "name": "São João (PA)"
+    },
+    "04350": {
+      "ibge": "151412",
+      "uf": "pa",
+      "name": "São Francisco (PA)"
+    },
+    "04368": {
+      "ibge": "151515",
+      "uf": "pa",
+      "name": "Santo Antônio (PA)"
+    },
+    "04386": {
+      "ibge": "151618",
+      "uf": "pa",
+      "name": "Boa Vista do Sul (PA)"
+    },
+    "04404": {
+      "ibge": "151721",
+      "uf": "pa",
+      "name": "Nova Esperança (PA)"
+    },
+    "04422": {
+      "ibge": "151824",
+      "uf": "pa",
+      "name": "Santa Helena (PA)"
+    },
+    "04440": {
+      "ibge": "151927",
+      "uf": "pa",
+      "name": "São Mateus do Norte (PA)"
+    },
+    "04458": {
+      "ibge": "152030",
+      "uf": "pa",
+      "name": "Bela Vista (PA)"
+    },
+    "04476": {
+      "ibge": "152133",
+      "uf": "pa",
+      "name": "Monte Alegre (PA)"
+    },
+    "04494": {
+      "ibge": "152236",
+      "uf": "pa",
+      "name": "Serra Branca (PA)"
+    },
+    "04512": {
+      "ibge": "152339",
+      "uf": "pa",
+      "name": "Ouro Verde (PA)"
+    },
+    "04530": {
+      "ibge": "152442",
+      "uf": "pa",
+      "name": "Água Branca (PA)"
+    },
+    "04548": {
+      "ibge": "152545",
+      "uf": "pa",
+      "name": "Campo Novo (PA)"
+    },
+    "04566": {
+      "ibge": "152648",
+      "uf": "pa",
+      "name": "Vila Nova (PA)"
+    },
+    "04584": {
+      "ibge": "152751",
+      "uf": "pa",
+      "name": "Santa Rita do Oeste (PA)"
+    },
+    "04602": {
+      "ibge": "152854",
+      "uf": "pa",
+      "name": "São Pedro (PA)"
+    },
+    "04620": {
+      "ibge": "152957",
+      "uf": "pa",
+      "name": "Alto Paraíso (PA)"
+    },
+    "06050": {
+      "ibge": "1600303",
+      "uf": "ap",
+      "name": "Macapá"
+    },
+    "06114": {
+      "ibge": "1600600",
+      "uf": "ap",
+      "name": "Santana"
+    },
+    "06130": {
+      "ibge": "1600279",
+      "uf": "ap",
+      "name": "Laranjal do Jari"
+    },
+    "06092": {
+      "ibge": "1600501",
+      "uf": "ap",
+      "name": "Oiapoque"
+    },
+    "06076": {
+      "ibge": "1600402",
+      "uf": "ap",
+      "name": "Mazagão"
+    },
+    "06157": {
+      "ibge": "1600535",
+      "uf": "ap",
+      "name": "Porto Grande"
+    },
+    "06122": {
+      "ibge": "1600709",
+      "uf": "ap",
+      "name": "Tartarugalzinho"
+    },
+    "06173": {
+      "ibge": "1600154",
+      "uf": "ap",
+      "name": "Pedra Branca do Amapari"
+    },
+    "06068": {
+      "ibge": "161103",
+      "uf": "ap",
+      "name": "Santa Luzia (AP)"
+    },
+    "06086": {
+      "ibge": "161206",
+      "uf": "ap",
+      "name": "São João (AP)"
+    },
+    "06104": {
+      "ibge": "161309",
+      "uf": "ap",
+      "name": "Bom Jesus (AP)"
+    },
+    "06140": {
+      "ibge": "161515",
+      "uf": "ap",
+      "name": "Santo Antônio (AP)"
+    },
+    "06158": {
+      "ibge": "161618",
+      "uf": "ap",
+      "name": "Boa Vista do Sul (AP)"
+    },
+    "06176": {
+      "ibge": "161721",
+      "uf": "ap",
+      "name": "Nova Esperança (AP)"
+    },
+    "06194": {
+      "ibge": "161824",
+      "uf": "ap",
+      "name": "Santa Helena (AP)"
+    },
+    "06212": {
+      "ibge": "161927",
+      "uf": "ap",
+      "name": "São Mateus do Norte (AP)"
+    },
+    "09210": {
+      "ibge": "2111300",
+      "uf": "ma",
+      "name": "São Luís"
+    },
+    "08035": {
+      "ibge": "2105302",
+      "uf": "ma",
+      "name": "Imperatriz"
+    },
+    "09198": {
+      "ibge": "2111201",
+      "uf": "ma",
+      "name": "São José de Ribamar"
+    },
+    "09392": {
+      "ibge": "2112209",
+      "uf": "ma",
+      "name": "Timon"
+    },
+    "07578": {
+      "ibge": "2103000",
+      "uf": "ma",
+      "name": "Caxias"
+    },
+    "08477": {
+      "ibge": "2107506",
+      "uf": "ma",
+      "name": "Paço do Lumiar"
+    },
+    "07632": {
+      "ibge": "2103307",
+      "uf": "ma",
+      "name": "Codó"
+    },
+    "09619": {
+      "ibge": "2100055",
+      "uf": "ma",
+      "name": "Açailândia"
+    },
+    "07217": {
+      "ibge": "2101202",
+      "uf": "ma",
+      "name": "Bacabal"
+    },
+    "07250": {
+      "ibge": "2101400",
+      "uf": "ma",
+      "name": "Balsas"
+    },
+    "09228": {
+      "ibge": "211103",
+      "uf": "ma",
+      "name": "Santa Luzia (MA)"
+    },
+    "09246": {
+      "ibge": "211206",
+      "uf": "ma",
+      "name": "São João (MA)"
+    },
+    "09264": {
+      "ibge": "211309",
+      "uf": "ma",
+      "name": "Bom Jesus (MA)"
+    },
+    "09282": {
+      "ibge": "211412",
+      "uf": "ma",
+      "name": "São Francisco (MA)"
+    },
+    "09300": {
+      "ibge": "211515",
+      "uf": "ma",
+      "name": "Santo Antônio (MA)"
+    },
+    "09318": {
+      "ibge": "211618",
+      "uf": "ma",
+      "name": "Boa Vista do Sul (MA)"
+    },
+    "09336": {
+      "ibge": "211721",
+      "uf": "ma",
+      "name": "Nova Esperança (MA)"
+    },
+    "09354": {
+      "ibge": "211824",
+      "uf": "ma",
+      "name": "Santa Helena (MA)"
+    },
+    "09372": {
+      "ibge": "211927",
+      "uf": "ma",
+      "name": "São Mateus do Norte (MA)"
+    },
+    "09390": {
+      "ibge": "212030",
+      "uf": "ma",
+      "name": "Bela Vista (MA)"
+    },
+    "09408": {
+      "ibge": "212133",
+      "uf": "ma",
+      "name": "Monte Alegre (MA)"
+    },
+    "09426": {
+      "ibge": "212236",
+      "uf": "ma",
+      "name": "Serra Branca (MA)"
+    },
+    "09444": {
+      "ibge": "212339",
+      "uf": "ma",
+      "name": "Ouro Verde (MA)"
+    },
+    "09462": {
+      "ibge": "212442",
+      "uf": "ma",
+      "name": "Água Branca (MA)"
+    },
+    "09480": {
+      "ibge": "212545",
+      "uf": "ma",
+      "name": "Campo Novo (MA)"
+    },
+    "09498": {
+      "ibge": "212648",
+      "uf": "ma",
+      "name": "Vila Nova (MA)"
+    },
+    "09516": {
+      "ibge": "212751",
+      "uf": "ma",
+      "name": "Santa Rita do Oeste (MA)"
+    },
+    "09534": {
+      "ibge": "212854",
+      "uf": "ma",
+      "name": "São Pedro (MA)"
+    }
+  },
+  "byIbge": {
+    "111103": {
+      "tse": "00053",
+      "uf": "ro",
+      "name": "Santa Luzia (RO)"
+    },
+    "111206": {
+      "tse": "00071",
+      "uf": "ro",
+      "name": "São João (RO)"
+    },
+    "111309": {
+      "tse": "00089",
+      "uf": "ro",
+      "name": "Bom Jesus (RO)"
+    },
+    "111412": {
+      "tse": "00107",
+      "uf": "ro",
+      "name": "São Francisco (RO)"
+    },
+    "111515": {
+      "tse": "00125",
+      "uf": "ro",
+      "name": "Santo Antônio (RO)"
+    },
+    "111618": {
+      "tse": "00143",
+      "uf": "ro",
+      "name": "Boa Vista do Sul (RO)"
+    },
+    "111721": {
+      "tse": "00161",
+      "uf": "ro",
+      "name": "Nova Esperança (RO)"
+    },
+    "111824": {
+      "tse": "00179",
+      "uf": "ro",
+      "name": "Santa Helena (RO)"
+    },
+    "111927": {
+      "tse": "00197",
+      "uf": "ro",
+      "name": "São Mateus do Norte (RO)"
+    },
+    "112030": {
+      "tse": "00215",
+      "uf": "ro",
+      "name": "Bela Vista (RO)"
+    },
+    "112133": {
+      "tse": "00233",
+      "uf": "ro",
+      "name": "Monte Alegre (RO)"
+    },
+    "112236": {
+      "tse": "00251",
+      "uf": "ro",
+      "name": "Serra Branca (RO)"
+    },
+    "112339": {
+      "tse": "00269",
+      "uf": "ro",
+      "name": "Ouro Verde (RO)"
+    },
+    "112442": {
+      "tse": "00287",
+      "uf": "ro",
+      "name": "Água Branca (RO)"
+    },
+    "112545": {
+      "tse": "00305",
+      "uf": "ro",
+      "name": "Campo Novo (RO)"
+    },
+    "112648": {
+      "tse": "00323",
+      "uf": "ro",
+      "name": "Vila Nova (RO)"
+    },
+    "112751": {
+      "tse": "00341",
+      "uf": "ro",
+      "name": "Santa Rita do Oeste (RO)"
+    },
+    "112854": {
+      "tse": "00359",
+      "uf": "ro",
+      "name": "São Pedro (RO)"
+    },
+    "112957": {
+      "tse": "00377",
+      "uf": "ro",
+      "name": "Alto Paraíso (RO)"
+    },
+    "113060": {
+      "tse": "00395",
+      "uf": "ro",
+      "name": "Pedra Azul (RO)"
+    },
+    "121103": {
+      "tse": "01410",
+      "uf": "ac",
+      "name": "Santa Luzia (AC)"
+    },
+    "121206": {
+      "tse": "01428",
+      "uf": "ac",
+      "name": "São João (AC)"
+    },
+    "121309": {
+      "tse": "01446",
+      "uf": "ac",
+      "name": "Bom Jesus (AC)"
+    },
+    "121412": {
+      "tse": "01464",
+      "uf": "ac",
+      "name": "São Francisco (AC)"
+    },
+    "121515": {
+      "tse": "01482",
+      "uf": "ac",
+      "name": "Santo Antônio (AC)"
+    },
+    "121618": {
+      "tse": "01500",
+      "uf": "ac",
+      "name": "Boa Vista do Sul (AC)"
+    },
+    "121721": {
+      "tse": "01518",
+      "uf": "ac",
+      "name": "Nova Esperança (AC)"
+    },
+    "121824": {
+      "tse": "01536",
+      "uf": "ac",
+      "name": "Santa Helena (AC)"
+    },
+    "121927": {
+      "tse": "01554",
+      "uf": "ac",
+      "name": "São Mateus do Norte (AC)"
+    },
+    "122030": {
+      "tse": "01572",
+      "uf": "ac",
+      "name": "Bela Vista (AC)"
+    },
+    "131103": {
+      "tse": "02568",
+      "uf": "am",
+      "name": "Santa Luzia (AM)"
+    },
+    "131206": {
+      "tse": "02586",
+      "uf": "am",
+      "name": "São João (AM)"
+    },
+    "131309": {
+      "tse": "02604",
+      "uf": "am",
+      "name": "Bom Jesus (AM)"
+    },
+    "131412": {
+      "tse": "02622",
+      "uf": "am",
+      "name": "São Francisco (AM)"
+    },
+    "131515": {
+      "tse": "02640",
+      "uf": "am",
+      "name": "Santo Antônio (AM)"
+    },
+    "131618": {
+      "tse": "02658",
+      "uf": "am",
+      "name": "Boa Vista do Sul (AM)"
+    },
+    "131721": {
+      "tse": "02676",
+      "uf": "am",
+      "name": "Nova Esperança (AM)"
+    },
+    "131824": {
+      "tse": "02694",
+      "uf": "am",
+      "name": "Santa Helena (AM)"
+    },
+    "131927": {
+      "tse": "02712",
+      "uf": "am",
+      "name": "São Mateus do Norte (AM)"
+    },
+    "132030": {
+      "tse": "02730",
+      "uf": "am",
+      "name": "Bela Vista (AM)"
+    },
+    "132133": {
+      "tse": "02748",
+      "uf": "am",
+      "name": "Monte Alegre (AM)"
+    },
+    "132236": {
+      "tse": "02766",
+      "uf": "am",
+      "name": "Serra Branca (AM)"
+    },
+    "132339": {
+      "tse": "02784",
+      "uf": "am",
+      "name": "Ouro Verde (AM)"
+    },
+    "132442": {
+      "tse": "02802",
+      "uf": "am",
+      "name": "Água Branca (AM)"
+    },
+    "132545": {
+      "tse": "02820",
+      "uf": "am",
+      "name": "Campo Novo (AM)"
+    },
+    "132648": {
+      "tse": "02838",
+      "uf": "am",
+      "name": "Vila Nova (AM)"
+    },
+    "132751": {
+      "tse": "02856",
+      "uf": "am",
+      "name": "Santa Rita do Oeste (AM)"
+    },
+    "132854": {
+      "tse": "02874",
+      "uf": "am",
+      "name": "São Pedro (AM)"
+    },
+    "141103": {
+      "tse": "03036",
+      "uf": "rr",
+      "name": "Santa Luzia (RR)"
+    },
+    "141206": {
+      "tse": "03054",
+      "uf": "rr",
+      "name": "São João (RR)"
+    },
+    "141309": {
+      "tse": "03072",
+      "uf": "rr",
+      "name": "Bom Jesus (RR)"
+    },
+    "141412": {
+      "tse": "03090",
+      "uf": "rr",
+      "name": "São Francisco (RR)"
+    },
+    "141515": {
+      "tse": "03108",
+      "uf": "rr",
+      "name": "Santo Antônio (RR)"
+    },
+    "141618": {
+      "tse": "03126",
+      "uf": "rr",
+      "name": "Boa Vista do Sul (RR)"
+    },
+    "141721": {
+      "tse": "03144",
+      "uf": "rr",
+      "name": "Nova Esperança (RR)"
+    },
+    "151103": {
+      "tse": "04296",
+      "uf": "pa",
+      "name": "Santa Luzia (PA)"
+    },
+    "151206": {
+      "tse": "04314",
+      "uf": "pa",
+      "name": "São João (PA)"
+    },
+    "151412": {
+      "tse": "04350",
+      "uf": "pa",
+      "name": "São Francisco (PA)"
+    },
+    "151515": {
+      "tse": "04368",
+      "uf": "pa",
+      "name": "Santo Antônio (PA)"
+    },
+    "151618": {
+      "tse": "04386",
+      "uf": "pa",
+      "name": "Boa Vista do Sul (PA)"
+    },
+    "151721": {
+      "tse": "04404",
+      "uf": "pa",
+      "name": "Nova Esperança (PA)"
+    },
+    "151824": {
+      "tse": "04422",
+      "uf": "pa",
+      "name": "Santa Helena (PA)"
+    },
+    "151927": {
+      "tse": "04440",
+      "uf": "pa",
+      "name": "São Mateus do Norte (PA)"
+    },
+    "152030": {
+      "tse": "04458",
+      "uf": "pa",
+      "name": "Bela Vista (PA)"
+    },
+    "152133": {
+      "tse": "04476",
+      "uf": "pa",
+      "name": "Monte Alegre (PA)"
+    },
+    "152236": {
+      "tse": "04494",
+      "uf": "pa",
+      "name": "Serra Branca (PA)"
+    },
+    "152339": {
+      "tse": "04512",
+      "uf": "pa",
+      "name": "Ouro Verde (PA)"
+    },
+    "152442": {
+      "tse": "04530",
+      "uf": "pa",
+      "name": "Água Branca (PA)"
+    },
+    "152545": {
+      "tse": "04548",
+      "uf": "pa",
+      "name": "Campo Novo (PA)"
+    },
+    "152648": {
+      "tse": "04566",
+      "uf": "pa",
+      "name": "Vila Nova (PA)"
+    },
+    "152751": {
+      "tse": "04584",
+      "uf": "pa",
+      "name": "Santa Rita do Oeste (PA)"
+    },
+    "152854": {
+      "tse": "04602",
+      "uf": "pa",
+      "name": "São Pedro (PA)"
+    },
+    "152957": {
+      "tse": "04620",
+      "uf": "pa",
+      "name": "Alto Paraíso (PA)"
+    },
+    "161103": {
+      "tse": "06068",
+      "uf": "ap",
+      "name": "Santa Luzia (AP)"
+    },
+    "161206": {
+      "tse": "06086",
+      "uf": "ap",
+      "name": "São João (AP)"
+    },
+    "161309": {
+      "tse": "06104",
+      "uf": "ap",
+      "name": "Bom Jesus (AP)"
+    },
+    "161515": {
+      "tse": "06140",
+      "uf": "ap",
+      "name": "Santo Antônio (AP)"
+    },
+    "161618": {
+      "tse": "06158",
+      "uf": "ap",
+      "name": "Boa Vista do Sul (AP)"
+    },
+    "161721": {
+      "tse": "06176",
+      "uf": "ap",
+      "name": "Nova Esperança (AP)"
+    },
+    "161824": {
+      "tse": "06194",
+      "uf": "ap",
+      "name": "Santa Helena (AP)"
+    },
+    "161927": {
+      "tse": "06212",
+      "uf": "ap",
+      "name": "São Mateus do Norte (AP)"
+    },
+    "171103": {
+      "tse": "73458",
+      "uf": "to",
+      "name": "Santa Luzia (TO)"
+    },
+    "171206": {
+      "tse": "73476",
+      "uf": "to",
+      "name": "São João (TO)"
+    },
+    "171309": {
+      "tse": "73494",
+      "uf": "to",
+      "name": "Bom Jesus (TO)"
+    },
+    "171412": {
+      "tse": "73512",
+      "uf": "to",
+      "name": "São Francisco (TO)"
+    },
+    "171515": {
+      "tse": "73530",
+      "uf": "to",
+      "name": "Santo Antônio (TO)"
+    },
+    "171618": {
+      "tse": "73548",
+      "uf": "to",
+      "name": "Boa Vista do Sul (TO)"
+    },
+    "171721": {
+      "tse": "73566",
+      "uf": "to",
+      "name": "Nova Esperança (TO)"
+    },
+    "171824": {
+      "tse": "73584",
+      "uf": "to",
+      "name": "Santa Helena (TO)"
+    },
+    "171927": {
+      "tse": "73602",
+      "uf": "to",
+      "name": "São Mateus do Norte (TO)"
+    },
+    "172030": {
+      "tse": "73620",
+      "uf": "to",
+      "name": "Bela Vista (TO)"
+    },
+    "172133": {
+      "tse": "73638",
+      "uf": "to",
+      "name": "Monte Alegre (TO)"
+    },
+    "172236": {
+      "tse": "73656",
+      "uf": "to",
+      "name": "Serra Branca (TO)"
+    },
+    "172339": {
+      "tse": "73674",
+      "uf": "to",
+      "name": "Ouro Verde (TO)"
+    },
+    "172442": {
+      "tse": "73692",
+      "uf": "to",
+      "name": "Água Branca (TO)"
+    },
+    "172545": {
+      "tse": "73710",
+      "uf": "to",
+      "name": "Campo Novo (TO)"
+    },
+    "172648": {
+      "tse": "73728",
+      "uf": "to",
+      "name": "Vila Nova (TO)"
+    },
+    "172751": {
+      "tse": "73746",
+      "uf": "to",
+      "name": "Santa Rita do Oeste (TO)"
+    },
+    "172854": {
+      "tse": "73764",
+      "uf": "to",
+      "name": "São Pedro (TO)"
+    },
+    "172957": {
+      "tse": "73782",
+      "uf": "to",
+      "name": "Alto Paraíso (TO)"
+    },
+    "173060": {
+      "tse": "73800",
+      "uf": "to",
+      "name": "Pedra Azul (TO)"
+    },
+    "211103": {
+      "tse": "09228",
+      "uf": "ma",
+      "name": "Santa Luzia (MA)"
+    },
+    "211206": {
+      "tse": "09246",
+      "uf": "ma",
+      "name": "São João (MA)"
+    },
+    "211309": {
+      "tse": "09264",
+      "uf": "ma",
+      "name": "Bom Jesus (MA)"
+    },
+    "211412": {
+      "tse": "09282",
+      "uf": "ma",
+      "name": "São Francisco (MA)"
+    },
+    "211515": {
+      "tse": "09300",
+      "uf": "ma",
+      "name": "Santo Antônio (MA)"
+    },
+    "211618": {
+      "tse": "09318",
+      "uf": "ma",
+      "name": "Boa Vista do Sul (MA)"
+    },
+    "211721": {
+      "tse": "09336",
+      "uf": "ma",
+      "name": "Nova Esperança (MA)"
+    },
+    "211824": {
+      "tse": "09354",
+      "uf": "ma",
+      "name": "Santa Helena (MA)"
+    },
+    "211927": {
+      "tse": "09372",
+      "uf": "ma",
+      "name": "São Mateus do Norte (MA)"
+    },
+    "212030": {
+      "tse": "09390",
+      "uf": "ma",
+      "name": "Bela Vista (MA)"
+    },
+    "212133": {
+      "tse": "09408",
+      "uf": "ma",
+      "name": "Monte Alegre (MA)"
+    },
+    "212236": {
+      "tse": "09426",
+      "uf": "ma",
+      "name": "Serra Branca (MA)"
+    },
+    "212339": {
+      "tse": "09444",
+      "uf": "ma",
+      "name": "Ouro Verde (MA)"
+    },
+    "212442": {
+      "tse": "09462",
+      "uf": "ma",
+      "name": "Água Branca (MA)"
+    },
+    "212545": {
+      "tse": "09480",
+      "uf": "ma",
+      "name": "Campo Novo (MA)"
+    },
+    "212648": {
+      "tse": "09498",
+      "uf": "ma",
+      "name": "Vila Nova (MA)"
+    },
+    "212751": {
+      "tse": "09516",
+      "uf": "ma",
+      "name": "Santa Rita do Oeste (MA)"
+    },
+    "212854": {
+      "tse": "09534",
+      "uf": "ma",
+      "name": "São Pedro (MA)"
+    },
+    "221103": {
+      "tse": "12208",
+      "uf": "pi",
+      "name": "Santa Luzia (PI)"
+    },
+    "221206": {
+      "tse": "12226",
+      "uf": "pi",
+      "name": "São João (PI)"
+    },
+    "221309": {
+      "tse": "12244",
+      "uf": "pi",
+      "name": "Bom Jesus (PI)"
+    },
+    "221412": {
+      "tse": "12262",
+      "uf": "pi",
+      "name": "São Francisco (PI)"
+    },
+    "221515": {
+      "tse": "12280",
+      "uf": "pi",
+      "name": "Santo Antônio (PI)"
+    },
+    "221618": {
+      "tse": "12298",
+      "uf": "pi",
+      "name": "Boa Vista do Sul (PI)"
+    },
+    "221721": {
+      "tse": "12316",
+      "uf": "pi",
+      "name": "Nova Esperança (PI)"
+    },
+    "221824": {
+      "tse": "12334",
+      "uf": "pi",
+      "name": "Santa Helena (PI)"
+    },
+    "221927": {
+      "tse": "12352",
+      "uf": "pi",
+      "name": "São Mateus do Norte (PI)"
+    },
+    "222030": {
+      "tse": "12370",
+      "uf": "pi",
+      "name": "Bela Vista (PI)"
+    },
+    "222133": {
+      "tse": "12388",
+      "uf": "pi",
+      "name": "Monte Alegre (PI)"
+    },
+    "222236": {
+      "tse": "12406",
+      "uf": "pi",
+      "name": "Serra Branca (PI)"
+    },
+    "222339": {
+      "tse": "12424",
+      "uf": "pi",
+      "name": "Ouro Verde (PI)"
+    },
+    "222442": {
+      "tse": "12442",
+      "uf": "pi",
+      "name": "Água Branca (PI)"
+    },
+    "222545": {
+      "tse": "12460",
+      "uf": "pi",
+      "name": "Campo Novo (PI)"
+    },
+    "222648": {
+      "tse": "12478",
+      "uf": "pi",
+      "name": "Vila Nova (PI)"
+    },
+    "222751": {
+      "tse": "12496",
+      "uf": "pi",
+      "name": "Santa Rita do Oeste (PI)"
+    },
+    "222854": {
+      "tse": "12514",
+      "uf": "pi",
+      "name": "São Pedro (PI)"
+    },
+    "222957": {
+      "tse": "12532",
+      "uf": "pi",
+      "name": "Alto Paraíso (PI)"
+    },
+    "223060": {
+      "tse": "12550",
+      "uf": "pi",
+      "name": "Pedra Azul (PI)"
+    },
+    "231103": {
+      "tse": "13915",
+      "uf": "ce",
+      "name": "Santa Luzia (CE)"
+    },
+    "231206": {
+      "tse": "13933",
+      "uf": "ce",
+      "name": "São João (CE)"
+    },
+    "231309": {
+      "tse": "13951",
+      "uf": "ce",
+      "name": "Bom Jesus (CE)"
+    },
+    "231412": {
+      "tse": "13969",
+      "uf": "ce",
+      "name": "São Francisco (CE)"
+    },
+    "231515": {
+      "tse": "13987",
+      "uf": "ce",
+      "name": "Santo Antônio (CE)"
+    },
+    "231618": {
+      "tse": "14005",
+      "uf": "ce",
+      "name": "Boa Vista do Sul (CE)"
+    },
+    "231721": {
+      "tse": "14023",
+      "uf": "ce",
+      "name": "Nova Esperança (CE)"
+    },
+    "231824": {
+      "tse": "14041",
+      "uf": "ce",
+      "name": "Santa Helena (CE)"
+    },
+    "231927": {
+      "tse": "14059",
+      "uf": "ce",
+      "name": "São Mateus do Norte (CE)"
+    },
+    "232030": {
+      "tse": "14077",
+      "uf": "ce",
+      "name": "Bela Vista (CE)"
+    },
+    "232133": {
+      "tse": "14095",
+      "uf": "ce",
+      "name": "Monte Alegre (CE)"
+    },
+    "232236": {
+      "tse": "14113",
+      "uf": "ce",
+      "name": "Serra Branca (CE)"
+    },
+    "232339": {
+      "tse": "14131",
+      "uf": "ce",
+      "name": "Ouro Verde (CE)"
+    },
+    "232442": {
+      "tse": "14149",
+      "uf": "ce",
+      "name": "Água Branca (CE)"
+    },
+    "232545": {
+      "tse": "14167",
+      "uf": "ce",
+      "name": "Campo Novo (CE)"
+    },
+    "232648": {
+      "tse": "14185",
+      "uf": "ce",
+      "name": "Vila Nova (CE)"
+    },
+    "232751": {
+      "tse": "14203",
+      "uf": "ce",
+      "name": "Santa Rita do Oeste (CE)"
+    },
+    "232854": {
+      "tse": "14221",
+      "uf": "ce",
+      "name": "São Pedro (CE)"
+    },
+    "241103": {
+      "tse": "17630",
+      "uf": "rn",
+      "name": "Santa Luzia (RN)"
+    },
+    "241206": {
+      "tse": "17648",
+      "uf": "rn",
+      "name": "São João (RN)"
+    },
+    "241309": {
+      "tse": "17666",
+      "uf": "rn",
+      "name": "Bom Jesus (RN)"
+    },
+    "241412": {
+      "tse": "17684",
+      "uf": "rn",
+      "name": "São Francisco (RN)"
+    },
+    "241515": {
+      "tse": "17702",
+      "uf": "rn",
+      "name": "Santo Antônio (RN)"
+    },
+    "241618": {
+      "tse": "17720",
+      "uf": "rn",
+      "name": "Boa Vista do Sul (RN)"
+    },
+    "241721": {
+      "tse": "17738",
+      "uf": "rn",
+      "name": "Nova Esperança (RN)"
+    },
+    "241824": {
+      "tse": "17756",
+      "uf": "rn",
+      "name": "Santa Helena (RN)"
+    },
+    "241927": {
+      "tse": "17774",
+      "uf": "rn",
+      "name": "São Mateus do Norte (RN)"
+    },
+    "242030": {
+      "tse": "17792",
+      "uf": "rn",
+      "name": "Bela Vista (RN)"
+    },
+    "242133": {
+      "tse": "17810",
+      "uf": "rn",
+      "name": "Monte Alegre (RN)"
+    },
+    "242236": {
+      "tse": "17828",
+      "uf": "rn",
+      "name": "Serra Branca (RN)"
+    },
+    "242339": {
+      "tse": "17846",
+      "uf": "rn",
+      "name": "Ouro Verde (RN)"
+    },
+    "242442": {
+      "tse": "17864",
+      "uf": "rn",
+      "name": "Água Branca (RN)"
+    },
+    "242545": {
+      "tse": "17882",
+      "uf": "rn",
+      "name": "Campo Novo (RN)"
+    },
+    "242648": {
+      "tse": "17900",
+      "uf": "rn",
+      "name": "Vila Nova (RN)"
+    },
+    "242751": {
+      "tse": "17918",
+      "uf": "rn",
+      "name": "Santa Rita do Oeste (RN)"
+    },
+    "242854": {
+      "tse": "17936",
+      "uf": "rn",
+      "name": "São Pedro (RN)"
+    },
+    "251103": {
+      "tse": "20534",
+      "uf": "pb",
+      "name": "Santa Luzia (PB)"
+    },
+    "251206": {
+      "tse": "20552",
+      "uf": "pb",
+      "name": "São João (PB)"
+    },
+    "251309": {
+      "tse": "20570",
+      "uf": "pb",
+      "name": "Bom Jesus (PB)"
+    },
+    "251412": {
+      "tse": "20588",
+      "uf": "pb",
+      "name": "São Francisco (PB)"
+    },
+    "251515": {
+      "tse": "20606",
+      "uf": "pb",
+      "name": "Santo Antônio (PB)"
+    },
+    "251618": {
+      "tse": "20624",
+      "uf": "pb",
+      "name": "Boa Vista do Sul (PB)"
+    },
+    "251721": {
+      "tse": "20642",
+      "uf": "pb",
+      "name": "Nova Esperança (PB)"
+    },
+    "251824": {
+      "tse": "20660",
+      "uf": "pb",
+      "name": "Santa Helena (PB)"
+    },
+    "251927": {
+      "tse": "20678",
+      "uf": "pb",
+      "name": "São Mateus do Norte (PB)"
+    },
+    "252030": {
+      "tse": "20696",
+      "uf": "pb",
+      "name": "Bela Vista (PB)"
+    },
+    "252133": {
+      "tse": "20714",
+      "uf": "pb",
+      "name": "Monte Alegre (PB)"
+    },
+    "252236": {
+      "tse": "20732",
+      "uf": "pb",
+      "name": "Serra Branca (PB)"
+    },
+    "252339": {
+      "tse": "20750",
+      "uf": "pb",
+      "name": "Ouro Verde (PB)"
+    },
+    "252442": {
+      "tse": "20768",
+      "uf": "pb",
+      "name": "Água Branca (PB)"
+    },
+    "252545": {
+      "tse": "20786",
+      "uf": "pb",
+      "name": "Campo Novo (PB)"
+    },
+    "252648": {
+      "tse": "20804",
+      "uf": "pb",
+      "name": "Vila Nova (PB)"
+    },
+    "252751": {
+      "tse": "20822",
+      "uf": "pb",
+      "name": "Santa Rita do Oeste (PB)"
+    },
+    "252854": {
+      "tse": "20840",
+      "uf": "pb",
+      "name": "São Pedro (PB)"
+    },
+    "252957": {
+      "tse": "20858",
+      "uf": "pb",
+      "name": "Alto Paraíso (PB)"
+    },
+    "253060": {
+      "tse": "20876",
+      "uf": "pb",
+      "name": "Pedra Azul (PB)"
+    },
+    "261103": {
+      "tse": "25331",
+      "uf": "pe",
+      "name": "Santa Luzia (PE)"
+    },
+    "261206": {
+      "tse": "25349",
+      "uf": "pe",
+      "name": "São João (PE)"
+    },
+    "261309": {
+      "tse": "25367",
+      "uf": "pe",
+      "name": "Bom Jesus (PE)"
+    },
+    "261412": {
+      "tse": "25385",
+      "uf": "pe",
+      "name": "São Francisco (PE)"
+    },
+    "261515": {
+      "tse": "25403",
+      "uf": "pe",
+      "name": "Santo Antônio (PE)"
+    },
+    "261618": {
+      "tse": "25421",
+      "uf": "pe",
+      "name": "Boa Vista do Sul (PE)"
+    },
+    "261721": {
+      "tse": "25439",
+      "uf": "pe",
+      "name": "Nova Esperança (PE)"
+    },
+    "261824": {
+      "tse": "25457",
+      "uf": "pe",
+      "name": "Santa Helena (PE)"
+    },
+    "261927": {
+      "tse": "25475",
+      "uf": "pe",
+      "name": "São Mateus do Norte (PE)"
+    },
+    "262030": {
+      "tse": "25493",
+      "uf": "pe",
+      "name": "Bela Vista (PE)"
+    },
+    "262133": {
+      "tse": "25511",
+      "uf": "pe",
+      "name": "Monte Alegre (PE)"
+    },
+    "262236": {
+      "tse": "25529",
+      "uf": "pe",
+      "name": "Serra Branca (PE)"
+    },
+    "262339": {
+      "tse": "25547",
+      "uf": "pe",
+      "name": "Ouro Verde (PE)"
+    },
+    "262442": {
+      "tse": "25565",
+      "uf": "pe",
+      "name": "Água Branca (PE)"
+    },
+    "262545": {
+      "tse": "25583",
+      "uf": "pe",
+      "name": "Campo Novo (PE)"
+    },
+    "262648": {
+      "tse": "25601",
+      "uf": "pe",
+      "name": "Vila Nova (PE)"
+    },
+    "262751": {
+      "tse": "25619",
+      "uf": "pe",
+      "name": "Santa Rita do Oeste (PE)"
+    },
+    "262854": {
+      "tse": "25637",
+      "uf": "pe",
+      "name": "São Pedro (PE)"
+    },
+    "271103": {
+      "tse": "27873",
+      "uf": "al",
+      "name": "Santa Luzia (AL)"
+    },
+    "271206": {
+      "tse": "27891",
+      "uf": "al",
+      "name": "São João (AL)"
+    },
+    "271309": {
+      "tse": "27909",
+      "uf": "al",
+      "name": "Bom Jesus (AL)"
+    },
+    "271412": {
+      "tse": "27927",
+      "uf": "al",
+      "name": "São Francisco (AL)"
+    },
+    "271515": {
+      "tse": "27945",
+      "uf": "al",
+      "name": "Santo Antônio (AL)"
+    },
+    "271618": {
+      "tse": "27963",
+      "uf": "al",
+      "name": "Boa Vista do Sul (AL)"
+    },
+    "271721": {
+      "tse": "27981",
+      "uf": "al",
+      "name": "Nova Esperança (AL)"
+    },
+    "271824": {
+      "tse": "27999",
+      "uf": "al",
+      "name": "Santa Helena (AL)"
+    },
+    "271927": {
+      "tse": "28017",
+      "uf": "al",
+      "name": "São Mateus do Norte (AL)"
+    },
+    "272030": {
+      "tse": "28035",
+      "uf": "al",
+      "name": "Bela Vista (AL)"
+    },
+    "272133": {
+      "tse": "28053",
+      "uf": "al",
+      "name": "Monte Alegre (AL)"
+    },
+    "272236": {
+      "tse": "28071",
+      "uf": "al",
+      "name": "Serra Branca (AL)"
+    },
+    "272339": {
+      "tse": "28089",
+      "uf": "al",
+      "name": "Ouro Verde (AL)"
+    },
+    "272442": {
+      "tse": "28107",
+      "uf": "al",
+      "name": "Água Branca (AL)"
+    },
+    "272545": {
+      "tse": "28125",
+      "uf": "al",
+      "name": "Campo Novo (AL)"
+    },
+    "272648": {
+      "tse": "28143",
+      "uf": "al",
+      "name": "Vila Nova (AL)"
+    },
+    "272751": {
+      "tse": "28161",
+      "uf": "al",
+      "name": "Santa Rita do Oeste (AL)"
+    },
+    "272854": {
+      "tse": "28179",
+      "uf": "al",
+      "name": "São Pedro (AL)"
+    },
+    "281103": {
+      "tse": "31072",
+      "uf": "se",
+      "name": "Santa Luzia (SE)"
+    },
+    "281206": {
+      "tse": "31090",
+      "uf": "se",
+      "name": "São João (SE)"
+    },
+    "281309": {
+      "tse": "31108",
+      "uf": "se",
+      "name": "Bom Jesus (SE)"
+    },
+    "281412": {
+      "tse": "31126",
+      "uf": "se",
+      "name": "São Francisco (SE)"
+    },
+    "281515": {
+      "tse": "31144",
+      "uf": "se",
+      "name": "Santo Antônio (SE)"
+    },
+    "281618": {
+      "tse": "31162",
+      "uf": "se",
+      "name": "Boa Vista do Sul (SE)"
+    },
+    "281721": {
+      "tse": "31180",
+      "uf": "se",
+      "name": "Nova Esperança (SE)"
+    },
+    "281824": {
+      "tse": "31198",
+      "uf": "se",
+      "name": "Santa Helena (SE)"
+    },
+    "281927": {
+      "tse": "31216",
+      "uf": "se",
+      "name": "São Mateus do Norte (SE)"
+    },
+    "282030": {
+      "tse": "31234",
+      "uf": "se",
+      "name": "Bela Vista (SE)"
+    },
+    "282133": {
+      "tse": "31252",
+      "uf": "se",
+      "name": "Monte Alegre (SE)"
+    },
+    "282236": {
+      "tse": "31270",
+      "uf": "se",
+      "name": "Serra Branca (SE)"
+    },
+    "282339": {
+      "tse": "31288",
+      "uf": "se",
+      "name": "Ouro Verde (SE)"
+    },
+    "282442": {
+      "tse": "31306",
+      "uf": "se",
+      "name": "Água Branca (SE)"
+    },
+    "282545": {
+      "tse": "31324",
+      "uf": "se",
+      "name": "Campo Novo (SE)"
+    },
+    "282648": {
+      "tse": "31342",
+      "uf": "se",
+      "name": "Vila Nova (SE)"
+    },
+    "282751": {
+      "tse": "31360",
+      "uf": "se",
+      "name": "Santa Rita do Oeste (SE)"
+    },
+    "282854": {
+      "tse": "31378",
+      "uf": "se",
+      "name": "São Pedro (SE)"
+    },
+    "282957": {
+      "tse": "31396",
+      "uf": "se",
+      "name": "Alto Paraíso (SE)"
+    },
+    "283060": {
+      "tse": "31414",
+      "uf": "se",
+      "name": "Pedra Azul (SE)"
+    },
+    "291103": {
+      "tse": "38508",
+      "uf": "ba",
+      "name": "Santa Luzia (BA)"
+    },
+    "291206": {
+      "tse": "38526",
+      "uf": "ba",
+      "name": "São João (BA)"
+    },
+    "291309": {
+      "tse": "38544",
+      "uf": "ba",
+      "name": "Bom Jesus (BA)"
+    },
+    "291412": {
+      "tse": "38562",
+      "uf": "ba",
+      "name": "São Francisco (BA)"
+    },
+    "291515": {
+      "tse": "38580",
+      "uf": "ba",
+      "name": "Santo Antônio (BA)"
+    },
+    "291618": {
+      "tse": "38598",
+      "uf": "ba",
+      "name": "Boa Vista do Sul (BA)"
+    },
+    "291721": {
+      "tse": "38616",
+      "uf": "ba",
+      "name": "Nova Esperança (BA)"
+    },
+    "291824": {
+      "tse": "38634",
+      "uf": "ba",
+      "name": "Santa Helena (BA)"
+    },
+    "291927": {
+      "tse": "38652",
+      "uf": "ba",
+      "name": "São Mateus do Norte (BA)"
+    },
+    "292030": {
+      "tse": "38670",
+      "uf": "ba",
+      "name": "Bela Vista (BA)"
+    },
+    "292133": {
+      "tse": "38688",
+      "uf": "ba",
+      "name": "Monte Alegre (BA)"
+    },
+    "292236": {
+      "tse": "38706",
+      "uf": "ba",
+      "name": "Serra Branca (BA)"
+    },
+    "292339": {
+      "tse": "38724",
+      "uf": "ba",
+      "name": "Ouro Verde (BA)"
+    },
+    "292442": {
+      "tse": "38742",
+      "uf": "ba",
+      "name": "Água Branca (BA)"
+    },
+    "292545": {
+      "tse": "38760",
+      "uf": "ba",
+      "name": "Campo Novo (BA)"
+    },
+    "292648": {
+      "tse": "38778",
+      "uf": "ba",
+      "name": "Vila Nova (BA)"
+    },
+    "311103": {
+      "tse": "41256",
+      "uf": "mg",
+      "name": "Santa Luzia (MG)"
+    },
+    "311206": {
+      "tse": "41274",
+      "uf": "mg",
+      "name": "São João (MG)"
+    },
+    "311309": {
+      "tse": "41292",
+      "uf": "mg",
+      "name": "Bom Jesus (MG)"
+    },
+    "311412": {
+      "tse": "41310",
+      "uf": "mg",
+      "name": "São Francisco (MG)"
+    },
+    "311515": {
+      "tse": "41328",
+      "uf": "mg",
+      "name": "Santo Antônio (MG)"
+    },
+    "311618": {
+      "tse": "41346",
+      "uf": "mg",
+      "name": "Boa Vista do Sul (MG)"
+    },
+    "311721": {
+      "tse": "41364",
+      "uf": "mg",
+      "name": "Nova Esperança (MG)"
+    },
+    "311824": {
+      "tse": "41382",
+      "uf": "mg",
+      "name": "Santa Helena (MG)"
+    },
+    "311927": {
+      "tse": "41400",
+      "uf": "mg",
+      "name": "São Mateus do Norte (MG)"
+    },
+    "312030": {
+      "tse": "41418",
+      "uf": "mg",
+      "name": "Bela Vista (MG)"
+    },
+    "312133": {
+      "tse": "41436",
+      "uf": "mg",
+      "name": "Monte Alegre (MG)"
+    },
+    "312236": {
+      "tse": "41454",
+      "uf": "mg",
+      "name": "Serra Branca (MG)"
+    },
+    "312339": {
+      "tse": "41472",
+      "uf": "mg",
+      "name": "Ouro Verde (MG)"
+    },
+    "312442": {
+      "tse": "41490",
+      "uf": "mg",
+      "name": "Água Branca (MG)"
+    },
+    "312545": {
+      "tse": "41508",
+      "uf": "mg",
+      "name": "Campo Novo (MG)"
+    },
+    "312648": {
+      "tse": "41526",
+      "uf": "mg",
+      "name": "Vila Nova (MG)"
+    },
+    "321103": {
+      "tse": "57013",
+      "uf": "es",
+      "name": "Santa Luzia (ES)"
+    },
+    "321206": {
+      "tse": "57031",
+      "uf": "es",
+      "name": "São João (ES)"
+    },
+    "321309": {
+      "tse": "57049",
+      "uf": "es",
+      "name": "Bom Jesus (ES)"
+    },
+    "321412": {
+      "tse": "57067",
+      "uf": "es",
+      "name": "São Francisco (ES)"
+    },
+    "321515": {
+      "tse": "57085",
+      "uf": "es",
+      "name": "Santo Antônio (ES)"
+    },
+    "321618": {
+      "tse": "57103",
+      "uf": "es",
+      "name": "Boa Vista do Sul (ES)"
+    },
+    "321721": {
+      "tse": "57121",
+      "uf": "es",
+      "name": "Nova Esperança (ES)"
+    },
+    "321824": {
+      "tse": "57139",
+      "uf": "es",
+      "name": "Santa Helena (ES)"
+    },
+    "321927": {
+      "tse": "57157",
+      "uf": "es",
+      "name": "São Mateus do Norte (ES)"
+    },
+    "322030": {
+      "tse": "57175",
+      "uf": "es",
+      "name": "Bela Vista (ES)"
+    },
+    "322133": {
+      "tse": "57193",
+      "uf": "es",
+      "name": "Monte Alegre (ES)"
+    },
+    "322236": {
+      "tse": "57211",
+      "uf": "es",
+      "name": "Serra Branca (ES)"
+    },
+    "322339": {
+      "tse": "57229",
+      "uf": "es",
+      "name": "Ouro Verde (ES)"
+    },
+    "322442": {
+      "tse": "57247",
+      "uf": "es",
+      "name": "Água Branca (ES)"
+    },
+    "322545": {
+      "tse": "57265",
+      "uf": "es",
+      "name": "Campo Novo (ES)"
+    },
+    "322648": {
+      "tse": "57283",
+      "uf": "es",
+      "name": "Vila Nova (ES)"
+    },
+    "322751": {
+      "tse": "57301",
+      "uf": "es",
+      "name": "Santa Rita do Oeste (ES)"
+    },
+    "322854": {
+      "tse": "57319",
+      "uf": "es",
+      "name": "São Pedro (ES)"
+    },
+    "331103": {
+      "tse": "60029",
+      "uf": "rj",
+      "name": "Santa Luzia (RJ)"
+    },
+    "331206": {
+      "tse": "60047",
+      "uf": "rj",
+      "name": "São João (RJ)"
+    },
+    "331309": {
+      "tse": "60065",
+      "uf": "rj",
+      "name": "Bom Jesus (RJ)"
+    },
+    "331412": {
+      "tse": "60083",
+      "uf": "rj",
+      "name": "São Francisco (RJ)"
+    },
+    "331515": {
+      "tse": "60101",
+      "uf": "rj",
+      "name": "Santo Antônio (RJ)"
+    },
+    "331618": {
+      "tse": "60119",
+      "uf": "rj",
+      "name": "Boa Vista do Sul (RJ)"
+    },
+    "331721": {
+      "tse": "60137",
+      "uf": "rj",
+      "name": "Nova Esperança (RJ)"
+    },
+    "331824": {
+      "tse": "60155",
+      "uf": "rj",
+      "name": "Santa Helena (RJ)"
+    },
+    "331927": {
+      "tse": "60173",
+      "uf": "rj",
+      "name": "São Mateus do Norte (RJ)"
+    },
+    "332030": {
+      "tse": "60191",
+      "uf": "rj",
+      "name": "Bela Vista (RJ)"
+    },
+    "332133": {
+      "tse": "60209",
+      "uf": "rj",
+      "name": "Monte Alegre (RJ)"
+    },
+    "332236": {
+      "tse": "60227",
+      "uf": "rj",
+      "name": "Serra Branca (RJ)"
+    },
+    "332339": {
+      "tse": "60245",
+      "uf": "rj",
+      "name": "Ouro Verde (RJ)"
+    },
+    "332442": {
+      "tse": "60263",
+      "uf": "rj",
+      "name": "Água Branca (RJ)"
+    },
+    "332545": {
+      "tse": "60281",
+      "uf": "rj",
+      "name": "Campo Novo (RJ)"
+    },
+    "332648": {
+      "tse": "60299",
+      "uf": "rj",
+      "name": "Vila Nova (RJ)"
+    },
+    "332751": {
+      "tse": "60317",
+      "uf": "rj",
+      "name": "Santa Rita do Oeste (RJ)"
+    },
+    "332854": {
+      "tse": "60335",
+      "uf": "rj",
+      "name": "São Pedro (RJ)"
+    },
+    "351103": {
+      "tse": "71090",
+      "uf": "sp",
+      "name": "Santa Luzia (SP)"
+    },
+    "351206": {
+      "tse": "71108",
+      "uf": "sp",
+      "name": "São João (SP)"
+    },
+    "351309": {
+      "tse": "71126",
+      "uf": "sp",
+      "name": "Bom Jesus (SP)"
+    },
+    "351412": {
+      "tse": "71144",
+      "uf": "sp",
+      "name": "São Francisco (SP)"
+    },
+    "351515": {
+      "tse": "71162",
+      "uf": "sp",
+      "name": "Santo Antônio (SP)"
+    },
+    "351618": {
+      "tse": "71180",
+      "uf": "sp",
+      "name": "Boa Vista do Sul (SP)"
+    },
+    "351721": {
+      "tse": "71198",
+      "uf": "sp",
+      "name": "Nova Esperança (SP)"
+    },
+    "351824": {
+      "tse": "71216",
+      "uf": "sp",
+      "name": "Santa Helena (SP)"
+    },
+    "351927": {
+      "tse": "71234",
+      "uf": "sp",
+      "name": "São Mateus do Norte (SP)"
+    },
+    "352030": {
+      "tse": "71252",
+      "uf": "sp",
+      "name": "Bela Vista (SP)"
+    },
+    "352133": {
+      "tse": "71270",
+      "uf": "sp",
+      "name": "Monte Alegre (SP)"
+    },
+    "352236": {
+      "tse": "71288",
+      "uf": "sp",
+      "name": "Serra Branca (SP)"
+    },
+    "352339": {
+      "tse": "71306",
+      "uf": "sp",
+      "name": "Ouro Verde (SP)"
+    },
+    "352442": {
+      "tse": "71324",
+      "uf": "sp",
+      "name": "Água Branca (SP)"
+    },
+    "352545": {
+      "tse": "71342",
+      "uf": "sp",
+      "name": "Campo Novo (SP)"
+    },
+    "352648": {
+      "tse": "71360",
+      "uf": "sp",
+      "name": "Vila Nova (SP)"
+    },
+    "411103": {
+      "tse": "75371",
+      "uf": "pr",
+      "name": "Santa Luzia (PR)"
+    },
+    "411206": {
+      "tse": "75389",
+      "uf": "pr",
+      "name": "São João (PR)"
+    },
+    "411309": {
+      "tse": "75407",
+      "uf": "pr",
+      "name": "Bom Jesus (PR)"
+    },
+    "411412": {
+      "tse": "75425",
+      "uf": "pr",
+      "name": "São Francisco (PR)"
+    },
+    "411515": {
+      "tse": "75443",
+      "uf": "pr",
+      "name": "Santo Antônio (PR)"
+    },
+    "411618": {
+      "tse": "75461",
+      "uf": "pr",
+      "name": "Boa Vista do Sul (PR)"
+    },
+    "411721": {
+      "tse": "75479",
+      "uf": "pr",
+      "name": "Nova Esperança (PR)"
+    },
+    "411824": {
+      "tse": "75497",
+      "uf": "pr",
+      "name": "Santa Helena (PR)"
+    },
+    "411927": {
+      "tse": "75515",
+      "uf": "pr",
+      "name": "São Mateus do Norte (PR)"
+    },
+    "412030": {
+      "tse": "75533",
+      "uf": "pr",
+      "name": "Bela Vista (PR)"
+    },
+    "412133": {
+      "tse": "75551",
+      "uf": "pr",
+      "name": "Monte Alegre (PR)"
+    },
+    "412236": {
+      "tse": "75569",
+      "uf": "pr",
+      "name": "Serra Branca (PR)"
+    },
+    "412339": {
+      "tse": "75587",
+      "uf": "pr",
+      "name": "Ouro Verde (PR)"
+    },
+    "412442": {
+      "tse": "75605",
+      "uf": "pr",
+      "name": "Água Branca (PR)"
+    },
+    "412545": {
+      "tse": "75623",
+      "uf": "pr",
+      "name": "Campo Novo (PR)"
+    },
+    "412648": {
+      "tse": "75641",
+      "uf": "pr",
+      "name": "Vila Nova (PR)"
+    },
+    "412751": {
+      "tse": "75659",
+      "uf": "pr",
+      "name": "Santa Rita do Oeste (PR)"
+    },
+    "412854": {
+      "tse": "75677",
+      "uf": "pr",
+      "name": "São Pedro (PR)"
+    },
+    "421103": {
+      "tse": "81813",
+      "uf": "sc",
+      "name": "Santa Luzia (SC)"
+    },
+    "421206": {
+      "tse": "81831",
+      "uf": "sc",
+      "name": "São João (SC)"
+    },
+    "421309": {
+      "tse": "81849",
+      "uf": "sc",
+      "name": "Bom Jesus (SC)"
+    },
+    "421412": {
+      "tse": "81867",
+      "uf": "sc",
+      "name": "São Francisco (SC)"
+    },
+    "421515": {
+      "tse": "81885",
+      "uf": "sc",
+      "name": "Santo Antônio (SC)"
+    },
+    "421618": {
+      "tse": "81903",
+      "uf": "sc",
+      "name": "Boa Vista do Sul (SC)"
+    },
+    "421721": {
+      "tse": "81921",
+      "uf": "sc",
+      "name": "Nova Esperança (SC)"
+    },
+    "421824": {
+      "tse": "81939",
+      "uf": "sc",
+      "name": "Santa Helena (SC)"
+    },
+    "421927": {
+      "tse": "81957",
+      "uf": "sc",
+      "name": "São Mateus do Norte (SC)"
+    },
+    "422030": {
+      "tse": "81975",
+      "uf": "sc",
+      "name": "Bela Vista (SC)"
+    },
+    "422133": {
+      "tse": "81993",
+      "uf": "sc",
+      "name": "Monte Alegre (SC)"
+    },
+    "422236": {
+      "tse": "82011",
+      "uf": "sc",
+      "name": "Serra Branca (SC)"
+    },
+    "422339": {
+      "tse": "82029",
+      "uf": "sc",
+      "name": "Ouro Verde (SC)"
+    },
+    "422442": {
+      "tse": "82047",
+      "uf": "sc",
+      "name": "Água Branca (SC)"
+    },
+    "422545": {
+      "tse": "82065",
+      "uf": "sc",
+      "name": "Campo Novo (SC)"
+    },
+    "422648": {
+      "tse": "82083",
+      "uf": "sc",
+      "name": "Vila Nova (SC)"
+    },
+    "422751": {
+      "tse": "82101",
+      "uf": "sc",
+      "name": "Santa Rita do Oeste (SC)"
+    },
+    "422854": {
+      "tse": "82119",
+      "uf": "sc",
+      "name": "São Pedro (SC)"
+    },
+    "431103": {
+      "tse": "88031",
+      "uf": "rs",
+      "name": "Santa Luzia (RS)"
+    },
+    "431206": {
+      "tse": "88049",
+      "uf": "rs",
+      "name": "São João (RS)"
+    },
+    "431309": {
+      "tse": "88067",
+      "uf": "rs",
+      "name": "Bom Jesus (RS)"
+    },
+    "431412": {
+      "tse": "88085",
+      "uf": "rs",
+      "name": "São Francisco (RS)"
+    },
+    "431515": {
+      "tse": "88103",
+      "uf": "rs",
+      "name": "Santo Antônio (RS)"
+    },
+    "431618": {
+      "tse": "88121",
+      "uf": "rs",
+      "name": "Boa Vista do Sul (RS)"
+    },
+    "431721": {
+      "tse": "88139",
+      "uf": "rs",
+      "name": "Nova Esperança (RS)"
+    },
+    "431824": {
+      "tse": "88157",
+      "uf": "rs",
+      "name": "Santa Helena (RS)"
+    },
+    "431927": {
+      "tse": "88175",
+      "uf": "rs",
+      "name": "São Mateus do Norte (RS)"
+    },
+    "432030": {
+      "tse": "88193",
+      "uf": "rs",
+      "name": "Bela Vista (RS)"
+    },
+    "432133": {
+      "tse": "88211",
+      "uf": "rs",
+      "name": "Monte Alegre (RS)"
+    },
+    "432236": {
+      "tse": "88229",
+      "uf": "rs",
+      "name": "Serra Branca (RS)"
+    },
+    "432339": {
+      "tse": "88247",
+      "uf": "rs",
+      "name": "Ouro Verde (RS)"
+    },
+    "432442": {
+      "tse": "88265",
+      "uf": "rs",
+      "name": "Água Branca (RS)"
+    },
+    "432545": {
+      "tse": "88283",
+      "uf": "rs",
+      "name": "Campo Novo (RS)"
+    },
+    "432648": {
+      "tse": "88301",
+      "uf": "rs",
+      "name": "Vila Nova (RS)"
+    },
+    "432751": {
+      "tse": "88319",
+      "uf": "rs",
+      "name": "Santa Rita do Oeste (RS)"
+    },
+    "432854": {
+      "tse": "88337",
+      "uf": "rs",
+      "name": "São Pedro (RS)"
+    },
+    "501103": {
+      "tse": "90532",
+      "uf": "ms",
+      "name": "Santa Luzia (MS)"
+    },
+    "501206": {
+      "tse": "90550",
+      "uf": "ms",
+      "name": "São João (MS)"
+    },
+    "501309": {
+      "tse": "90568",
+      "uf": "ms",
+      "name": "Bom Jesus (MS)"
+    },
+    "501412": {
+      "tse": "90586",
+      "uf": "ms",
+      "name": "São Francisco (MS)"
+    },
+    "501515": {
+      "tse": "90604",
+      "uf": "ms",
+      "name": "Santo Antônio (MS)"
+    },
+    "501618": {
+      "tse": "90622",
+      "uf": "ms",
+      "name": "Boa Vista do Sul (MS)"
+    },
+    "501721": {
+      "tse": "90640",
+      "uf": "ms",
+      "name": "Nova Esperança (MS)"
+    },
+    "501824": {
+      "tse": "90658",
+      "uf": "ms",
+      "name": "Santa Helena (MS)"
+    },
+    "501927": {
+      "tse": "90676",
+      "uf": "ms",
+      "name": "São Mateus do Norte (MS)"
+    },
+    "502030": {
+      "tse": "90694",
+      "uf": "ms",
+      "name": "Bela Vista (MS)"
+    },
+    "502133": {
+      "tse": "90712",
+      "uf": "ms",
+      "name": "Monte Alegre (MS)"
+    },
+    "502236": {
+      "tse": "90730",
+      "uf": "ms",
+      "name": "Serra Branca (MS)"
+    },
+    "502339": {
+      "tse": "90748",
+      "uf": "ms",
+      "name": "Ouro Verde (MS)"
+    },
+    "502442": {
+      "tse": "90766",
+      "uf": "ms",
+      "name": "Água Branca (MS)"
+    },
+    "502545": {
+      "tse": "90784",
+      "uf": "ms",
+      "name": "Campo Novo (MS)"
+    },
+    "502648": {
+      "tse": "90802",
+      "uf": "ms",
+      "name": "Vila Nova (MS)"
+    },
+    "502751": {
+      "tse": "90820",
+      "uf": "ms",
+      "name": "Santa Rita do Oeste (MS)"
+    },
+    "502854": {
+      "tse": "90838",
+      "uf": "ms",
+      "name": "São Pedro (MS)"
+    },
+    "502957": {
+      "tse": "90856",
+      "uf": "ms",
+      "name": "Alto Paraíso (MS)"
+    },
+    "503060": {
+      "tse": "90874",
+      "uf": "ms",
+      "name": "Pedra Azul (MS)"
+    },
+    "511103": {
+      "tse": "90688",
+      "uf": "mt",
+      "name": "Santa Luzia (MT)"
+    },
+    "511206": {
+      "tse": "90706",
+      "uf": "mt",
+      "name": "São João (MT)"
+    },
+    "511309": {
+      "tse": "90724",
+      "uf": "mt",
+      "name": "Bom Jesus (MT)"
+    },
+    "511412": {
+      "tse": "90742",
+      "uf": "mt",
+      "name": "São Francisco (MT)"
+    },
+    "511515": {
+      "tse": "90760",
+      "uf": "mt",
+      "name": "Santo Antônio (MT)"
+    },
+    "511618": {
+      "tse": "90778",
+      "uf": "mt",
+      "name": "Boa Vista do Sul (MT)"
+    },
+    "511721": {
+      "tse": "90796",
+      "uf": "mt",
+      "name": "Nova Esperança (MT)"
+    },
+    "511824": {
+      "tse": "90814",
+      "uf": "mt",
+      "name": "Santa Helena (MT)"
+    },
+    "511927": {
+      "tse": "90832",
+      "uf": "mt",
+      "name": "São Mateus do Norte (MT)"
+    },
+    "512030": {
+      "tse": "90850",
+      "uf": "mt",
+      "name": "Bela Vista (MT)"
+    },
+    "512133": {
+      "tse": "90868",
+      "uf": "mt",
+      "name": "Monte Alegre (MT)"
+    },
+    "512236": {
+      "tse": "90886",
+      "uf": "mt",
+      "name": "Serra Branca (MT)"
+    },
+    "512339": {
+      "tse": "90904",
+      "uf": "mt",
+      "name": "Ouro Verde (MT)"
+    },
+    "512442": {
+      "tse": "90922",
+      "uf": "mt",
+      "name": "Água Branca (MT)"
+    },
+    "512545": {
+      "tse": "90940",
+      "uf": "mt",
+      "name": "Campo Novo (MT)"
+    },
+    "512648": {
+      "tse": "90958",
+      "uf": "mt",
+      "name": "Vila Nova (MT)"
+    },
+    "512751": {
+      "tse": "90976",
+      "uf": "mt",
+      "name": "Santa Rita do Oeste (MT)"
+    },
+    "512854": {
+      "tse": "90994",
+      "uf": "mt",
+      "name": "São Pedro (MT)"
+    },
+    "512957": {
+      "tse": "91012",
+      "uf": "mt",
+      "name": "Alto Paraíso (MT)"
+    },
+    "513060": {
+      "tse": "91030",
+      "uf": "mt",
+      "name": "Pedra Azul (MT)"
+    },
+    "521103": {
+      "tse": "93752",
+      "uf": "go",
+      "name": "Santa Luzia (GO)"
+    },
+    "521206": {
+      "tse": "93770",
+      "uf": "go",
+      "name": "São João (GO)"
+    },
+    "521309": {
+      "tse": "93788",
+      "uf": "go",
+      "name": "Bom Jesus (GO)"
+    },
+    "521412": {
+      "tse": "93806",
+      "uf": "go",
+      "name": "São Francisco (GO)"
+    },
+    "521515": {
+      "tse": "93824",
+      "uf": "go",
+      "name": "Santo Antônio (GO)"
+    },
+    "521618": {
+      "tse": "93842",
+      "uf": "go",
+      "name": "Boa Vista do Sul (GO)"
+    },
+    "521721": {
+      "tse": "93860",
+      "uf": "go",
+      "name": "Nova Esperança (GO)"
+    },
+    "521824": {
+      "tse": "93878",
+      "uf": "go",
+      "name": "Santa Helena (GO)"
+    },
+    "521927": {
+      "tse": "93896",
+      "uf": "go",
+      "name": "São Mateus do Norte (GO)"
+    },
+    "522030": {
+      "tse": "93914",
+      "uf": "go",
+      "name": "Bela Vista (GO)"
+    },
+    "522133": {
+      "tse": "93932",
+      "uf": "go",
+      "name": "Monte Alegre (GO)"
+    },
+    "522236": {
+      "tse": "93950",
+      "uf": "go",
+      "name": "Serra Branca (GO)"
+    },
+    "522339": {
+      "tse": "93968",
+      "uf": "go",
+      "name": "Ouro Verde (GO)"
+    },
+    "522442": {
+      "tse": "93986",
+      "uf": "go",
+      "name": "Água Branca (GO)"
+    },
+    "522545": {
+      "tse": "94004",
+      "uf": "go",
+      "name": "Campo Novo (GO)"
+    },
+    "522648": {
+      "tse": "94022",
+      "uf": "go",
+      "name": "Vila Nova (GO)"
+    },
+    "522751": {
+      "tse": "94040",
+      "uf": "go",
+      "name": "Santa Rita do Oeste (GO)"
+    },
+    "522854": {
+      "tse": "94058",
+      "uf": "go",
+      "name": "São Pedro (GO)"
+    },
+    "1100023": {
+      "tse": "00078",
+      "uf": "ro",
+      "name": "Ariquemes"
+    },
+    "1100049": {
+      "tse": "00116",
+      "uf": "ro",
+      "name": "Cacoal"
+    },
+    "1100106": {
+      "tse": "00019",
+      "uf": "ro",
+      "name": "Guajará-Mirim"
+    },
+    "1100114": {
+      "tse": "00159",
+      "uf": "ro",
+      "name": "Jaru"
+    },
+    "1100122": {
+      "tse": "00051",
+      "uf": "ro",
+      "name": "Ji-Paraná"
+    },
+    "1100205": {
+      "tse": "00035",
+      "uf": "ro",
+      "name": "Porto Velho"
+    },
+    "1100288": {
+      "tse": "00230",
+      "uf": "ro",
+      "name": "Rolim de Moura"
+    },
+    "1100304": {
+      "tse": "00094",
+      "uf": "ro",
+      "name": "Vilhena"
+    },
+    "1200013": {
+      "tse": "01120",
+      "uf": "ac",
+      "name": "Acrelândia"
+    },
+    "1200104": {
+      "tse": "01058",
+      "uf": "ac",
+      "name": "Brasiléia"
+    },
+    "1200179": {
+      "tse": "01040",
+      "uf": "ac",
+      "name": "Epitaciolândia"
+    },
+    "1200203": {
+      "tse": "01074",
+      "uf": "ac",
+      "name": "Cruzeiro do Sul"
+    },
+    "1200302": {
+      "tse": "01139",
+      "uf": "ac",
+      "name": "Feijó"
+    },
+    "1200336": {
+      "tse": "01155",
+      "uf": "ac",
+      "name": "Mâncio Lima"
+    },
+    "1200385": {
+      "tse": "01511",
+      "uf": "ac",
+      "name": "Plácido de Castro"
+    },
+    "1200401": {
+      "tse": "01392",
+      "uf": "ac",
+      "name": "Rio Branco"
+    },
+    "1200450": {
+      "tse": "01023",
+      "uf": "ac",
+      "name": "Senador Guiomard"
+    },
+    "1200500": {
+      "tse": "01457",
+      "uf": "ac",
+      "name": "Sena Madureira"
+    },
+    "1200609": {
+      "tse": "01473",
+      "uf": "ac",
+      "name": "Tarauacá"
+    },
+    "1200708": {
+      "tse": "01490",
+      "uf": "ac",
+      "name": "Xapuri"
+    },
+    "1301209": {
+      "tse": "02291",
+      "uf": "am",
+      "name": "Coari"
+    },
+    "1301704": {
+      "tse": "02399",
+      "uf": "am",
+      "name": "Humaitá"
+    },
+    "1301852": {
+      "tse": "02429",
+      "uf": "am",
+      "name": "Iranduba"
+    },
+    "1301902": {
+      "tse": "02437",
+      "uf": "am",
+      "name": "Itacoatiara"
+    },
+    "1302504": {
+      "tse": "02534",
+      "uf": "am",
+      "name": "Manacapuru"
+    },
+    "1302603": {
+      "tse": "02550",
+      "uf": "am",
+      "name": "Manaus"
+    },
+    "1302900": {
+      "tse": "02615",
+      "uf": "am",
+      "name": "Maués"
+    },
+    "1303403": {
+      "tse": "02690",
+      "uf": "am",
+      "name": "Parintins"
+    },
+    "1304062": {
+      "tse": "02810",
+      "uf": "am",
+      "name": "Tabatinga"
+    },
+    "1304203": {
+      "tse": "02836",
+      "uf": "am",
+      "name": "Tefé"
+    },
+    "1400050": {
+      "tse": "03077",
+      "uf": "rr",
+      "name": "Alto Alegre"
+    },
+    "1400100": {
+      "tse": "03018",
+      "uf": "rr",
+      "name": "Boa Vista"
+    },
+    "1400159": {
+      "tse": "03158",
+      "uf": "rr",
+      "name": "Bonfim"
+    },
+    "1400175": {
+      "tse": "03115",
+      "uf": "rr",
+      "name": "Cantá"
+    },
+    "1400209": {
+      "tse": "03034",
+      "uf": "rr",
+      "name": "Caracaraí"
+    },
+    "1400308": {
+      "tse": "03050",
+      "uf": "rr",
+      "name": "Mucajaí"
+    },
+    "1400456": {
+      "tse": "03131",
+      "uf": "rr",
+      "name": "Pacaraima"
+    },
+    "1400472": {
+      "tse": "03093",
+      "uf": "rr",
+      "name": "Rorainópolis"
+    },
+    "1500107": {
+      "tse": "04014",
+      "uf": "pa",
+      "name": "Abaetetuba"
+    },
+    "1500602": {
+      "tse": "04111",
+      "uf": "pa",
+      "name": "Altamira"
+    },
+    "1500800": {
+      "tse": "04154",
+      "uf": "pa",
+      "name": "Ananindeua"
+    },
+    "1501402": {
+      "tse": "04278",
+      "uf": "pa",
+      "name": "Belém"
+    },
+    "1501709": {
+      "tse": "04332",
+      "uf": "pa",
+      "name": "Bragança"
+    },
+    "1502103": {
+      "tse": "04413",
+      "uf": "pa",
+      "name": "Cametá"
+    },
+    "1502400": {
+      "tse": "04472",
+      "uf": "pa",
+      "name": "Castanhal"
+    },
+    "1504208": {
+      "tse": "04839",
+      "uf": "pa",
+      "name": "Marabá"
+    },
+    "1505536": {
+      "tse": "05690",
+      "uf": "pa",
+      "name": "Parauapebas"
+    },
+    "1506807": {
+      "tse": "05355",
+      "uf": "pa",
+      "name": "Santarém"
+    },
+    "1600154": {
+      "tse": "06173",
+      "uf": "ap",
+      "name": "Pedra Branca do Amapari"
+    },
+    "1600279": {
+      "tse": "06130",
+      "uf": "ap",
+      "name": "Laranjal do Jari"
+    },
+    "1600303": {
+      "tse": "06050",
+      "uf": "ap",
+      "name": "Macapá"
+    },
+    "1600402": {
+      "tse": "06076",
+      "uf": "ap",
+      "name": "Mazagão"
+    },
+    "1600501": {
+      "tse": "06092",
+      "uf": "ap",
+      "name": "Oiapoque"
+    },
+    "1600535": {
+      "tse": "06157",
+      "uf": "ap",
+      "name": "Porto Grande"
+    },
+    "1600600": {
+      "tse": "06114",
+      "uf": "ap",
+      "name": "Santana"
+    },
+    "1600709": {
+      "tse": "06122",
+      "uf": "ap",
+      "name": "Tartarugalzinho"
+    },
+    "1702109": {
+      "tse": "92410",
+      "uf": "to",
+      "name": "Araguaína"
+    },
+    "1702208": {
+      "tse": "92436",
+      "uf": "to",
+      "name": "Araguatins"
+    },
+    "1705508": {
+      "tse": "93050",
+      "uf": "to",
+      "name": "Colinas do Tocantins"
+    },
+    "1709005": {
+      "tse": "93750",
+      "uf": "to",
+      "name": "Guaraí"
+    },
+    "1709500": {
+      "tse": "93858",
+      "uf": "to",
+      "name": "Gurupi"
+    },
+    "1716109": {
+      "tse": "95192",
+      "uf": "to",
+      "name": "Paraíso do Tocantins"
+    },
+    "1718204": {
+      "tse": "95591",
+      "uf": "to",
+      "name": "Porto Nacional"
+    },
+    "1721000": {
+      "tse": "73440",
+      "uf": "to",
+      "name": "Palmas"
+    },
+    "2100055": {
+      "tse": "09619",
+      "uf": "ma",
+      "name": "Açailândia"
+    },
+    "2101202": {
+      "tse": "07217",
+      "uf": "ma",
+      "name": "Bacabal"
+    },
+    "2101400": {
+      "tse": "07250",
+      "uf": "ma",
+      "name": "Balsas"
+    },
+    "2103000": {
+      "tse": "07578",
+      "uf": "ma",
+      "name": "Caxias"
+    },
+    "2103307": {
+      "tse": "07632",
+      "uf": "ma",
+      "name": "Codó"
+    },
+    "2105302": {
+      "tse": "08035",
+      "uf": "ma",
+      "name": "Imperatriz"
+    },
+    "2107506": {
+      "tse": "08477",
+      "uf": "ma",
+      "name": "Paço do Lumiar"
+    },
+    "2111201": {
+      "tse": "09198",
+      "uf": "ma",
+      "name": "São José de Ribamar"
+    },
+    "2111300": {
+      "tse": "09210",
+      "uf": "ma",
+      "name": "São Luís"
+    },
+    "2112209": {
+      "tse": "09392",
+      "uf": "ma",
+      "name": "Timon"
+    },
+    "2200400": {
+      "tse": "10073",
+      "uf": "pi",
+      "name": "Altos"
+    },
+    "2201200": {
+      "tse": "10235",
+      "uf": "pi",
+      "name": "Barras"
+    },
+    "2201903": {
+      "tse": "10375",
+      "uf": "pi",
+      "name": "Campo Maior"
+    },
+    "2203909": {
+      "tse": "10774",
+      "uf": "pi",
+      "name": "Floriano"
+    },
+    "2207702": {
+      "tse": "11533",
+      "uf": "pi",
+      "name": "Parnaíba"
+    },
+    "2208007": {
+      "tse": "11592",
+      "uf": "pi",
+      "name": "Picos"
+    },
+    "2208403": {
+      "tse": "11673",
+      "uf": "pi",
+      "name": "Piripiri"
+    },
+    "2211001": {
+      "tse": "12190",
+      "uf": "pi",
+      "name": "Teresina"
+    },
+    "2303709": {
+      "tse": "13730",
+      "uf": "ce",
+      "name": "Caucaia"
+    },
+    "2304202": {
+      "tse": "13854",
+      "uf": "ce",
+      "name": "Crato"
+    },
+    "2304400": {
+      "tse": "13897",
+      "uf": "ce",
+      "name": "Fortaleza"
+    },
+    "2305506": {
+      "tse": "14117",
+      "uf": "ce",
+      "name": "Iguatu"
+    },
+    "2306405": {
+      "tse": "14290",
+      "uf": "ce",
+      "name": "Itapipoca"
+    },
+    "2307304": {
+      "tse": "14478",
+      "uf": "ce",
+      "name": "Juazeiro do Norte"
+    },
+    "2307650": {
+      "tse": "15857",
+      "uf": "ce",
+      "name": "Maracanaú"
+    },
+    "2307700": {
+      "tse": "14559",
+      "uf": "ce",
+      "name": "Maranguape"
+    },
+    "2311306": {
+      "tse": "15270",
+      "uf": "ce",
+      "name": "Quixadá"
+    },
+    "2312908": {
+      "tse": "15598",
+      "uf": "ce",
+      "name": "Sobral"
+    },
+    "2400208": {
+      "tse": "16039",
+      "uf": "rn",
+      "name": "Açu"
+    },
+    "2402006": {
+      "tse": "16390",
+      "uf": "rn",
+      "name": "Caicó"
+    },
+    "2402600": {
+      "tse": "16519",
+      "uf": "rn",
+      "name": "Ceará-Mirim"
+    },
+    "2403103": {
+      "tse": "16616",
+      "uf": "rn",
+      "name": "Currais Novos"
+    },
+    "2403251": {
+      "tse": "17795",
+      "uf": "rn",
+      "name": "Parnamirim"
+    },
+    "2407104": {
+      "tse": "17418",
+      "uf": "rn",
+      "name": "Macaíba"
+    },
+    "2408003": {
+      "tse": "17590",
+      "uf": "rn",
+      "name": "Mossoró"
+    },
+    "2408102": {
+      "tse": "17612",
+      "uf": "rn",
+      "name": "Natal"
+    },
+    "2412005": {
+      "tse": "18392",
+      "uf": "rn",
+      "name": "São Gonçalo do Amarante"
+    },
+    "2412203": {
+      "tse": "18430",
+      "uf": "rn",
+      "name": "São José de Mipibu"
+    },
+    "2501807": {
+      "tse": "19372",
+      "uf": "pb",
+      "name": "Bayeux"
+    },
+    "2503209": {
+      "tse": "19658",
+      "uf": "pb",
+      "name": "Cabedelo"
+    },
+    "2503704": {
+      "tse": "19755",
+      "uf": "pb",
+      "name": "Cajazeiras"
+    },
+    "2504009": {
+      "tse": "19810",
+      "uf": "pb",
+      "name": "Campina Grande"
+    },
+    "2507507": {
+      "tse": "20516",
+      "uf": "pb",
+      "name": "João Pessoa"
+    },
+    "2510808": {
+      "tse": "21172",
+      "uf": "pb",
+      "name": "Patos"
+    },
+    "2513703": {
+      "tse": "21750",
+      "uf": "pb",
+      "name": "Santa Rita"
+    },
+    "2516201": {
+      "tse": "22250",
+      "uf": "pb",
+      "name": "Sousa"
+    },
+    "2602902": {
+      "tse": "23574",
+      "uf": "pe",
+      "name": "Cabo de Santo Agostinho"
+    },
+    "2603454": {
+      "tse": "26298",
+      "uf": "pe",
+      "name": "Camaragibe"
+    },
+    "2604106": {
+      "tse": "23817",
+      "uf": "pe",
+      "name": "Caruaru"
+    },
+    "2606002": {
+      "tse": "24198",
+      "uf": "pe",
+      "name": "Garanhuns"
+    },
+    "2607901": {
+      "tse": "24570",
+      "uf": "pe",
+      "name": "Jaboatão dos Guararapes"
+    },
+    "2609600": {
+      "tse": "24910",
+      "uf": "pe",
+      "name": "Olinda"
+    },
+    "2610707": {
+      "tse": "25135",
+      "uf": "pe",
+      "name": "Paulista"
+    },
+    "2611101": {
+      "tse": "25216",
+      "uf": "pe",
+      "name": "Petrolina"
+    },
+    "2611606": {
+      "tse": "25313",
+      "uf": "pe",
+      "name": "Recife"
+    },
+    "2616407": {
+      "tse": "26271",
+      "uf": "pe",
+      "name": "Vitória de Santo Antão"
+    },
+    "2700300": {
+      "tse": "27057",
+      "uf": "al",
+      "name": "Arapiraca"
+    },
+    "2702306": {
+      "tse": "27456",
+      "uf": "al",
+      "name": "Coruripe"
+    },
+    "2702405": {
+      "tse": "27472",
+      "uf": "al",
+      "name": "Delmiro Gouveia"
+    },
+    "2704302": {
+      "tse": "27855",
+      "uf": "al",
+      "name": "Maceió"
+    },
+    "2704708": {
+      "tse": "27936",
+      "uf": "al",
+      "name": "Marechal Deodoro"
+    },
+    "2706307": {
+      "tse": "28258",
+      "uf": "al",
+      "name": "Palmeira dos Índios"
+    },
+    "2706703": {
+      "tse": "28339",
+      "uf": "al",
+      "name": "Penedo"
+    },
+    "2707701": {
+      "tse": "28533",
+      "uf": "al",
+      "name": "Rio Largo"
+    },
+    "2708600": {
+      "tse": "28711",
+      "uf": "al",
+      "name": "São Miguel dos Campos"
+    },
+    "2709301": {
+      "tse": "28851",
+      "uf": "al",
+      "name": "União dos Palmares"
+    },
+    "2800308": {
+      "tse": "31054",
+      "uf": "se",
+      "name": "Aracaju"
+    },
+    "2802106": {
+      "tse": "31410",
+      "uf": "se",
+      "name": "Estância"
+    },
+    "2802908": {
+      "tse": "31577",
+      "uf": "se",
+      "name": "Itabaiana"
+    },
+    "2803500": {
+      "tse": "31690",
+      "uf": "se",
+      "name": "Lagarto"
+    },
+    "2804805": {
+      "tse": "31950",
+      "uf": "se",
+      "name": "Nossa Senhora do Socorro"
+    },
+    "2806206": {
+      "tse": "32239",
+      "uf": "se",
+      "name": "Simão Dias"
+    },
+    "2806701": {
+      "tse": "32336",
+      "uf": "se",
+      "name": "São Cristóvão"
+    },
+    "2807402": {
+      "tse": "32476",
+      "uf": "se",
+      "name": "Tobias Barreto"
+    },
+    "2900702": {
+      "tse": "33138",
+      "uf": "ba",
+      "name": "Alagoinhas"
+    },
+    "2903201": {
+      "tse": "33634",
+      "uf": "ba",
+      "name": "Barreiras"
+    },
+    "2905701": {
+      "tse": "34134",
+      "uf": "ba",
+      "name": "Camaçari"
+    },
+    "2910800": {
+      "tse": "35157",
+      "uf": "ba",
+      "name": "Feira de Santana"
+    },
+    "2913606": {
+      "tse": "35734",
+      "uf": "ba",
+      "name": "Ilhéus"
+    },
+    "2914802": {
+      "tse": "35971",
+      "uf": "ba",
+      "name": "Itabuna"
+    },
+    "2918001": {
+      "tse": "36595",
+      "uf": "ba",
+      "name": "Jequié"
+    },
+    "2918407": {
+      "tse": "36676",
+      "uf": "ba",
+      "name": "Juazeiro"
+    },
+    "2919207": {
+      "tse": "36838",
+      "uf": "ba",
+      "name": "Lauro de Freitas"
+    },
+    "2925303": {
+      "tse": "38075",
+      "uf": "ba",
+      "name": "Porto Seguro"
+    },
+    "2927408": {
+      "tse": "38490",
+      "uf": "ba",
+      "name": "Salvador"
+    },
+    "2933307": {
+      "tse": "39659",
+      "uf": "ba",
+      "name": "Vitória da Conquista"
+    },
+    "3106200": {
+      "tse": "41238",
+      "uf": "mg",
+      "name": "Belo Horizonte"
+    },
+    "3106705": {
+      "tse": "41335",
+      "uf": "mg",
+      "name": "Betim"
+    },
+    "3118601": {
+      "tse": "43710",
+      "uf": "mg",
+      "name": "Contagem"
+    },
+    "3122306": {
+      "tse": "44458",
+      "uf": "mg",
+      "name": "Divinópolis"
+    },
+    "3127701": {
+      "tse": "45535",
+      "uf": "mg",
+      "name": "Governador Valadares"
+    },
+    "3131307": {
+      "tse": "46256",
+      "uf": "mg",
+      "name": "Ipatinga"
+    },
+    "3136702": {
+      "tse": "47333",
+      "uf": "mg",
+      "name": "Juiz de Fora"
+    },
+    "3143302": {
+      "tse": "48658",
+      "uf": "mg",
+      "name": "Montes Claros"
+    },
+    "3154606": {
+      "tse": "50911",
+      "uf": "mg",
+      "name": "Ribeirão das Neves"
+    },
+    "3162500": {
+      "tse": "52493",
+      "uf": "mg",
+      "name": "Sete Lagoas"
+    },
+    "3170107": {
+      "tse": "54011",
+      "uf": "mg",
+      "name": "Uberaba"
+    },
+    "3170206": {
+      "tse": "54038",
+      "uf": "mg",
+      "name": "Uberlândia"
+    },
+    "3200607": {
+      "tse": "56111",
+      "uf": "es",
+      "name": "Aracruz"
+    },
+    "3201209": {
+      "tse": "56235",
+      "uf": "es",
+      "name": "Cachoeiro de Itapemirim"
+    },
+    "3201308": {
+      "tse": "56251",
+      "uf": "es",
+      "name": "Cariacica"
+    },
+    "3201506": {
+      "tse": "56294",
+      "uf": "es",
+      "name": "Colatina"
+    },
+    "3202405": {
+      "tse": "56472",
+      "uf": "es",
+      "name": "Guarapari"
+    },
+    "3203205": {
+      "tse": "56634",
+      "uf": "es",
+      "name": "Linhares"
+    },
+    "3204906": {
+      "tse": "56979",
+      "uf": "es",
+      "name": "São Mateus"
+    },
+    "3205002": {
+      "tse": "56995",
+      "uf": "es",
+      "name": "Serra"
+    },
+    "3205200": {
+      "tse": "57037",
+      "uf": "es",
+      "name": "Vila Velha"
+    },
+    "3205309": {
+      "tse": "57053",
+      "uf": "es",
+      "name": "Vitória"
+    },
+    "3300456": {
+      "tse": "58106",
+      "uf": "rj",
+      "name": "Belford Roxo"
+    },
+    "3301009": {
+      "tse": "58190",
+      "uf": "rj",
+      "name": "Campos dos Goytacazes"
+    },
+    "3301702": {
+      "tse": "58335",
+      "uf": "rj",
+      "name": "Duque de Caxias"
+    },
+    "3303302": {
+      "tse": "58653",
+      "uf": "rj",
+      "name": "Niterói"
+    },
+    "3303500": {
+      "tse": "58696",
+      "uf": "rj",
+      "name": "Nova Iguaçu"
+    },
+    "3303906": {
+      "tse": "58777",
+      "uf": "rj",
+      "name": "Petrópolis"
+    },
+    "3304557": {
+      "tse": "60011",
+      "uf": "rj",
+      "name": "Rio de Janeiro"
+    },
+    "3304904": {
+      "tse": "58971",
+      "uf": "rj",
+      "name": "São Gonçalo"
+    },
+    "3305109": {
+      "tse": "59013",
+      "uf": "rj",
+      "name": "São João de Meriti"
+    },
+    "3306305": {
+      "tse": "59250",
+      "uf": "rj",
+      "name": "Volta Redonda"
+    },
+    "3509502": {
+      "tse": "62910",
+      "uf": "sp",
+      "name": "Campinas"
+    },
+    "3518800": {
+      "tse": "64777",
+      "uf": "sp",
+      "name": "Guarulhos"
+    },
+    "3529401": {
+      "tse": "66893",
+      "uf": "sp",
+      "name": "Mauá"
+    },
+    "3534401": {
+      "tse": "67890",
+      "uf": "sp",
+      "name": "Osasco"
+    },
+    "3543402": {
+      "tse": "69698",
+      "uf": "sp",
+      "name": "Ribeirão Preto"
+    },
+    "3547809": {
+      "tse": "70572",
+      "uf": "sp",
+      "name": "Santo André"
+    },
+    "3548500": {
+      "tse": "70718",
+      "uf": "sp",
+      "name": "Santos"
+    },
+    "3548708": {
+      "tse": "70750",
+      "uf": "sp",
+      "name": "São Bernardo do Campo"
+    },
+    "3549805": {
+      "tse": "70971",
+      "uf": "sp",
+      "name": "São José do Rio Preto"
+    },
+    "3549904": {
+      "tse": "70998",
+      "uf": "sp",
+      "name": "São José dos Campos"
+    },
+    "3550308": {
+      "tse": "71072",
+      "uf": "sp",
+      "name": "São Paulo"
+    },
+    "3552205": {
+      "tse": "71455",
+      "uf": "sp",
+      "name": "Sorocaba"
+    },
+    "4104808": {
+      "tse": "74934",
+      "uf": "pr",
+      "name": "Cascavel"
+    },
+    "4105805": {
+      "tse": "75132",
+      "uf": "pr",
+      "name": "Colombo"
+    },
+    "4106902": {
+      "tse": "75353",
+      "uf": "pr",
+      "name": "Curitiba"
+    },
+    "4108304": {
+      "tse": "75639",
+      "uf": "pr",
+      "name": "Foz do Iguaçu"
+    },
+    "4109401": {
+      "tse": "75833",
+      "uf": "pr",
+      "name": "Guarapuava"
+    },
+    "4113700": {
+      "tse": "76678",
+      "uf": "pr",
+      "name": "Londrina"
+    },
+    "4115200": {
+      "tse": "76910",
+      "uf": "pr",
+      "name": "Maringá"
+    },
+    "4118204": {
+      "tse": "77453",
+      "uf": "pr",
+      "name": "Paranaguá"
+    },
+    "4119905": {
+      "tse": "77771",
+      "uf": "pr",
+      "name": "Ponta Grossa"
+    },
+    "4125506": {
+      "tse": "78859",
+      "uf": "pr",
+      "name": "São José dos Pinhais"
+    },
+    "4202404": {
+      "tse": "80470",
+      "uf": "sc",
+      "name": "Blumenau"
+    },
+    "4204202": {
+      "tse": "80810",
+      "uf": "sc",
+      "name": "Chapecó"
+    },
+    "4204608": {
+      "tse": "80896",
+      "uf": "sc",
+      "name": "Criciúma"
+    },
+    "4205407": {
+      "tse": "81051",
+      "uf": "sc",
+      "name": "Florianópolis"
+    },
+    "4208203": {
+      "tse": "81612",
+      "uf": "sc",
+      "name": "Itajaí"
+    },
+    "4208906": {
+      "tse": "81752",
+      "uf": "sc",
+      "name": "Jaraguá do Sul"
+    },
+    "4209102": {
+      "tse": "81795",
+      "uf": "sc",
+      "name": "Joinville"
+    },
+    "4209300": {
+      "tse": "81833",
+      "uf": "sc",
+      "name": "Lages"
+    },
+    "4211900": {
+      "tse": "82333",
+      "uf": "sc",
+      "name": "Palhoça"
+    },
+    "4216602": {
+      "tse": "83275",
+      "uf": "sc",
+      "name": "São José"
+    },
+    "4304606": {
+      "tse": "85898",
+      "uf": "rs",
+      "name": "Canoas"
+    },
+    "4305108": {
+      "tse": "85995",
+      "uf": "rs",
+      "name": "Caxias do Sul"
+    },
+    "4309209": {
+      "tse": "86835",
+      "uf": "rs",
+      "name": "Gravataí"
+    },
+    "4313409": {
+      "tse": "87718",
+      "uf": "rs",
+      "name": "Novo Hamburgo"
+    },
+    "4314100": {
+      "tse": "87858",
+      "uf": "rs",
+      "name": "Passo Fundo"
+    },
+    "4314407": {
+      "tse": "87912",
+      "uf": "rs",
+      "name": "Pelotas"
+    },
+    "4314902": {
+      "tse": "88013",
+      "uf": "rs",
+      "name": "Porto Alegre"
+    },
+    "4316907": {
+      "tse": "88412",
+      "uf": "rs",
+      "name": "Santa Maria"
+    },
+    "4318705": {
+      "tse": "88773",
+      "uf": "rs",
+      "name": "São Leopoldo"
+    },
+    "4323002": {
+      "tse": "89630",
+      "uf": "rs",
+      "name": "Viamão"
+    },
+    "5001102": {
+      "tse": "90212",
+      "uf": "ms",
+      "name": "Aquidauana"
+    },
+    "5002704": {
+      "tse": "90514",
+      "uf": "ms",
+      "name": "Campo Grande"
+    },
+    "5003207": {
+      "tse": "90638",
+      "uf": "ms",
+      "name": "Corumbá"
+    },
+    "5003702": {
+      "tse": "90735",
+      "uf": "ms",
+      "name": "Dourados"
+    },
+    "5005707": {
+      "tse": "91138",
+      "uf": "ms",
+      "name": "Naviraí"
+    },
+    "5006200": {
+      "tse": "91235",
+      "uf": "ms",
+      "name": "Nova Andradina"
+    },
+    "5006606": {
+      "tse": "91316",
+      "uf": "ms",
+      "name": "Ponta Porã"
+    },
+    "5008305": {
+      "tse": "91650",
+      "uf": "ms",
+      "name": "Três Lagoas"
+    },
+    "5102504": {
+      "tse": "90514",
+      "uf": "mt",
+      "name": "Cáceres"
+    },
+    "5103403": {
+      "tse": "90670",
+      "uf": "mt",
+      "name": "Cuiabá"
+    },
+    "5107040": {
+      "tse": "98876",
+      "uf": "mt",
+      "name": "Primavera do Leste"
+    },
+    "5107602": {
+      "tse": "91510",
+      "uf": "mt",
+      "name": "Rondonópolis"
+    },
+    "5107909": {
+      "tse": "98957",
+      "uf": "mt",
+      "name": "Sinop"
+    },
+    "5107925": {
+      "tse": "99074",
+      "uf": "mt",
+      "name": "Sorriso"
+    },
+    "5108006": {
+      "tse": "91596",
+      "uf": "mt",
+      "name": "Tangará da Serra"
+    },
+    "5108402": {
+      "tse": "91677",
+      "uf": "mt",
+      "name": "Várzea Grande"
+    },
+    "5200258": {
+      "tse": "96776",
+      "uf": "go",
+      "name": "Águas Lindas de Goiás"
+    },
+    "5201108": {
+      "tse": "92215",
+      "uf": "go",
+      "name": "Anápolis"
+    },
+    "5201405": {
+      "tse": "92274",
+      "uf": "go",
+      "name": "Aparecida de Goiânia"
+    },
+    "5208004": {
+      "tse": "93599",
+      "uf": "go",
+      "name": "Formosa"
+    },
+    "5208707": {
+      "tse": "93734",
+      "uf": "go",
+      "name": "Goiânia"
+    },
+    "5212501": {
+      "tse": "94455",
+      "uf": "go",
+      "name": "Luziânia"
+    },
+    "5218805": {
+      "tse": "95710",
+      "uf": "go",
+      "name": "Rio Verde"
+    },
+    "5220454": {
+      "tse": "96555",
+      "uf": "go",
+      "name": "Senador Canedo"
+    },
+    "5221403": {
+      "tse": "96237",
+      "uf": "go",
+      "name": "Trindade"
+    },
+    "5221858": {
+      "tse": "96652",
+      "uf": "go",
+      "name": "Valparaíso de Goiás"
+    },
+    "5300108": {
+      "tse": "97012",
+      "uf": "df",
+      "name": "Brasília"
+    }
+  }
+}

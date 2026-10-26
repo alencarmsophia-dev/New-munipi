@@ -1,0 +1,128 @@
+{
+  "schemaVersion": "1.0",
+  "metricType": "apuracao_tse",
+  "timezone": "America/Sao_Paulo (UTC-3 · Horário Oficial de Brasília)",
+  "specialWindow": {
+    "id": "17h-19h",
+    "label": "Janela 17h–19h (abertura da totalização e prorrogação excepcional)",
+    "start": "17:00",
+    "end": "19:00",
+    "note": "A votação é unificada pelo horário de Brasília (8h às 17h), com início imediato da totalização às 17h e registros de prorrogação até as 19h em seções afetadas por contingências."
+  },
+  "honestyDisclaimer": "Os dados exibidos nesta série correspondem ao HORÁRIO DE TOTALIZAÇÃO E DIVULGAÇÃO PELO TSE (carimbos dt/ht dos lotes EA20), e não ao horário em que cada eleitor digitou o voto na urna. O horário individual de votação só consta nos Logs de Urna (RDV/BU) publicados dias após o pleito no Portal de Dados Abertos.",
+  "source": "Aguardando importação de snapshots reais do TSE (use o botão «Importar JSON de horários» ou rode build-snapshot.js --history-dir)",
+  "updatedAt": "2026-10-26T14:02:23.201Z",
+  "points": [],
+  "simPoints": [
+    {
+      "hora": "17:05",
+      "dt": "25/10/2026",
+      "secoesApuradas": 16352,
+      "secoesTotal": 408800,
+      "votosA": 2964677,
+      "votosB": 3146523,
+      "brancos": 97779,
+      "nulos": 177225
+    },
+    {
+      "hora": "17:20",
+      "dt": "25/10/2026",
+      "secoesApuradas": 57232,
+      "secoesTotal": 408800,
+      "votosA": 10461926,
+      "votosB": 10927274,
+      "brancos": 342227,
+      "nulos": 620287
+    },
+    {
+      "hora": "17:40",
+      "dt": "25/10/2026",
+      "secoesApuradas": 118552,
+      "secoesTotal": 408800,
+      "votosA": 21936969,
+      "votosB": 22369231,
+      "brancos": 708899,
+      "nulos": 1284880
+    },
+    {
+      "hora": "18:00",
+      "dt": "25/10/2026",
+      "secoesApuradas": 188048,
+      "secoesTotal": 408800,
+      "votosA": 35218245,
+      "votosB": 35060555,
+      "brancos": 1124461,
+      "nulos": 2038085
+    },
+    {
+      "hora": "18:20",
+      "dt": "25/10/2026",
+      "secoesApuradas": 257544,
+      "secoesTotal": 408800,
+      "votosA": 48907443,
+      "votosB": 47343957,
+      "brancos": 1540022,
+      "nulos": 2791291
+    },
+    {
+      "hora": "18:40",
+      "dt": "25/10/2026",
+      "secoesApuradas": 318864,
+      "secoesTotal": 408800,
+      "votosA": 61028746,
+      "votosB": 58139654,
+      "brancos": 1906694,
+      "nulos": 3455884
+    },
+    {
+      "hora": "19:00",
+      "dt": "25/10/2026",
+      "secoesApuradas": 363832,
+      "secoesTotal": 408800,
+      "votosA": 69907312,
+      "votosB": 66066888,
+      "brancos": 2175587,
+      "nulos": 3943252
+    },
+    {
+      "hora": "19:30",
+      "dt": "25/10/2026",
+      "secoesApuradas": 388360,
+      "secoesTotal": 408800,
+      "votosA": 74765306,
+      "votosB": 70375694,
+      "brancos": 2322256,
+      "nulos": 4209089
+    },
+    {
+      "hora": "20:00",
+      "dt": "25/10/2026",
+      "secoesApuradas": 402668,
+      "secoesTotal": 408800,
+      "votosA": 77610110,
+      "votosB": 72878190,
+      "brancos": 2407813,
+      "nulos": 4364161
+    },
+    {
+      "hora": "20:45",
+      "dt": "25/10/2026",
+      "secoesApuradas": 407165,
+      "secoesTotal": 408800,
+      "votosA": 78507256,
+      "votosB": 73661624,
+      "brancos": 2434702,
+      "nulos": 4412898
+    },
+    {
+      "hora": "21:30",
+      "dt": "25/10/2026",
+      "secoesApuradas": 408800,
+      "secoesTotal": 408800,
+      "votosA": 77478082,
+      "votosB": 75301918,
+      "brancos": 2444480,
+      "nulos": 4430620
+    }
+  ]
+}
